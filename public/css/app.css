@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ------------- BAGIAN NAVBAR ------------- */
+.navbar {
+    background-color: #0c356a;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    height: 100px;
+    width: 100%;
+}
+
+.navbar-left {
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+
+.navbar-left img {
+    height: 80px;
+    width: auto;
+    margin: auto 0;
+}
+
+.navbar-left-desc {
+    padding-left: 20px;
+}
+
+.navbar-left-desc h1 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.navbar-left-desc p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.navbar-right {
+    margin: auto 0;
+}
+
+.navbar-right-content {
+    display: flex;
+}
+
+.navbar-right-content img {
+    height: 20px;
+    width: auto;
+    margin: auto 0;
+}
+
+.navbar-right-content p {
+    margin: 3px 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* ------------- END BAGIAN NAVBAR ------------- */
+
+.sidebar {
+    background-color: #082851;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+}
+
+.content {
+    margin-top: 100px;
+    margin-left: 20%;
+}
+
+/* ------------- BAGIAN RESPONSIVE ------------- */
+@media screen and (max-width: 800px) {
+    /* ------------- BAGIAN RESPONSIVE NAVBAR ------------- */
+    .navbar {
+        padding: 0 40px;
+    }
+
+    .navbar-left-desc h1 {
+        font-size: 16px;
+    }
+
+    .navbar-left-desc p {
+        font-size: 10px;
+    }
+
+    .navbar-right-content img {
+        height: 15px;
+    }
+
+    .navbar-right-content p {
+        font-size: 10px;
+    }
+
+    /* ------------- END BAGIAN RESPONSIVE NAVBAR ------------- */
+}
+
+@media screen and (max-width: 500px) {
+    /* ------------- BAGIAN RESPONSIVE NAVBAR ------------- */
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .navbar-left {
+        width: 50%;
+    }
+
+    .navbar-left-desc {
+        padding-left: 10px;
+    }
+
+    .navbar-left img {
+        height: 50px;
+    }
+
+    .navbar-left-desc h1 {
+        font-size: 12px;
+    }
+
+    .navbar-left-desc p {
+        display: none;
+    }
+
+    .navbar-right-content img {
+        height: 12px;
+    }
+
+    .navbar-right-content p {
+        font-size: 8px;
+        margin: 3px 3px;
+    }
+    /* ------------- END BAGIAN RESPONSIVE NAVBAR ------------- */
+}
+
+/* ------------- END BAGIAN RESPONSIVE ------------- */
