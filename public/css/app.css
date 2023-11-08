@@ -7,8 +7,13 @@
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: unset;
+}
+
 /* ------------- BAGIAN NAVBAR ------------- */
-.navbar {
+.navbar-c {
     background-color: #0c356a;
     font-family: "Poppins", sans-serif;
     color: #fff;
@@ -19,33 +24,35 @@
     padding: 0 80px;
     height: 100px;
     width: 100%;
+    z-index: 5;
 }
 
-.navbar-left {
+.navbar-c-left {
     display: flex;
     width: 60%;
     align-items: center;
 }
 
-.navbar-left img {
+.navbar-c-left img {
     height: 80px;
     width: auto;
     margin: auto 0;
 }
 
-.navbar-left-desc {
+.navbar-c-left-desc {
     padding-left: 20px;
 }
 
-.navbar-left-desc h1 {
+.navbar-c-left-desc h1 {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.2px;
+    margin: 0;
 }
 
-.navbar-left-desc p {
+.navbar-c-left-desc p {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -53,104 +60,143 @@
     letter-spacing: 0.8px;
 }
 
-.navbar-right {
+.navbar-c-right {
     margin: auto 0;
 }
 
-.navbar-right-content {
+.navbar-c-right-content {
     display: flex;
 }
 
-.navbar-right-content img {
+.navbar-c-right-content img {
     height: 20px;
     width: auto;
     margin: auto 0;
 }
 
-.navbar-right-content p {
+.navbar-c-right-content p {
     margin: 3px 10px;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-/* ------------- END BAGIAN NAVBAR ------------- */
 
-.sidebar {
-    background-color: #082851;
-    position: fixed;
-    top: 100px;
-    left: 0;
-    width: 20%;
-    height: 100vh;
-}
+/* ------------- END BAGIAN NAVBAR ------------- */
 
 .content {
     margin-top: 100px;
     margin-left: 20%;
+    width: 80%;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+.expand {
+    margin-left: 5%;
+    width: 95%;
+}
+
+.go-top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    margin: 50px;
+    border-radius: 50px;
+    background-color: #ffc436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-top button {
+    border: none;
+    background: none;
+}
+
+.go-top button a {
+    text-decoration: none;
+    color: unset;
 }
 
 /* ------------- BAGIAN RESPONSIVE ------------- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     /* ------------- BAGIAN RESPONSIVE NAVBAR ------------- */
-    .navbar {
+    .navbar-c {
         padding: 0 40px;
+        margin-top: -0.5px;
     }
 
-    .navbar-left-desc h1 {
+    .navbar-c-left-desc h1 {
         font-size: 16px;
     }
 
-    .navbar-left-desc p {
+    .navbar-c-left-desc p {
         font-size: 10px;
     }
 
-    .navbar-right-content img {
+    .navbar-c-right-content img {
         height: 15px;
     }
 
-    .navbar-right-content p {
+    .navbar-c-right-content p {
         font-size: 10px;
     }
 
     /* ------------- END BAGIAN RESPONSIVE NAVBAR ------------- */
+    .content {
+        margin-left: 7%;
+        width: 93%;
+    }
+
+    .expand {
+        margin-left: 7%;
+        width: 93%;
+    }
 }
 
 @media screen and (max-width: 500px) {
     /* ------------- BAGIAN RESPONSIVE NAVBAR ------------- */
-    .navbar {
-        padding: 0 10px;
+    .navbar-c {
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .navbar-left {
-        width: 50%;
+    .navbar-c-left {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .navbar-left-desc {
-        padding-left: 10px;
-    }
-
-    .navbar-left img {
-        height: 50px;
-    }
-
-    .navbar-left-desc h1 {
-        font-size: 12px;
-    }
-
-    .navbar-left-desc p {
+    .navbar-c-left-desc p,
+    .navbar-c-right {
         display: none;
     }
 
-    .navbar-right-content img {
-        height: 12px;
+    .navbar-c-left img {
+        height: 50px;
     }
 
-    .navbar-right-content p {
-        font-size: 8px;
-        margin: 3px 3px;
+    .navbar-c-left-desc {
+        padding-left: 10px;
     }
-    /* ------------- END BAGIAN RESPONSIVE NAVBAR ------------- */
+
+    .navbar-c-left-desc h1 {
+        font-size: 14px;
+    }
+
+    .content {
+        margin-top: 100px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .expand {
+        margin-top: 150px;
+    }
 }
 
 /* ------------- END BAGIAN RESPONSIVE ------------- */

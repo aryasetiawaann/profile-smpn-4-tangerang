@@ -1,0 +1,119 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+* {
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.footer-distributed {
+    font-family: "Poppins", sans-serif;
+    background: #0c356a;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.left-top {
+    display: flex;
+}
+
+.left-top img {
+    height: 110px;
+    width: auto;
+}
+
+.school-name {
+    display: flex;
+    color: #fff;
+    margin-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.school-name h3,
+p {
+    margin: 0;
+}
+
+.left-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.akreditasi {
+    width: 100%;
+}
+
+.akreditasi span {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.akreditasi .bold-text {
+    color: #ffc436;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-info {
+    display: flex;
+    color: #fff;
+}
+
+.footer-info img {
+    height: 32px;
+}
+
+.footer-info p {
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.footer-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.admin {
+    margin-left: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin a {
+    text-decoration: none;
+    color: #c9c9c9;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 5px ;
+}
+
+.admin img{
+    height: 20px;
+    width: auto;
+}
+
+.footer-right .maps iframe {
+    border-radius: 7px;
+}

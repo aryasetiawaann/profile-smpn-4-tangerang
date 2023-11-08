@@ -1,0 +1,171 @@
+.carousel-container .c-img {
+    object-fit: cover;
+    height: 600px;
+}
+
+.carousel{
+    z-index: -1;
+}
+
+.home-line {
+    width: 100%;
+    height: 45px;
+    background: #0174be;
+}
+
+.home-sekolah {
+    margin-top: 100px;
+    margin-left: 80px;
+    color: #ffc436;
+    font-family: Poppins, sans-serif;
+    word-wrap: break-word;
+}
+
+.home-sekolah h1 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.home-sekolah .home-namasekolah {
+    color: #082851;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* KEPSEK */
+.home-kepsek {
+    display: flex;
+    align-items: center;
+    margin: auto 15px 100px 80px;
+}
+
+.home-imagekepsek {
+    width: 295px;
+    border-radius: 10px;
+}
+
+.home-textkepsek {
+    margin-left: 50px;
+}
+
+.home-namakepsek {
+    color: black;
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.home-loremkepsek {
+    color: black;
+    width: 70%;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+    margin-top: 30px;
+}
+
+/* VISI MISI */
+.home-visi-misi {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    background: #0c356a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.visi,
+.misi {
+    margin: 0 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.visi p,
+.misi p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.visi h1,
+.misi h1 {
+    font-size: 32px;
+    color: #ffc436;
+}
+
+.misi ul li {
+    list-style: decimal;
+    text-align: start;
+    font-size: 18px;
+}
+
+/* BERITA */
+.home-berita {
+    margin-top: 150px;
+    margin-left: 80px;
+    color: #ffc436;
+    font-family: Poppins, sans-serif;
+    word-wrap: break-word;
+}
+
+.home-berita h1 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.home-berita .home-berita2 {
+    color: #082851;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.flex-container {
+    margin: auto 15px 100px 80px;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flex-image {
+    width: 379px;
+    height: 217px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.flex-content {
+    color: #082851;
+    font-family: Poppins;
+}
+
+.flex-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.flex-date {
+    font-size: 16px;
+    color: #b7b7b7;
+    margin-top: 10px;
+}
+
+.flex-read-more {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    margin-top: 50px;
+}
+
+.spacing {
+    margin-bottom: 200px;
+}

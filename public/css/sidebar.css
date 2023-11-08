@@ -1,0 +1,273 @@
+.sidebar {
+    background-color: #082851;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    transform: translateX(-75%);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    overflow-y: auto;
+    padding-top: 115px;
+    padding-bottom: 15px;
+}
+
+.show-sidebar {
+    transform: translateX(0);
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: unset;
+}
+
+.sidebar-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 60px;
+}
+
+.sidebar-title button {
+    background: none !important;
+    border: none;
+    width: 1.5em;
+    height: auto;
+}
+
+.sidebar-title button svg {
+    width: 1.5em;
+    color: #fff;
+}
+
+.sidebar-title h1 {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.65px;
+}
+
+/* --- CONTENT ---*/
+.sidebar-content {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.content-list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 0;
+}
+
+.content-list img,
+.content-list svg {
+    width: 1.5em;
+    height: auto;
+}
+
+.content-list p {
+    width: 65%;
+    margin: 0 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dropdown-list {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-list li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.dropdown-button {
+    background: none !important;
+    border: none;
+    width: 10%;
+}
+
+.dropdown-button svg {
+    width: 0.5em;
+    height: auto;
+}
+
+.dropdown-button .arrow-down {
+    width: 1.6em;
+}
+
+/* --- CLOSE SIDEBAR --- */
+.close-sidebar {
+    background-color: #082851;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    left: 0;
+    width: 5%;
+    height: 100vh;
+}
+
+.close-sidebar a {
+    text-decoration: none;
+    color: unset;
+}
+
+.close-sidebar-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 80px;
+}
+
+.close-sidebar-title button {
+    background: none !important;
+    border: none;
+    width: 1.5em;
+    height: auto;
+}
+
+.close-sidebar-title button svg {
+    width: 1.5em;
+    color: #fff;
+}
+
+/* --- CONTENT ---*/
+.close-sidebar-content {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.close-content-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.close-content-list img,
+.close-content-list svg {
+    width: 1.5em;
+    height: auto;
+}
+
+.close-content-list button {
+    background: none !important;
+    border: none !important;
+    padding-left: 0;
+}
+
+.dropend .dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu.show {
+    font-size: 14px;
+    text-align: center;
+    z-index: 3 !important;
+    margin-left: 5px !important;
+    padding: 5px !important;
+    background-color: #082851 !important;
+    color: #fff !important;
+}
+
+@media screen and (max-width: 850px) {
+    .sidebar {
+        width: 30%;
+        transform: translateX(-80%);
+        transition: transform 0.3s ease;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .show-sidebar {
+        transform: translateX(0);
+    }
+
+    /* CLOSE SIDEBAR */
+    .close-sidebar {
+        width: 7%;
+        height: 100vh;
+        margin-top: -1px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        width: 70%;
+        transform: translateX(-100%);
+    }
+
+    .show-sidebar {
+        transform: translateX(0);
+    }
+
+    .sidebar-title {
+        height: 60px;
+    }
+
+    .close-sidebar {
+        width: 100vw;
+        height: 50px;
+        margin-top: -1px;
+    }
+
+    .close-sidebar-title {
+        justify-content: start;
+    }
+
+    .close-content-list {
+        display: none;
+    }
+
+    .content-list {
+        padding: 10px 0;
+    }
+
+    .dropdown-list li {
+        padding: 1px 0;
+    }
+
+    .content-list p {
+        font-size: 13px;
+    }
+
+    .content-list img,
+    .content-list svg {
+        width: 1.2em;
+        height: auto;
+    }
+
+    .dropdown-button svg {
+        width: 0.4em;
+        height: auto;
+    }
+
+    .dropdown-button .arrow-down {
+        width: 1.6em;
+    }
+
+    .dropdown-list a {
+        font-size: 10px;
+    }
+}
