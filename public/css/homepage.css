@@ -7,9 +7,6 @@
     z-index: -1;
 }
 
-.carousel-control-next, .carousel-control-prev{
-    z-index: 2 ;
-}
 
 .home-line {
     width: 100%;
