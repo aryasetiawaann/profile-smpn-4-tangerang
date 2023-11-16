@@ -1,12 +1,12 @@
-<div>
-    <div :class="{'show-sidebar': isopen_sidebar}" class="sidebar">
+<div x-data="{drop1 : false, drop2 : false, drop3: false}">
+    <div :class="{'show-sidebar': isopen_sidebar}" class="sidebar" >
         <div class="sidebar-title">
-            <button class="close-button" @click="isopen_sidebar = !isopen_sidebar">
+            <button class="close-button" @click="isopen_sidebar = !isopen_sidebar; drop1 = false; drop2 = false; drop3 = false">
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
             <h1>SMP NEGERI 4 TANGERANG</h1>
         </div>
-        <div class="sidebar-content" x-data="{drop1 : false, drop2 : false, drop3: false}">
+        <div class="sidebar-content" >
             <a href="/">
                 <div class="content-list">
                     <div class="svg-container">
@@ -20,7 +20,7 @@
             </a>
             
             <div class="content-list">
-                <img src="assets/profile-sidebar.png" alt="profile">
+                <img src="/assets/profile-sidebar.png" alt="profile">
                 <p>Profile</p>
                 <button class="dropdown-button" @click="drop1 = !drop1">
                     <div class="svg-container">
@@ -35,13 +35,14 @@
             </div>
             
             <ul class="dropdown-list" x-show="drop1" x-transition>
-                <li><a href="">Sejarah</a></li>
-                <li><a href="">Staff</a></li>
-                <li><a href="">Ekskul</a></li>
+                <li><a href="/sejarah-sekolah">Sejarah</a></li>
+                <li><a href="/staff-pengajar">Staff Pengajar</a></li>
+                <li><a href="">Fasilitas Sekolah</a></li>
+                <li><a href="/ekstrakulikuler">Ekskul</a></li>
             </ul>
             
             <div class="content-list">
-                <img src="assets/akademik-sidebar.png" alt="akademik">
+                <img src="/assets/akademik-sidebar.png" alt="akademik">
                 <p>Akademik</p>
                 <button class="dropdown-button" @click="drop2 = !drop2">
                     <div class="svg-container">
@@ -56,18 +57,18 @@
             </div>
             
             <ul class="dropdown-list" x-show="drop2" x-transition>
-                <li><a href="">Kalender Akademik</a></li>
-                <li><a href="">Prestasi</a></li>
+                <li><a href="/kalender-akademik">Kalender Akademik</a></li>
+                <li><a href="/prestasi">Prestasi</a></li>
             </ul>
-            <a href="#">
+            <a href="/pengumuman-dan-berita">
                 <div class="content-list">
-                    <img src="assets/berita-sidebar.png" alt="berita">
+                    <img src="/assets/berita-sidebar.png" alt="berita">
                     <p>Pengumuman & Berita</p>
                 </div>
             </a>
             
             <div class="content-list">
-                <img src="assets/dokumentasi-sidebar.png" alt="dokumentasi">
+                <img src="/assets/dokumentasi-sidebar.png" alt="dokumentasi">
                 <p>Dokumentasi</p>
                 <button class="dropdown-button" @click="drop3 = !drop3">
                     <div class="svg-container">
@@ -111,50 +112,32 @@
                     </div>
                 </div>
             </a>
-        
-            
 
-            <div class="btn-group dropend close-content-list">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="assets/profile-sidebar.png" alt="profile">
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="">Sejarah</a></li>
-                <li><a href="">Staff</a></li>
-                <li><a href="">Ekskul</a></li>
-            </ul>
-            </div>
-
-            
-            <div class="btn-group dropend close-content-list">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="assets/akademik-sidebar.png" alt="akademik">
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="">Kalender Akademik</a></li>
-                <li><a href="">Prestasi</a></li>
-            </ul>
-            </div>
-
-            <a href="#">
+            <a href="#" @click="isopen_sidebar = !isopen_sidebar; drop1 = !drop1">
                 <div class="close-content-list">
-                    <img src="assets/berita-sidebar.png" alt="berita">
+                    <img src="/assets/profile-sidebar.png" alt="profile">
                 </div>
             </a>
-            
-            <div class="btn-group dropend close-content-list">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="assets/dokumentasi-sidebar.png" alt="dokumentasi">
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="">Kelas - 7</a></li>
-                <li><a href="">Kelas - 8</a></li>
-                <li><a href="">Kelas - 9</a></li>
-            </ul>
-            </div>
+
+            <a href="#" @click="isopen_sidebar = !isopen_sidebar; drop2 = !drop2">
+                <div class="close-content-list">
+                    <img src="/assets/akademik-sidebar.png" alt="akademik">
+                </div>
+            </a>
+
+            <a href="/pengumuman-dan-berita">
+                <div class="close-content-list">
+                    <img src="/assets/berita-sidebar.png" alt="berita">
+                </div>
+            </a>
+
+            <a href="#" @click="isopen_sidebar = !isopen_sidebar; drop3 = !drop3">
+                <div class="close-content-list">
+                    <img src="/assets/dokumentasi-sidebar.png" alt="dokumentasi">
+                </div>
+            </a>
            
             
         </div>
     </div>
-
 </div>

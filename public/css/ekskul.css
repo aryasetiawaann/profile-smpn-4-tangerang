@@ -1,0 +1,89 @@
+.ekskul-content {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+}
+
+.ekskul-content-head {
+    margin-bottom: 15px;
+}
+
+.ekskul-content-head p {
+    margin: 0;
+    color: #ffc436;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ekskul-content-head h1 {
+    color: #082851;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ekskul-content-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.ekskul-card {
+    width: 32%;
+    height: 200px;
+    margin: 15px 0;
+    border-radius: 5px;
+    scale: 1;
+    transition: scale 0.3s ease;
+}
+
+.ekskul-card:hover{
+    scale: 1.03;
+}
+
+.ekskul-card a {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.ekskul-card img {
+    width: 27%;
+    height: auto;
+}
+
+.ekskul-card p {
+    font-size: 24px;
+    margin: auto 0;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 850px){
+    .ekskul-content-body {
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .ekskul-card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .ekskul-content {
+        margin: 30px;
+    }
+
+    .ekskul-content-body {
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    .ekskul-card {
+        width: 100%;
+    }
+}

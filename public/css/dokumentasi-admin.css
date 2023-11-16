@@ -1,0 +1,81 @@
+.head-dokumentasi {
+    font-family: "Poppins", sans-serif;
+}
+
+.button-add-dokumentasi button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dokumentasi-container {
+    background-color: #f8f8f9;
+    padding-left: 200px;
+}
+
+.button-add-dokumentasi button {
+    width: 100px;
+    height: 33px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: #2984ff;
+    cursor: pointer;
+    border: none;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.dokumentasi-container .isi-table {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.dokumentasi-container .isi-table table {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "Poppins", sans-serif;
+    border-collapse: collapse;
+    border-radius: 6px;
+}
+
+.dokumentasi-container .isi-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: left;
+    background-color: #2984ff;
+    color: white;
+}
+
+.dokumentasi-container .isi-table td,
+.dokumentasi-container .isi-table th {
+    border: 1px solid #b7b7b7;
+}
+
+.dokumentasi-container .isi-table td {
+    font-size: 16px;
+    color: #9d9d9d;
+    padding: 10px;
+}
+
+.dokumentasi-table-img img {
+    width: 213px;
+    height: 141px;
+    padding: 10px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.dokumentasi-aksi-img img {
+    width: 21px;
+    height: 22px;
+}
+
+.deskripsi-dokumentasi {
+    width: 350px;
+}
+/* EDIT  */

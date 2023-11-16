@@ -1,12 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
 .carousel-container .c-img {
+    margin-top: 0;
     object-fit: cover;
+    filter: brightness(0.8);
     height: 600px;
 }
 
-.carousel{
-    z-index: -1;
+.carousel-caption {
+    font-family: "Poppins", sans-serif;
+    top: 40%;
 }
 
+.carousel-caption h5 {
+    font-weight: 600;
+    font-size: 42px !important;
+}
 
 .home-line {
     width: 100%;
@@ -14,7 +23,7 @@
     background: #0174be;
 }
 
-.home-sekolah {
+.home-sambutan-head {
     margin-top: 100px;
     margin-left: 80px;
     color: #ffc436;
@@ -22,54 +31,53 @@
     word-wrap: break-word;
 }
 
-.home-sekolah h1 {
+.home-sambutan-head h1 {
     font-size: 16px;
     font-weight: 500;
 }
 
-.home-sekolah .home-namasekolah {
+.home-sambutan-head p {
     color: #082851;
     font-size: 24px;
     font-weight: 700;
 }
 
-/* KEPSEK */
-.home-kepsek {
+.home-sambutan-body {
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin: auto 15px 100px 80px;
 }
 
-.home-imagekepsek {
+.home-sambutan-body img {
     width: 295px;
     border-radius: 10px;
 }
 
-.home-textkepsek {
-    margin-left: 50px;
+.home-sambutan-desc {
+    margin-left: 40px;
+    margin-top: 30px;
+    font-family: Poppins, sans-serif;
 }
 
-.home-namakepsek {
-    color: black;
+.home-sambutan-desc h3 {
+    margin: 0;
     font-size: 32px;
-    font-family: Poppins;
     font-weight: 600;
     word-wrap: break-word;
 }
 
-.home-loremkepsek {
-    color: black;
-    width: 70%;
-    font-size: 18px;
+.home-sambutan-desc p {
+    font-size: 16px;
     font-weight: 500;
     word-wrap: break-word;
     margin-top: 30px;
+    padding-right: 10%;
 }
 
 /* VISI MISI */
 .home-visi-misi {
     width: 100%;
-    height: 600px;
+    min-height: 600px;
     margin: auto;
     background: #0c356a;
     display: flex;
@@ -109,64 +117,279 @@
 
 /* BERITA */
 .home-berita {
-    margin-top: 150px;
-    margin-left: 80px;
-    color: #ffc436;
+    margin: 80px;
+    margin-bottom: 50px;
     font-family: Poppins, sans-serif;
+}
+
+.home-berita-head {
+    color: #ffc436;
     word-wrap: break-word;
 }
 
-.home-berita h1 {
+.home-berita-head h1 {
     font-size: 16px;
     font-weight: 500;
 }
 
-.home-berita .home-berita2 {
+.home-berita-head p {
     color: #082851;
     font-size: 24px;
     font-weight: 700;
 }
 
-.flex-container {
-    margin: auto 15px 100px 80px;
-}
-
-.flex-item {
+.home-berita-item {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.flex-image {
-    width: 379px;
-    height: 217px;
+.home-berita-more {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-berita-more button {
+    background-color: #082851;
+    border: none;
     border-radius: 10px;
-    margin-right: 20px;
+    padding: 10px;
 }
 
-.flex-content {
+.home-berita-more button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.home-berita-item img {
+    border-radius: 10px;
+    width: 45%;
+    object-fit: cover;
+    max-width: 350px;
+    aspect-ratio: 16/9;
+}
+
+.berita-item-desc {
+    margin-left: 30px;
+}
+
+.berita-item-desc h5 {
     color: #082851;
-    font-family: Poppins;
-}
-
-.flex-title {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
 }
 
-.flex-date {
+.berita-item-desc p {
     font-size: 16px;
-    color: #b7b7b7;
-    margin-top: 10px;
 }
 
-.flex-read-more {
+.item-desc-date {
+    color: #b7b7b7;
+}
+
+.item-desc-more {
     font-size: 15px;
     font-weight: 600;
-    color: black;
-    margin-top: 50px;
 }
 
-.spacing {
-    margin-bottom: 200px;
+@media screen and (max-width: 850px) {
+    .carousel-caption h5 {
+        font-size: 32px !important;
+    }
+
+    .home-sambutan-head {
+        margin: 0 30px;
+        margin-top: 30px;
+    }
+
+    .home-sambutan-body {
+        margin: 10px 30px;
+        margin-bottom: 30px;
+    }
+
+    .home-sambutan-body img {
+        width: 35%;
+    }
+
+    .home-sambutan-desc {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .home-sambutan-desc h3 {
+        font-size: 20px;
+    }
+
+    .home-sambutan-desc p {
+        margin: 30px auto;
+        margin-top: 20px;
+        text-align: justify;
+        font-size: 13px;
+        padding-right: 0;
+    }
+
+    .home-visi-misi {
+        margin: auto;
+        padding: 50px 30px;
+    }
+
+    .visi,
+    .misi {
+        margin: 0;
+    }
+
+    .visi h1,
+    .misi h1 {
+        font-size: 28px;
+    }
+
+    .visi p,
+    .misi p,
+    .misi ul li p {
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .home-berita-item {
+        flex-direction: column;
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .home-berita-item img {
+        width: 50%;
+    }
+
+    .berita-item-desc {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carousel-container .c-img {
+        height: 550px;
+    }
+
+    .carousel-caption {
+        font-family: "Poppins", sans-serif;
+        top: 30%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 32px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 18px;
+    }
+
+    .home-sambutan-head {
+        margin: 0 30px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .home-sambutan-head h1 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .home-sambutan-head p {
+        color: #082851;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .home-sambutan-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 30px;
+    }
+
+    .home-sambutan-desc {
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .home-sambutan-desc h3 {
+        font-size: 16px;
+    }
+
+    .home-sambutan-desc p {
+        text-align: justify;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .home-sambutan-body img {
+        width: 80%;
+    }
+
+    .visi h1,
+    .misi h1 {
+        font-size: 24px;
+    }
+
+    .misi ul {
+        margin: 0;
+        padding-left: 5%;
+    }
+
+    .visi p,
+    .misi p,
+    .misi ul li,
+    .misi ul li p {
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    .home-visi-misi {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .visi,
+    .misi {
+        margin: 0 30px;
+        text-align: justify;
+    }
+
+    .home-berita {
+        margin: 30px;
+    }
+
+    .home-berita-head {
+        text-align: center;
+    }
+
+    .home-berita-head h1 {
+        font-size: 14px;
+    }
+
+    .home-berita-head p {
+        font-size: 18px;
+    }
+
+    .home-berita-item img {
+        width: 100%;
+    }
+
+    .berita-item-desc h5 {
+        font-size: 14px;
+    }
+
+    .berita-item-desc p {
+        font-size: 12px;
+    }
+
+    .item-desc-more {
+        font-size: 14px;
+    }
 }

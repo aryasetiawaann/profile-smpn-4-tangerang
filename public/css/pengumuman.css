@@ -1,0 +1,41 @@
+.pengumuman-content {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+}
+
+.pengumuman-content-head {
+    margin-bottom: 15px;
+}
+
+.pengumuman-content-head p {
+    margin: 0;
+    color: #ffc436;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pengumuman-content-head h1 {
+    color: #082851;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 850px) {
+    .pengumuman-content {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pengumuman-content-head p {
+        font-size: 13px;
+    }
+
+    .pengumuman-content-head h1 {
+        font-size: 21px;
+    }
+}

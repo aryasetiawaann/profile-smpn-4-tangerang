@@ -1,0 +1,164 @@
+.prestasi-content {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+}
+
+.prestasi-content-head {
+    margin-bottom: 15px;
+}
+
+.prestasi-content-head p {
+    margin: 0;
+    color: #ffc436;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.prestasi-content-head h1 {
+    color: #082851;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.prestasi-content-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.prestasi-card {
+    height: auto;
+    min-height: 310px;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.prestasi-card img {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.prestasi-card-desc {
+    margin-left: 15px;
+}
+
+.prestasi-card-desc a {
+    color: unset;
+    text-decoration: none;
+}
+
+.prestasi-card-desc h1 {
+    color: #082851;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.prestasi-card-desc p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.prestasi-date {
+    color: #b7b7b7;
+}
+
+.prestasi-highlight {
+    height: 60px;
+}
+
+.prestasi-desc-detail {
+    display: flex;
+}
+
+.prestasi-desc-detail img {
+    width: 30px;
+    height: auto;
+    object-fit: contain;
+}
+
+.prestasi-desc-detail p {
+    margin: auto 0;
+    margin-left: 5px;
+    color: #c9c9c9;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 850px) {
+    .prestasi-content {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        margin-bottom: 50px;
+    }
+
+    .prestasi-highlight {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .prestasi-content-head p {
+        font-size: 13px;
+    }
+
+    .prestasi-content-head h1 {
+        font-size: 21px;
+    }
+
+    .prestasi-card {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    .prestasi-card img {
+        width: 100%;
+    }
+
+    .prestasi-card-desc {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .prestasi-card-desc h1 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .prestasi-card-desc p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .prestasi-card-desc hr {
+        display: none;
+    }
+
+    .prestasi-date {
+        margin: 0;
+    }
+
+    .prestasi-highlight {
+        height: 80px;
+        margin-bottom: 3px;
+    }
+
+    .prestasi-desc-detail img {
+        width: 20px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .prestasi-desc-detail p {
+        margin: auto 0;
+        margin-left: 5px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}

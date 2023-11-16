@@ -1,7 +1,7 @@
 <footer class="footer-distributed">
 <div class="footer-left">
     <div class="left-top">
-        <img src="assets/logo.png" alt="School Logo">
+        <img src="/assets/logo.png" alt="School Logo">
         <div class="school-name">
             <h3>SMP NEGERI 4 TANGERANG</h3>
             <p>UNGGUL TERAMPIL AKTIF MANDIRI ADAPTIF</p>
@@ -16,13 +16,13 @@
         </div>
         <div class="left-bottom-right">
             <div class="footer-info">
-                <img src=assets/address.png class="address-icon">
+                <img src=/assets/address.png class="address-icon">
                 <p>Jl. Mochammad Yamin No.1, RT.002/RW.003, Babakan, Kec. Tangerang, Kota Tangerang <br>
                 Banten 15118</p>
             </div>
             <br>
             <div class="footer-info">
-                <img src=assets/footer-phone.png class="phone-icon"> 
+                <img src=//assets/footer-phone.png class="phone-icon"> 
                 <p>(021) 123-456-788</p>
             </div>
         </div>
@@ -36,9 +36,9 @@
 </div>
 <hr>
 <div class="footer-bottom">
-    <p class="copyright">Copyright &copy; 2023 MAKA Bahagia. Hak Cipta Dilindungi | IF330.</p>
+    <p class="copyright">Copyright &copy; 2023 Universitas Multimedia Nusantara & SMPN 4 Tangerang.</p>
     <div class="admin">
-        <img src="assets/admin.png" alt="admin">
+        <img src="//assets/admin.png" alt="admin">
         <a href=""><p>Admin View</p></a>
     </div>
 </div>

@@ -1,0 +1,253 @@
+.pengumuman-container {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.head-pengumuman {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.button-add-pengumuman button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.button-add-pengumuman button {
+    width: 100px;
+    height: 33px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: #2984ff;
+    cursor: pointer;
+    border: none;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.pengumuman-body {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.pengumuman-table{
+    margin: 0 30px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    margin: 30px;
+    font-family: "Poppins", sans-serif;
+    border-collapse: collapse;
+    border-radius: 6px;
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    background-color: #2984ff;
+    color: white;
+}
+
+td,
+th {
+    border: 1px solid #b7b7b7;
+}
+
+td {
+    font-size: 16px;
+    color: #9d9d9d;
+    padding: 10px;
+}
+
+.pengumuman-table-img img {
+    width: 213px;
+    height: 141px;
+    padding: 10px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.pengumuman-aksi-img img {
+    width: 21px;
+    height: 22px;
+}
+
+.pengumuman-deskripsi {
+    width: 350px;
+}
+
+/* EDIT  */
+.container-edit {
+    width: 70%;
+    height: 50%;
+    position: relative;
+    background: #2984ff;
+    border-radius: 16px;
+    margin: 100px auto auto;
+    color: white;
+}
+
+.inner-container {
+    padding: 40px;
+}
+
+.top-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.title-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title-form input,
+.title-form label,
+.title-form text,
+.title-form placeholder {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.title-form input {
+    width: 310px;
+    height: 62px;
+    background: white;
+    border-radius: 9px;
+    border: 1px black solid;
+    margin-top: 10px;
+}
+
+.title-form label {
+    width: 53px;
+    height: 15px;
+    background: #2984ff;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.title-form text {
+    color: white;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-top: 10px;
+}
+
+.title-form placeholder {
+    width: 264px;
+    height: 21px;
+    color: #bebebe;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-top: 10px;
+}
+
+/* .title-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    z-index: 5;
+}
+
+.title-form input{
+    Rectangle 149
+    width: 200px;
+    height: 40px;
+    border-radius: 9px;
+    border: 1px solid #000;
+
+}
+
+.title-form label {
+    margin-top: 10px;
+    padding-left: 20px;
+    background-color: tomato;
+    width: 75px;
+    height: 13px;
+    z-index: 1;
+} */
+
+.date-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.date-form input {
+    width: 200px;
+    height: 40px;
+    border-radius: 9px;
+    border: 1px solid #000;
+}
+
+.placeholder {
+    color: #bebebe;
+}
+
+textarea {
+    margin-bottom: 20px;
+    border-radius: 9px;
+    border: 1px solid #000;
+}
+
+.description-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.file-form {
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    border: 1px solid #000;
+}
+
+.file-label {
+    color: black;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button {
+    margin-top: 40px;
+    background: white;
+    border-radius: 5px;
+}
+
+.my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 9px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+.my-button:hover {
+    background-color: #000000;
+    color: #fff;
+}

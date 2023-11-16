@@ -1,0 +1,81 @@
+.kalender-content {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+}
+
+.kalender-content-head {
+    margin-bottom: 15px;
+}
+
+.kalender-content-head p {
+    margin: 0;
+    color: #ffc436;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.kalender-content-head h1 {
+    color: #082851;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.kalender-content-body {
+    margin: 20px 0;
+    margin-bottom: 30vh;
+}
+
+.kalender-item {
+    margin-bottom: 15px;
+}
+
+.kalender-item h3 {
+    color: #082851;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.kalender-item button {
+    width: 197px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #0174be;
+}
+
+.kalender-item button img {
+    width: 8%;
+    height: auto;
+}
+
+.kalender-item button p {
+    font-size: 15px;
+    margin: auto 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .kalender-content {
+        margin: 30px;
+    }
+
+    .kalender-content-head p {
+        font-size: 13px;
+    }
+
+    .kalender-content-head h1 {
+        font-size: 21px;
+    }
+
+    .kalender-item {
+        margin-bottom: 30px;
+    }
+
+    .kalender-item button {
+        margin: 15px 0;
+    }
+}
