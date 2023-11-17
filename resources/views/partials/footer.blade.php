@@ -22,7 +22,7 @@
             </div>
             <br>
             <div class="footer-info">
-                <img src=//assets/footer-phone.png class="phone-icon"> 
+                <img src=/assets/footer-phone.png class="phone-icon"> 
                 <p>(021) 123-456-788</p>
             </div>
         </div>
@@ -38,7 +38,7 @@
 <div class="footer-bottom">
     <p class="copyright">Copyright &copy; 2023 Universitas Multimedia Nusantara & SMPN 4 Tangerang.</p>
     <div class="admin">
-        <img src="//assets/admin.png" alt="admin">
+        <img src="/assets/admin.png" alt="admin">
         <a href=""><p>Admin View</p></a>
     </div>
 </div>
