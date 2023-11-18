@@ -1,0 +1,95 @@
+.fasilitas-content {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+}
+
+.fasilitas-content-head {
+    margin-bottom: 15px;
+}
+
+.fasilitas-content-head p {
+    margin: 0;
+    color: #ffc436;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fasilitas-content-head h1 {
+    color: #082851;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.fasilitas-content-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(24%, 1fr));
+    gap: 15px;
+}
+
+.fasilitas-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    scale: 1;
+    transition: scale 0.3s ease;
+}
+
+.fasilitas-card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.fasilitas-card-desc {
+    padding: 10px;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #082851;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.fasilitas-card-desc p {
+    font-size: 16px;
+    color: #ffc436;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.fasilitas-card:hover {
+    scale: 1.03;
+}
+
+.fasilitas-card:hover .fasilitas-card-desc {
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 500px) {
+    .fasilitas-content {
+        margin: 30px;
+    }
+
+    .fasilitas-content-head p {
+        font-size: 14px;
+    }
+
+    .fasilitas-content-head h1 {
+        font-size: 16px;
+    }
+
+    .fasilitas-content-body {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0;
+    }
+
+    .fasilitas-card {
+        margin-bottom: 20px;
+    }
+}

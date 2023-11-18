@@ -39,7 +39,7 @@
     <p class="copyright">Copyright &copy; 2023 Universitas Multimedia Nusantara & SMPN 4 Tangerang.</p>
     <div class="admin">
         <img src="/assets/admin.png" alt="admin">
-        <a href=""><p>Admin View</p></a>
+        <a href="/admin"><p>Admin View</p></a>
     </div>
 </div>
 </footer>

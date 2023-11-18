@@ -37,7 +37,7 @@
             <ul class="dropdown-list" x-show="drop1" x-transition>
                 <li><a href="/sejarah-sekolah">Sejarah</a></li>
                 <li><a href="/staff-pengajar">Staff Pengajar</a></li>
-                <li><a href="">Fasilitas Sekolah</a></li>
+                <li><a href="/fasilitas-sekolah">Fasilitas Sekolah</a></li>
                 <li><a href="/ekstrakulikuler">Ekskul</a></li>
             </ul>
             
@@ -83,9 +83,9 @@
             </div>
             
             <ul class="dropdown-list" x-show="drop3" x-transition>
-                <li><a href="">Kelas - 7</a></li>
-                <li><a href="">Kelas - 8</a></li>
-                <li><a href="">Kelas - 9</a></li>
+                <li><a href="/dokumentasi/kelas-7">Kelas - 7</a></li>
+                <li><a href="/dokumentasi/kelas-8">Kelas - 8</a></li>
+                <li><a href="/dokumentasi/kelas-9">Kelas - 9</a></li>
             </ul>
         </div>
     </div>

@@ -106,7 +106,7 @@
             @endfor
         </div>
         <div class="home-berita-more">
-            <button><a href="">Lihat Semua</a></button>
+            <button><a href="/pengumuman-dan-berita">Lihat Semua</a></button>
         </div>
     </div>
 </div>

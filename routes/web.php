@@ -32,11 +32,22 @@ Route::get('/pengumuman-dan-berita', function () {
     return view('pengumuman', ['title'=> 'Pengumuman dan Berita']);
 });
 
+Route::get('/fasilitas-sekolah', function () {
+    return view('fasilitas', ['title'=> 'Fasilitas Sekolah']);
+});
+
 // Isi ID atau judul beritanya aja
 Route::get('/pengumuman-dan-berita/id', function () {
     return view('detail-pengumuman', ['title'=> 'judul pengumumannya']);
 });
 
+
+// contoh: kelas-8
+Route::get('/dokumentasi/{kelas}', function ($kelas) {
+    $title = str_replace('-',' ', $kelas);
+
+    return view('dokumentasi', ['title'=> $title]);
+});
 
 
 // --- BAGIAN ADMIN ---

@@ -3,7 +3,7 @@
 @section('content') 
 <div>
     <div class="banner">
-        <img src="assets/banner.png" alt="banner">
+        <img src="/assets/banner.png" alt="banner">
         <div class="line"></div>
         <div class="banner-desc">
             <p>AKADEMIK</p>
