@@ -90,17 +90,27 @@ td {
 }
 
 /* EDIT  */
+
 .container-edit {
-    width: 70%;
-    height: 50%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.head-edit{
+    margin-bottom: -60px;
+}
+
+.inner-container {
+    width: 100%;
+    height: 60%;
     position: relative;
     background: #2984ff;
     border-radius: 16px;
     margin: 100px auto auto;
     color: white;
-}
-
-.inner-container {
     padding: 40px;
 }
 
@@ -110,24 +120,14 @@ td {
 }
 
 .title-form {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.title-form input,
-.title-form label,
-.title-form text,
-.title-form placeholder {
-    box-sizing: border-box;
-    width: 100%;
-}
-
 .title-form input {
-    width: 310px;
-    height: 62px;
+    width: 300px;
+    height: 50px;
     background: white;
     border-radius: 9px;
     border: 1px black solid;
@@ -151,43 +151,6 @@ td {
     margin-top: 10px;
 }
 
-.title-form placeholder {
-    width: 264px;
-    height: 21px;
-    color: #bebebe;
-    font-size: 16px;
-    font-family: Poppins;
-    font-weight: 400;
-    word-wrap: break-word;
-    margin-top: 10px;
-}
-
-/* .title-form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    z-index: 5;
-}
-
-.title-form input{
-    Rectangle 149
-    width: 200px;
-    height: 40px;
-    border-radius: 9px;
-    border: 1px solid #000;
-
-}
-
-.title-form label {
-    margin-top: 10px;
-    padding-left: 20px;
-    background-color: tomato;
-    width: 75px;
-    height: 13px;
-    z-index: 1;
-} */
-
 .date-form {
     position: relative;
     display: flex;
@@ -197,21 +160,19 @@ td {
 }
 
 .date-form input {
-    width: 200px;
-    height: 40px;
+    width: 300px;
+    height: 50px;
+    background: white;
     border-radius: 9px;
-    border: 1px solid #000;
+    border: 1px black solid;
+    margin-top: 3px;
 }
 
-.placeholder {
+::placeholder {
     color: #bebebe;
+    padding-left: 20px;
 }
 
-textarea {
-    margin-bottom: 20px;
-    border-radius: 9px;
-    border: 1px solid #000;
-}
 
 .description-form {
     display: flex;
@@ -219,23 +180,51 @@ textarea {
     margin-top: 50px;
 }
 
-.file-form {
-    margin-top: 20px;
-    background-color: rgb(255, 255, 255);
+.description-form textarea{
+    width: 800px;
+    height: 309px;
+    margin-bottom: 20px;
     border-radius: 9px;
     border: 1px solid #000;
 }
 
-.file-label {
-    color: black;
-    cursor: pointer;
-    margin-left: 5px;
+
+.file-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
-button {
+.file-form input{
+    border: 1px solid #000;
+    width: 800px;
+    color: #444;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+.file-form input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #d4d4d4;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  .file-form input[type=file]::file-selector-button:hover {
+    background: #2984ff ;
+  }
+
+.simpan-button button {
     margin-top: 40px;
     background: white;
-    border-radius: 5px;
+    border-radius: 9px;
+    border: none;
 }
 
 .my-button {
@@ -252,6 +241,5 @@ button {
 }
 
 .my-button:hover {
-    background-color: #000000;
-    color: #fff;
+    background-color: #e8e7e7;
 }

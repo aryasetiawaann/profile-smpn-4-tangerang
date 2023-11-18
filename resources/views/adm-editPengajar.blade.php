@@ -1,11 +1,11 @@
 @extends('layouts.admin')
 
 @section('content')
-<main>
-    <h1>Edit Data Pengajar</h1>
-</main>
     <div>
         <div class="container-edit">
+        <div class="head-edit">
+                 <h1>Edit Data Pengajar</h1>
+            </div>
             <div class="inner-container">
                 <h1>UNGGUL TERAMPIL AKTIF MANDIRI ADAPTIF</h1>
                 <form action="" method="post">
@@ -20,12 +20,13 @@
                         </div>
                     </div>
                     <div class="bot-form">
-                        <div class="file-form">
-                            <label for="photo" class="file-label" >Choose file  |</label>
-                            <input type="file" id="photo" name="photo" style="display: none;">
-                            <span id="file-name">No file chosen</span>
+                    <div class="file-form">
+                            <label class="foto">Foto</label>
+                            <input type="file" accept="image/*">
+                            <span class="file-custom"></span>
                         </div>
                     </div>
+                    <div class="simpan-button">
                     <button a href="" class="my-button" type="submit">Simpan</button>
                 </form>
             </div>
