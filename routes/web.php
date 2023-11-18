@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//VISITOR
+use App\Http\Controllers\FasilitasController as VisitorFasilitasController;
 
+//ADMIN
+use App\Http\Controllers\Admin\FasilitasController as AdminFasilitasController;
 
 Route::get('/', function () {
     return view('home', ['title'=> 'Home']);
@@ -103,3 +107,16 @@ Route::get('/admin/kalender', function () {
 Route::get('/admin/kalender/edit', function () {
     return view('adm-editKalender', ['title'=> 'Edit Kalender']);
 });
+
+//fasilitas-ADMIN
+Route::resource('admin/fasilitas', AdminFasilitasController::class)->names([
+    'index' => 'admin.fasilitas.index',
+    'create' => 'admin.fasilitas.create',
+    'store' => 'admin.fasilitas.store',
+    'edit' => 'admin.fasilitas.edit',
+    'update' => 'admin.fasilitas.update',
+    'destroy' => 'admin.fasilitas.destroy',
+]);
+
+//fasilitas-VISITOR
+Route::get('/fasilitas-sekolah', [VisitorFasilitasController::class, 'index'])->name('fasilitas.index');

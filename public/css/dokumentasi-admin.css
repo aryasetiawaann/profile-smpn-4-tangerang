@@ -1,21 +1,16 @@
-.dokumentasi-container {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-
 .head-dokumentasi {
     font-family: "Poppins", sans-serif;
-    font-weight: lighter;
-    margin-bottom: 15px;
 }
 
 .button-add-dokumentasi button a {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
+}
+
+.dokumentasi-container {
+    background-color: #f8f8f9;
+    padding-left: 200px;
 }
 
 .button-add-dokumentasi button {
@@ -30,39 +25,38 @@
     margin-left: 50px;
 }
 
-.dokumentasi-body {
+.dokumentasi-container .isi-table {
     width: 100%;
     height: auto;
     border-radius: 16px;
     background-color: #fff;
 }
 
-.dokumentasi-table{
-    margin: 0 30px;
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    margin: 30px;
+.dokumentasi-container .isi-table table {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-family: "Poppins", sans-serif;
     border-collapse: collapse;
     border-radius: 6px;
 }
 
-th {
-    padding: 12px;
+.dokumentasi-container .isi-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     text-align: left;
     background-color: #2984ff;
     color: white;
 }
 
-td,
-th {
+.dokumentasi-container .isi-table td,
+.dokumentasi-container .isi-table th {
     border: 1px solid #b7b7b7;
 }
 
-td {
+.dokumentasi-container .isi-table td {
     font-size: 16px;
     color: #9d9d9d;
     padding: 10px;
@@ -81,7 +75,7 @@ td {
     height: 22px;
 }
 
-.dokumentasi-deskripsi {
+.deskripsi-dokumentasi {
     width: 350px;
 }
-
+/* EDIT  */

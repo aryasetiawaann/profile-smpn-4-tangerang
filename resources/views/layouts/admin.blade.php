@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/css/pengumuman-admin.css">
     <link rel="stylesheet" href="/css/prestasi-admin.css">
     <link rel="stylesheet" href="/css/dokumentasi-admin.css">
-    <link rel="stylesheet" href="/css/ekskul-admin.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Admin SMPN 4 Tangerang | {{ $title }}</title>
 </head>
@@ -30,27 +29,31 @@
                 <div></div>
                 <div class="line"></div>
                 <div class="sidebar">
-                    <a href="/admin" class="active">
+                    <a href="#" class="active">
                     <span class="material-symbols-outlined">home</span>
                     <h3>Home</h3>
                     </a>
-                    <a href="/admin/pengajar">
+                    <a href="">
                     <span class="material-symbols-outlined">groups</span>
-                    <h3>Pengajar</h3>
+                    <h3>Staff</h3>
                     </a>
-                    <a href="/admin/ekskul">
+                    <a href="{{ route('admin.fasilitas.index') }}">
+                    <span class="material-symbols-outlined">business</span>
+                    <h3>Fasilitas</h3>
+                    </a>
+                    <a href="#">
                     <span class="material-symbols-outlined">steps</span>
                     <h3>Ekstrakulikuler</h3>
                     </a>
-                    <a href="/admin/pengumuman">
+                    <a href="#">
                     <span class="material-symbols-outlined">campaign</span>
                     <h3>Pengumumuman & Berita</h3>
                     </a>
-                    <a href="/admin/prestasi">
+                    <a href="#">
                     <span class="material-symbols-outlined">emoji_events</span>
                     <h3>Prestasi</h3>
                     </a>
-                    <a href="/admin/kalender">
+                    <a href="#">
                     <span class="material-symbols-outlined">calendar_month</span>
                     <h3>Kalender Akademik</h3>
                     </a>

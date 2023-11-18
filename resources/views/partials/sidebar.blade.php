@@ -37,7 +37,7 @@
             <ul class="dropdown-list" x-show="drop1" x-transition>
                 <li><a href="/sejarah-sekolah">Sejarah</a></li>
                 <li><a href="/staff-pengajar">Staff Pengajar</a></li>
-                <li><a href="/fasilitas-sekolah">Fasilitas Sekolah</a></li>
+                <li><a href="{{ route('fasilitas.index') }}">Fasilitas Sekolah</a></li>
                 <li><a href="/ekstrakulikuler">Ekskul</a></li>
             </ul>
             
