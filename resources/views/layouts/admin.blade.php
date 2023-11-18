@@ -46,7 +46,7 @@
                     <span class="material-symbols-outlined">steps</span>
                     <h3>Ekstrakulikuler</h3>
                     </a>
-                    <a href="#">
+                    <a href="{{ route('admin.announcement.index') }}">
                     <span class="material-symbols-outlined">campaign</span>
                     <h3>Pengumumuman & Berita</h3>
                     </a>

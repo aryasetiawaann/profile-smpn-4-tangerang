@@ -19,9 +19,9 @@
                 </div>
             </div>
             <div class="detail-pengumuman-text">
-            <img src="{{ asset('storage/' . $announcement->photo) }}" alt="{{ $announcement->judul }}">
+                <img src="{{ $announcement->photo }}" alt="banner">
                 <div>
-                    {{ $announcement->deskripsi }}
+                    {!! $announcement->deskripsi !!} <!-- Use {!! !!} to output HTML tags in the description -->
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
         @include('partials.footer')
     </div>
 </div>
-@endsection
+@stop
 
 @php
 $title = $announcement->judul; // Use the announcement title as the page title
