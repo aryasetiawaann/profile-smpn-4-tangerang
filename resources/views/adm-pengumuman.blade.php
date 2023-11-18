@@ -7,7 +7,7 @@
     </div>
     <div class="pengumuman-body">
         <div class="button-add-pengumuman">
-            <button><a href="">+ Add</a></button>
+            <button><a href="/admin/pengumuman/edit">+ Add</a></button>
         </div>
         <div class="pengumuman-table">
             <table>

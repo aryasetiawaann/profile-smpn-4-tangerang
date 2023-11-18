@@ -7,7 +7,7 @@
     </div>
     <div class="isi-table">
         <div class="button-add-pengumuman">
-            <button><a href="">+ Add</a></button>
+            <button><a href="/admin/prestasi/edit">+ Add</a></button>
         </div>
         <table>
             <thead>

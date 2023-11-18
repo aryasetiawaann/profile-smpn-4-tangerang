@@ -1,6 +1,9 @@
 @extends('layouts.admin')
 
 @section('content')
+<main>
+    <h1>Edit Pengumuman dan Berita</h1>
+</main>
     <div>
         <div class="container-edit">
             <div class="inner-container">
@@ -27,7 +30,7 @@
                             <span id="file-name">No file chosen</span>
                         </div>
                     </div>
-                    <button class="my-button" type="submit">Simpan</button>
+                    <button a href="" class="my-button" type="submit">Simpan</button>
                 </form>
             </div>
         </div>

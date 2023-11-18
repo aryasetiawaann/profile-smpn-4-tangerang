@@ -29,27 +29,27 @@
                 <div></div>
                 <div class="line"></div>
                 <div class="sidebar">
-                    <a href="#" class="active">
+                    <a href="/admin" class="active">
                     <span class="material-symbols-outlined">home</span>
                     <h3>Home</h3>
                     </a>
-                    <a href="#">
+                    <a href="/admin/pengajar">
                     <span class="material-symbols-outlined">groups</span>
-                    <h3>Staff</h3>
+                    <h3>Pengajar</h3>
                     </a>
-                    <a href="#">
+                    <a href="/admin/ekskul">
                     <span class="material-symbols-outlined">steps</span>
                     <h3>Ekstrakulikuler</h3>
                     </a>
-                    <a href="#">
+                    <a href="/admin/pengumuman">
                     <span class="material-symbols-outlined">campaign</span>
                     <h3>Pengumumuman & Berita</h3>
                     </a>
-                    <a href="#">
+                    <a href="/admin/prestasi">
                     <span class="material-symbols-outlined">emoji_events</span>
                     <h3>Prestasi</h3>
                     </a>
-                    <a href="#">
+                    <a href="/admin/kalender">
                     <span class="material-symbols-outlined">calendar_month</span>
                     <h3>Kalender Akademik</h3>
                     </a>
