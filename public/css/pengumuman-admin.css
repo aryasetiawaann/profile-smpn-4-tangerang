@@ -81,23 +81,31 @@ td {
     height: 22px;
 }
 
+.kalender-name{
+    color: #2984ff;
+}
 .pengumuman-deskripsi {
     width: 350px;
 }
 
 /* EDIT  */
 .container-edit {
-    width: 70%;
-    height: 50%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.inner-container {
+    padding: 30px;
+    width: 100%;
+    height: 60%;
     position: relative;
     background: #2984ff;
     border-radius: 16px;
     margin: 100px auto auto;
     color: white;
-}
-
-.inner-container {
-    padding: 40px;
 }
 
 .top-form {
@@ -106,20 +114,18 @@ td {
 }
 
 .title-form {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.title-form input,
+/* .title-form input,
 .title-form label,
 .title-form text,
 .title-form placeholder {
     box-sizing: border-box;
     width: 100%;
-}
+} */
 
 .title-form input {
     width: 310px;
@@ -147,7 +153,7 @@ td {
     margin-top: 10px;
 }
 
-.title-form placeholder {
+/* .title-form placeholder {
     width: 264px;
     height: 21px;
     color: #bebebe;
@@ -156,7 +162,7 @@ td {
     font-weight: 400;
     word-wrap: break-word;
     margin-top: 10px;
-}
+} */
 
 /* .title-form {
     position: relative;

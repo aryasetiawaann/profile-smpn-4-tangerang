@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/pengumuman-admin.css">
     <link rel="stylesheet" href="/css/prestasi-admin.css">
     <link rel="stylesheet" href="/css/dokumentasi-admin.css">
+    <link rel="stylesheet" href="/css/ekskul-admin.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Admin SMPN 4 Tangerang | {{ $title }}</title>
 </head>

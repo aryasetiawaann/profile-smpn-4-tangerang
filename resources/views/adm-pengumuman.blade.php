@@ -23,7 +23,7 @@
                 <tbody>
                 @for ($i = 0; $i < 10; $i++) 
                     <tr>
-                        <td class="pengumuman-table-img"><img src="../assets/kepsek.png" alt=""></td>
+                        <td class="pengumuman-table-img"><img src="../assets/foto-sekolah.png" alt=""></td>
                         <td>Lorem ipsum SMPN 4 Tangerang</td>
                         <td class="pengumuman-deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
                         <td>4 November 2019</td>

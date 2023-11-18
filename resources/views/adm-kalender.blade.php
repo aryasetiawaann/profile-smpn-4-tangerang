@@ -21,7 +21,7 @@
                 <tbody>
                 @for ($i = 0; $i < 10; $i++) 
                     <tr>
-                        <td>Kalender Pendidikan SMT Genap 2022-2023.pdf</td>
+                        <td class="kalender-name">Kalender Pendidikan SMT Genap 2022-2023.pdf</td>
                         <td class="pengumuman-deskripsi">NamaMahasiswa_NIM_Tugas Pertemuan 10.pdf</td>      
                         <td class="pengumuman-aksi-img"><img src="../assets/edit.png" alt="edit"> <img src="../assets/trash.png" alt="edit"></td>       
                     </tr>

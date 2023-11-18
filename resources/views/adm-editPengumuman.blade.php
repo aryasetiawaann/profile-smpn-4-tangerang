@@ -1,13 +1,14 @@
 @extends('layouts.admin')
 
 @section('content')
-<main>
-    <h1>Edit Pengumuman dan Berita</h1>
-</main>
-    <div>
         <div class="container-edit">
+            <div class="head-pengumuman">
+                 <h1>Edit Pengumuman dan Berita</h1>
+            </div>
             <div class="inner-container">
+                <div class="head-editpengumuman">
                 <h1>UNGGUL TERAMPIL AKTIF MANDIRI ADAPTIF</h1>
+                </div>
                 <form action="" method="post">
                     <div class="top-form">
                         <div class="title-form">
@@ -30,9 +31,10 @@
                             <span id="file-name">No file chosen</span>
                         </div>
                     </div>
+                    <div class="simpan-button">
                     <button a href="" class="my-button" type="submit">Simpan</button>
+                    </div>
                 </form>
             </div>
         </div>
-    </div>
 @stop

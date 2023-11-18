@@ -1,4 +1,4 @@
-.dokumentasi-container {
+.ekskul-container {
     margin: 30px;
     display: flex;
     flex-direction: column;
@@ -6,19 +6,19 @@
     align-items: start;
 }
 
-.head-dokumentasi {
+.head-ekskul {
     font-family: "Poppins", sans-serif;
     font-weight: lighter;
     margin-bottom: 15px;
 }
 
-.button-add-dokumentasi button a {
+.button-add-ekskul button a {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
 }
 
-.button-add-dokumentasi button {
+.button-add-ekskul button {
     width: 100px;
     height: 33px;
     flex-shrink: 0;
@@ -30,16 +30,20 @@
     margin-left: 50px;
 }
 
-.dokumentasi-body {
+.ekskul-body {
     width: 100%;
     height: auto;
     border-radius: 16px;
     background-color: #fff;
 }
 
-.dokumentasi-table{
+.ekskul-table{
     margin: 0 30px;
     overflow-x: auto;
+}
+
+.ekskul-judul{
+    text-align: center;
 }
 
 table {
@@ -68,7 +72,7 @@ td {
     padding: 10px;
 }
 
-.dokumentasi-table-img img {
+.ekskul-table-img img {
     width: 213px;
     height: 141px;
     padding: 10px;
@@ -76,12 +80,12 @@ td {
     object-fit: cover;
 }
 
-.dokumentasi-aksi-img img {
+.ekskul-aksi-img img {
     width: 21px;
     height: 22px;
 }
 
-.dokumentasi-deskripsi {
+.ekskul-deskripsi {
     width: 350px;
 }
 
