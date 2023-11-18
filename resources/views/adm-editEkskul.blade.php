@@ -1,10 +1,10 @@
 @extends('layouts.admin')
 
 @section('content')
+<main class="Edit-title">
+    <h1>Edit Ekstrakulikuler</h1>
+</main>
         <div class="container-edit">
-            <div class="head-pengumuman">
-                 <h1>Edit Ekstrakulikuler</h1>
-            </div>
             <div class="inner-container">
                 <div class="head-editpengumuman">
                 <h1>UNGGUL TERAMPIL AKTIF MANDIRI ADAPTIF</h1>

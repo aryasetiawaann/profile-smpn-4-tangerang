@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<main>
+<main class="Edit-title">
     <h1>Edit Prestasi</h1>
 </main>
     <div>

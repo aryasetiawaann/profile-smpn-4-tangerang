@@ -255,3 +255,8 @@ button {
     background-color: #000000;
     color: #fff;
 }
+
+.Edit-title {
+    padding-left: 30px;
+    padding-top: 30px;
+}
