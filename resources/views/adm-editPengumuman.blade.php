@@ -2,7 +2,7 @@
 
 @section('content')
         <div class="container-edit">
-            <div class="head-pengumuman">
+            <div class="head-edit">
                  <h1>Edit Pengumuman dan Berita</h1>
             </div>
             <div class="inner-container">
