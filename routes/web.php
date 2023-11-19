@@ -3,9 +3,11 @@
 use Illuminate\Support\Facades\Route;
 //VISITOR
 use App\Http\Controllers\FasilitasController as VisitorFasilitasController;
+use App\Http\Controllers\AnnouncementController as VisitorAnnouncementController;
 
 //ADMIN
 use App\Http\Controllers\Admin\FasilitasController as AdminFasilitasController;
+use App\Http\Controllers\Admin\AnnouncementController as AdminAnnouncementController;
 
 Route::get('/', function () {
     return view('home', ['title'=> 'Home']);
@@ -120,3 +122,17 @@ Route::resource('admin/fasilitas', AdminFasilitasController::class)->names([
 
 //fasilitas-VISITOR
 Route::get('/fasilitas-sekolah', [VisitorFasilitasController::class, 'index'])->name('fasilitas.index');
+
+//pengumuman-ADMIN
+Route::resource('admin/announcement', AdminAnnouncementController::class)->names([
+    'index' => 'admin.announcement.index',
+    'create' => 'admin.announcement.create',
+    'store' => 'admin.announcement.store',
+    'edit' => 'admin.announcement.edit',
+    'update' => 'admin.announcement.update',
+    'destroy' => 'admin.announcement.destroy',
+]);
+
+//pengumuman-VISITOR
+Route::get('/pengumuman-dan-berita', [VisitorAnnouncementController::class, 'index'])->name('pengumuman.index');
+Route::get('/pengumuman-dan-berita/{id}', [VisitorAnnouncementController::class, 'show'])->name('detail-pengumuman.index');

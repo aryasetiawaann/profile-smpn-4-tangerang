@@ -15,17 +15,21 @@
             <h1>PENGUMUMAN DAN BERITA</h1>
         </div>
         <div class="pengumuman-content-body">
-            @for ($i = 0; $i < 10; $i++) 
-            <div class="home-berita-item">
-                <img src="https://via.placeholder.com/379x217">
-                <div class="berita-item-desc">
-                    <a href="/pengumuman-dan-berita/id" style="text-decoration:none;color:unset;"><h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, molestiae SMPN 4 Tangerang.</h5></a>
-                    <p class="item-desc-date">11 November 2023</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cum libero sapiente suscipit nam iusto maxime placeat aspernatur rem minus.</p>
-                    <a href="" style="text-decoration:none;color:unset;"><p class="item-desc-more">Read More >></p></a>
+            @foreach ($announcements as $announcement)
+                <div class="home-berita-item">
+                    <img src="{{ 'storage/' . $announcement->photo }}">
+                    <div class="berita-item-desc">
+                        <a href="/pengumuman-dan-berita/{{ $announcement->id }}" style="text-decoration:none;color:unset;">
+                            <h5>{{ $announcement->judul }}</h5>
+                        </a>
+                        <p class="item-desc-date">{{ $announcement->tanggal->format('d F Y') }}</p>
+                        <p>{{ Str::limit($announcement->deskripsi, 200) }}</p>
+                        <a href="/pengumuman-dan-berita/{{ $announcement->id }}" style="text-decoration:none;color:unset;">
+                            <p class="item-desc-more">Read More >></p>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            @endfor
+            @endforeach
         </div>
     </div>
     <div>
@@ -33,3 +37,7 @@
     </div>
 </div>
 @stop
+
+@php
+$title = 'Pengumuman dan Berita';
+@endphp

@@ -93,18 +93,26 @@
             <p>PENGUMUMAN DAN BERITA</p>
         </div>
         <div class="home-berita-body">
-            @for ($i = 0; $i < 3; $i++)    
+        @php
+            $topAnnouncements = \App\Models\Announcement::orderBy('created_at', 'desc')->take(3)->get();
+        @endphp
+
+        @foreach ($topAnnouncements as $announcement)
             <div class="home-berita-item">
-                <img src="https://via.placeholder.com/379x217">
+                <img src="{{ asset('storage/' . $announcement->photo) }}">
                 <div class="berita-item-desc">
-                    <a href="" style="text-decoration:none;color:unset;"><h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, molestiae SMPN 4 Tangerang.</h5></a>
-                    <p class="item-desc-date">11 November 2023</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cum libero sapiente suscipit nam iusto maxime placeat aspernatur rem minus.</p>
-                    <a href="" style="text-decoration:none;color:unset;"><p class="item-desc-more">Read More >></p></a>
+                    <a href="/pengumuman-dan-berita/{{ $announcement->id }}" style="text-decoration:none;color:unset;">
+                        <h5>{{ $announcement->judul }}</h5>
+                    </a>
+                    <p class="item-desc-date">{{ $announcement->tanggal->format('d F Y') }}</p>
+                    <p>{{ Str::limit($announcement->deskripsi, 200) }}</p>
+                    <a href="/pengumuman-dan-berita/{{ $announcement->id }}" style="text-decoration:none;color:unset;">
+                        <p class="item-desc-more">Read More >></p>
+                    </a>
                 </div>
             </div>
-            @endfor
-        </div>
+        @endforeach
+    </div>
         <div class="home-berita-more">
             <button><a href="/pengumuman-dan-berita">Lihat Semua</a></button>
         </div>
