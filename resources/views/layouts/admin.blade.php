@@ -1,3 +1,8 @@
+@php
+$words = explode(' ', $title);
+$check = end($words);
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,35 +35,35 @@
                 <div></div>
                 <div class="line"></div>
                 <div class="sidebar">
-                    <a href="#" class="active">
+                    <a class="{{ ($check == 'Home') ? 'active' : ' ' }}" href="/admin">
                     <span class="material-symbols-outlined">home</span>
                     <h3>Home</h3>
                     </a>
-                    <a href="">
+                    <a class="{{ ($check == 'Pengajar') ? 'active' : ' ' }}" href="/admin/pengajar">
                     <span class="material-symbols-outlined">groups</span>
-                    <h3>Staff</h3>
+                    <h3>Staff Pengajar</h3>
                     </a>
-                    <a href="{{ route('admin.fasilitas.index') }}">
+                    <a class="{{ ($check == 'Fasilitas') ? 'active' : ' ' }}" href="{{ route('admin.fasilitas.index') }}">
                     <span class="material-symbols-outlined">business</span>
                     <h3>Fasilitas</h3>
                     </a>
-                    <a href="#">
+                    <a class="{{ ($check == 'Ekskul') ? 'active' : ' ' }}" href="#">
                     <span class="material-symbols-outlined">steps</span>
                     <h3>Ekstrakulikuler</h3>
                     </a>
-                    <a href="{{ route('admin.announcement.index') }}">
+                    <a class="{{ ($check == 'Pengumuman') ? 'active' : ' ' }}" href="{{ route('admin.announcement.index') }}">
                     <span class="material-symbols-outlined">campaign</span>
                     <h3>Pengumumuman & Berita</h3>
                     </a>
-                    <a href="#">
+                    <a class="{{ ($check == 'Prestasi') ? 'active' : ' ' }}" href="#">
                     <span class="material-symbols-outlined">emoji_events</span>
                     <h3>Prestasi</h3>
                     </a>
-                    <a href="#">
+                    <a class="{{ ($check == 'Akademik') ? 'active' : ' ' }}" href="#">
                     <span class="material-symbols-outlined">calendar_month</span>
                     <h3>Kalender Akademik</h3>
                     </a>
-                    <a href="#">
+                    <a class="{{ ($check == 'Logout') ? 'active' : ' ' }}" href="#">
                     <span class="material-symbols-outlined">logout</span>
                     <h3>Logout</h3>
                     </a>
