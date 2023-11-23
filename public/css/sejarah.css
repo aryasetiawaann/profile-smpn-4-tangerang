@@ -23,7 +23,7 @@
 
 .sejarah-content-body img {
     width: 100%;
-    height: auto;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -43,5 +43,9 @@
 
     .sejarah-content-head h1 {
         font-size: 21px;
+    }
+
+    .sejarah-content-body img {
+        height: 300px;
     }
 }

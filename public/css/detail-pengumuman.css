@@ -91,4 +91,8 @@
         font-size: 14px;
         font-weight: 400;
     }
+
+    .detail-pengumuman-text img {
+        height: 300px;
+    }
 }
