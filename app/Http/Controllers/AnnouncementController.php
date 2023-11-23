@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
-use App\Models\Announcement; // Ganti Pengumuman dengan Announcement
+use App\Models\Announcement;
 
 class AnnouncementController extends Controller
 {

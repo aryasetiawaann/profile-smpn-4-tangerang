@@ -16,20 +16,23 @@
             <h1>KALENDER AKADEMIK SEKOLAH</h1>
         </div>
         <div class="kalender-content-body">
+            @forelse ($kalenders as $kalender)
             <div class="kalender-item">
-                <h3>Kalender Pendidikan SMT Genap 2022-2023</h3>
+                <h3>{{ $kalender->title }}</h3>
+                <div class="pdf-viewer">
+                    <iframe src="{{ asset('storage/' . $kalender->file_path) }}"></iframe>
+                </div>
                 <button>
-                    <img src="/assets/download.png" alt="">
-                    <p>Download File</p>
+                    <a href="{{ asset('storage/' . $kalender->file_path) }}" download="{{ $kalender->title }}">
+                        <img src="/assets/download.png" alt="">
+                        <p>Download File</p>
+                    </a>
                 </button>
             </div>
-            <div class="kalender-item">
-                <h3>Kalender Pendidikan SMT Ganjil 2022-2023</h3>
-                <button>
-                    <img src="/assets/download.png" alt="">
-                    <p>Download File</p>
-                </button>
-            </div>
+
+            @empty
+            <p>Tidak ada kalender.</p>
+            @endforelse
         </div>
     </div>
     <div>
@@ -37,3 +40,7 @@
     </div>
 </div>
 @stop
+
+@php
+$title = 'Kalender Akademik';
+@endphp

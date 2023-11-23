@@ -4,10 +4,12 @@ use Illuminate\Support\Facades\Route;
 //VISITOR
 use App\Http\Controllers\FasilitasController as VisitorFasilitasController;
 use App\Http\Controllers\AnnouncementController as VisitorAnnouncementController;
+use App\Http\Controllers\KalenderController as VisitorKalenderController;
 
 //ADMIN
 use App\Http\Controllers\Admin\FasilitasController as AdminFasilitasController;
 use App\Http\Controllers\Admin\AnnouncementController as AdminAnnouncementController;
+use App\Http\Controllers\Admin\KalenderController as AdminKalenderController;   
 
 Route::get('/', function () {
     return view('home', ['title'=> 'Home']);
@@ -136,3 +138,16 @@ Route::resource('admin/announcement', AdminAnnouncementController::class)->names
 //pengumuman-VISITOR
 Route::get('/pengumuman-dan-berita', [VisitorAnnouncementController::class, 'index'])->name('pengumuman.index');
 Route::get('/pengumuman-dan-berita/{id}', [VisitorAnnouncementController::class, 'show'])->name('detail-pengumuman.index');
+
+//kalender-ADMIN
+Route::resource('admin/kalender', AdminKalenderController::class)->names([
+    'index' => 'admin.kalender.index',
+    'create' => 'admin.kalender.create',
+    'store' => 'admin.kalender.store',
+    'edit' => 'admin.kalender.edit',
+    'update' => 'admin.kalender.update',
+    'destroy' => 'admin.kalender.destroy',
+]);
+
+//kalender-VISITOR
+Route::get('/kalender-akademik', [VisitorKalenderController::class, 'index'])->name('kalender.index');
