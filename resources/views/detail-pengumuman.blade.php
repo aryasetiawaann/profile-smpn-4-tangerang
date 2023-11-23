@@ -19,9 +19,9 @@
                 </div>
             </div>
             <div class="detail-pengumuman-text">
-            <img src="{{ asset('storage/' . $announcement->photo) }}" alt="{{ $announcement->judul }}">
+                <img src="{{ asset('storage/' . $announcement->photo) }}" alt="{{ $announcement->judul }}">
                 <div>
-                    {{ $announcement->deskripsi }}
+                    {!! nl2br(e($announcement->deskripsi)) !!}
                 </div>
             </div>
         </div>

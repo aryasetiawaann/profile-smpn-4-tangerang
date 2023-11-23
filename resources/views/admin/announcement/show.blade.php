@@ -21,7 +21,7 @@
             <div class="detail-pengumuman-text">
                 <img src="{{ $announcement->photo }}" alt="banner">
                 <div>
-                    {!! $announcement->deskripsi !!} <!-- Use {!! !!} to output HTML tags in the description -->
+                    {!! $announcement->deskripsi !!}
                 </div>
             </div>
         </div>
