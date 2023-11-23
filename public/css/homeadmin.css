@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Cabin&family=Manrope:wght@200&family=Montserrat&family=Nova+Flat&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@500&display=swap");
+
+
+
+
+
+.admin-content-admin {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: auto;
+    
+}
+
+main {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+}
+
+.image-box img {
+    margin-top: 0.5rem;
+    width: 850px;
+    height: 330px;
+    border-radius: 13px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.100);
+}
+
+/* Staff List */
+
+.staff-box-admin{
+    margin-top: 2rem;
+}
+
+.staff-box-admin h2 {
+    margin-bottom: 0.5rem;
+}
+
+.table-admin {
+    width: 800px;
+    background: white;
+    border-radius: 13px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.100);
+    transition: all 300ms ease;
+
+}
+
+.table-admin th {
+    color: #b7b7b7;
+}
+
+.table-admin:hover {
+    box-shadow: none;
+}
+
+.table-admin tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid gray;
+}
+
+.table-admin tbody td img {
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+}
+
+main a {
+    text-align: left;
+    display: block;
+    margin-top: 1rem;
+    color: #2984ff;
+    text-decoration: none;
+    list-style: none;
+}
+
+.right {
+    width: 24rem;
+}
+
+.right .top {
+    height: 2rem;
+    justify-content: flex-end;
+}
+
+.right .top button {
+    display: none;
+}
+
+
+.wrapper {
+    width: 95%;
+    height: 48%;
+    background: #fff;
+    border-radius: 13px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.100);
+    overflow: hidden;
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+header .icons {
+    display: flex;
+}
+
+header .icons span {
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.icons span:last-child {
+    margin-right: -10px;
+}
+
+header .icons span:hover {
+    background: #f2f2f2;
+}
+
+header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.calendar {
+    padding: 20px;
+    width: 100%;
+    height: 70%;
+}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.calendar .days {
+    margin-bottom: 20px;
+}
+
+.calendar li {
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 0.9rem;
+}
+
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+}
+
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+    color: #2984ff;
+}
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active {
+    color: #fff;
+}
+
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+    background: #2984ff;
+}
+
+.days li:not(.active):hover::before {
+    background: #f2f2f2;
+}
+
+.right .berita {
+    margin-top: 3rem;
+}
+
+.right .berita h4 {
+    font-weight: 600;
+}
+
+.right .berita h5 {
+    color: #878787;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.right .berita .item {
+    background: white;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.100);
+    transition: all 300ms ease;
+}
+
+.right .berita .item img {
+    width: 6rem;
+    height: 4rem;
+    border-radius: 5px;
+}
+
+.right .berita .item:hover {
+    box-shadow: none;
+}
+
+/* Media Queries */
+
+/* Media Queries for Tablets
+@media screen and (max-width: 1200px) {
+    .admin-container {
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    aside .logo h2 {
+        display: none;
+    }
+
+    aside .sidebar h3 {
+        display: none;
+    }
+
+    aside .admin-sidebar {
+        width: 10%;
+    }
+
+    aside .sidebar a {
+        width: 5.6rem;
+    }
+
+    .admin-content {
+        margin-left: 10%;
+    }
+}
+
+/* Media Queries for Mobile */
+/* 
+@media screen and (max-width: 767px) {
+    .admin-container {
+        grid-template-columns: auto;
+    }
+
+    .admin-sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .admin-content {
+        margin-left: 0;
+    }
+
+    .admin-sidebar aside .top {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .admin-sidebar aside .sidebar a {
+        margin-left: 1rem;
+    }
+
+    .admin-sidebar aside .close-btn {
+        display: block;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .right .berita .item {
+        width: 90%;
+    }
+} */ 

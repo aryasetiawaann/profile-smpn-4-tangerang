@@ -19,15 +19,14 @@
                             <label for="date">Tanggal</label>
                             <input type="date" id="date" name="date" required>
                         </div>
-                        <!-- <div class="class-form">
-                            <label for="date">Kelas</label>
-                            <button class="dropbtn">Dropdown</button>
-                            <div class="dropdown-content">
-                                <p>Kelas 7</p>
-                                <p>Kelas 8</p>
-                                <p>Kelas 9</p>
-                            </div>
-                        </div> -->
+                        <div class="kelas-form">
+                            <label for="kelas">Kelas</label>
+                                <select name="kelas" id="kelas">
+                                    <option value="Kelas 7">Kelas 7</option>
+                                    <option value="Kelas 8">Kelas 8</option>
+                                    <option value="Kelas 9">Kelas 9</option>
+                                </select>
+                        </div>
                     </div>
                     <div class="bot-form">
                         <div class="description-form">
