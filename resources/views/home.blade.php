@@ -74,9 +74,6 @@
         </div>
         <div class="misi">
             <h1>MISI</h1>
-            <p>
-                Untuk mewujudkan visi tersebut, UPT Satuan Pendidikan SMP Negeri 4 Tangerang menetapkan misi sebagai berikut:
-            </p>
             <ul>
                 <li><p>Melaksanakan Projek Penguatan Profil Pelajar Pancasila</p></li>
                 <li><p>Mengimplentasikan Kurikulum Merdeka dan kegiatan ekstrakurikuler dalam upaya mencapai prestasi</p></li>
