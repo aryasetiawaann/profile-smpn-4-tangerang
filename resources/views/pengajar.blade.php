@@ -43,7 +43,7 @@ $gurus = [
     </div>
     <div class="pengajar-content">
         <div class="pengajar-content-head">
-                <p>STAFF</p>
+                <p>PROFILE</p>
                 <h1>STAFF PENGAJAR</h1>
         </div>
         <div class="pengajar-content-body">
