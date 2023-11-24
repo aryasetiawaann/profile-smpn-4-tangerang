@@ -19,13 +19,10 @@
             @forelse ($kalenders as $kalender)
             <div class="kalender-item">
                 <h3>{{ $kalender->title }}</h3>
-                <div class="pdf-viewer">
-                    <iframe src="{{ asset('storage/' . $kalender->file_path) }}"></iframe>
-                </div>
                 <button>
-                    <a href="{{ asset('storage/' . $kalender->file_path) }}" download="{{ $kalender->title }}">
-                        <img src="/assets/download.png" alt="">
-                        <p>Download File</p>
+                <a href="{{ asset('storage/' . $kalender->file_path) }}" target="_blank">
+                        <!-- <img src="/assets/download.png" alt="" > -->
+                        <p>Open File</p>
                     </a>
                 </button>
             </div>
