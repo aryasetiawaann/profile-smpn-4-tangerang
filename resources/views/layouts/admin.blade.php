@@ -59,7 +59,7 @@ $check = end($words);
                     <span class="material-symbols-outlined">emoji_events</span>
                     <h3>Prestasi</h3>
                     </a>
-                    <a class="{{ ($check == 'Akademik') ? 'active' : ' ' }}" href="{{ route('admin.kalender.index') }}">
+                    <a class="{{ ($check == 'Kalender') ? 'active' : ' ' }}" href="{{ route('admin.kalender.index') }}">
                     <span class="material-symbols-outlined">calendar_month</span>
                     <h3>Kalender Akademik</h3>
                     </a>
