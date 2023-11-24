@@ -55,7 +55,7 @@ $check = end($words);
                     <span class="material-symbols-outlined">campaign</span>
                     <h3>Pengumumuman & Berita</h3>
                     </a>
-                    <a class="{{ ($check == 'Prestasi') ? 'active' : ' ' }}" href="#">
+                    <a class="{{ ($check == 'Prestasi') ? 'active' : ' ' }}" href="{{ route('admin.prestasi.index') }}">
                     <span class="material-symbols-outlined">emoji_events</span>
                     <h3>Prestasi</h3>
                     </a>

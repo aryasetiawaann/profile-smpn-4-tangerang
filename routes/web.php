@@ -5,11 +5,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FasilitasController as VisitorFasilitasController;
 use App\Http\Controllers\AnnouncementController as VisitorAnnouncementController;
 use App\Http\Controllers\KalenderController as VisitorKalenderController;
+use App\Http\Controllers\PrestasiController as VisitorPrestasiController;
 
 //ADMIN
 use App\Http\Controllers\Admin\FasilitasController as AdminFasilitasController;
 use App\Http\Controllers\Admin\AnnouncementController as AdminAnnouncementController;
 use App\Http\Controllers\Admin\KalenderController as AdminKalenderController;   
+use App\Http\Controllers\Admin\PrestasiController as AdminPrestasiController;
 
 Route::get('/', function () {
     return view('home', ['title'=> 'Home']);
@@ -67,13 +69,13 @@ Route::get('/admin', function () {
     return view('adm-home', ['title'=> 'Home']);
 });
 
-Route::get('/admin/pengumuman', function () {
-    return view('adm-pengumuman', ['title'=> 'Pengumuman']);
-});
+// Route::get('/admin/pengumuman', function () {
+//     return view('adm-pengumuman', ['title'=> 'Pengumuman']);
+// });
 
-Route::get('/admin/pengumuman/edit', function () {
-    return view('adm-editPengumuman', ['title'=> 'Edit Pengumuman']);
-});
+// Route::get('/admin/pengumuman/edit', function () {
+//     return view('adm-editPengumuman', ['title'=> 'Edit Pengumuman']);
+// });
 
 Route::get('/admin/pengajar', function () {
     return view('adm-pengajar', ['title'=> 'Pengajar']);
@@ -99,13 +101,13 @@ Route::get('/admin/dokumentasi/edit', function () {
     return view('adm-editDokumentasi', ['title'=> 'Edit Dokumentasi']);
 });
 
-Route::get('/admin/prestasi', function () {
-    return view('adm-prestasi', ['title'=> 'Prestasi']);
-});
+// Route::get('/admin/prestasi', function () {
+//     return view('adm-prestasi', ['title'=> 'Prestasi']);
+// });
 
-Route::get('/admin/prestasi/edit', function () {
-    return view('adm-editPrestasi', ['title'=> 'Edit Prestasi']);
-});
+// Route::get('/admin/prestasi/edit', function () {
+//     return view('adm-editPrestasi', ['title'=> 'Edit Prestasi']);
+// });
 
 Route::get('/admin/kalender', function () {
     return view('adm-kalender', ['title'=> 'Kalender']);
@@ -128,7 +130,7 @@ Route::resource('admin/fasilitas', AdminFasilitasController::class)->names([
 //fasilitas-VISITOR
 Route::get('/fasilitas-sekolah', [VisitorFasilitasController::class, 'index'])->name('fasilitas.index');
 
-//pengumuman-ADMIN
+
 Route::resource('admin/announcement', AdminAnnouncementController::class)->names([
     'index' => 'admin.announcement.index',
     'create' => 'admin.announcement.create',
@@ -138,9 +140,31 @@ Route::resource('admin/announcement', AdminAnnouncementController::class)->names
     'destroy' => 'admin.announcement.destroy',
 ]);
 
-//pengumuman-VISITOR
+// Admin Prestasi routes
+Route::resource('admin/prestasi', AdminPrestasiController::class)->names([
+    'index' => 'admin.prestasi.index',
+    'create' => 'admin.prestasi.create',
+    'store' => 'admin.prestasi.store',
+    'edit' => 'admin.prestasi.edit',
+    'update' => 'admin.prestasi.update',
+    'destroy' => 'admin.prestasi.destroy',
+]);
+
+// ... other admin routes
+
+// --- BAGIAN VISITOR ---
+
+// Visitor Pengumuman routes
 Route::get('/pengumuman-dan-berita', [VisitorAnnouncementController::class, 'index'])->name('pengumuman.index');
 Route::get('/pengumuman-dan-berita/{id}', [VisitorAnnouncementController::class, 'show'])->name('detail-pengumuman.index');
+
+// Visitor Prestasi routes
+Route::get('/prestasi', [VisitorPrestasiController::class, 'index'])->name('prestasi.index');
+Route::get('/prestasi/{id}', [VisitorPrestasiController::class, 'show'])->name('detail-prestasi.index');
+
+
+
+
 
 //kalender-ADMIN
 Route::resource('admin/kalender', AdminKalenderController::class)->names([
