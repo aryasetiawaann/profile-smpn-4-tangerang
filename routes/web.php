@@ -49,6 +49,9 @@ Route::get('/pengumuman-dan-berita/id', function () {
     return view('detail-pengumuman', ['title'=> 'judul pengumumannya']);
 });
 
+Route::get('/ekstrakulikuler/id', function () {
+    return view('detail-ekskul', ['title'=> 'Nama Ekskul']);
+});
 
 // contoh: kelas-8
 Route::get('/dokumentasi/{kelas}', function ($kelas) {
