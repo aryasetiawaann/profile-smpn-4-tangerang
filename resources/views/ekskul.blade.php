@@ -16,58 +16,29 @@
             <h1>EKSTRAKULIKULER</h1>
         </div>
         <div class="ekskul-content-body">
-            <div class="ekskul-card shadow" style="background-color: #0174BE;">
+            <!-- BIKIN LOOP DISINI -->
+            <div class="ekskul-card shadow">
                 <a href="">
-                    <img src="assets/eks-basket.png" alt="basket">
-                    <p>Basket</p>
+                    <img src="/assets/basket.jpeg" alt="basket">
+                    <p>BASKET</p>
                 </a>
             </div>
-            <div class="ekskul-card shadow" style="background-color: #1EC1D9;">
+            <div class="ekskul-card shadow">
                 <a href="">
-                    <img src="assets/eks-dance.png" alt="dance">
+                    <img src="/assets/banner3.png" alt="basket">
                     <p>Tari Tradisional</p>
                 </a>
             </div>
-            <div class="ekskul-card shadow" style="background-color: #10C45C;">
+            <div class="ekskul-card shadow">
                 <a href="">
-                    <img src="assets/eks-bola.png" alt="bola">
-                    <p>Sepakbola</p>
+                    <img src="/assets/banner2.png" alt="basket">
+                    <p>Pramuka</p>
                 </a>
             </div>
-            <div class="ekskul-card shadow" style="background-color: #FFC436;">
+            <div class="ekskul-card shadow">
                 <a href="">
-                    <img src="assets/eks-buku.png" alt="buku">
-                    <p>English Club Competition (ECC)</p>
-                </a>
-            </div>
-            <div class="ekskul-card shadow" style="background-color: #E84B3A;">
-                <a href="">
-                    <img src="assets/eks-voli.png" alt="voli">
-                    <p>Voli</p>
-                </a>
-            </div>
-            <div class="ekskul-card shadow" style="background-color: #47C58E;">
-                <a href="">
-                    <img src="assets/eks-pmr.png" alt="pmr">
-                    <p>Palang Merah Remaja (PMR)</p>
-                </a>
-            </div>
-            <div class="ekskul-card shadow" style="background-color: #E948AE;">
-                <a href="">
-                    <img src="assets/eks-kir.png" alt="kir">
-                    <p>Karya Ilmiah Remaja (KIR)</p>
-                </a>
-            </div>
-            <div class="ekskul-card shadow" style="background-color: #92278F;">
-                <a href="">
-                    <img src="assets/eks-badmin.png" alt="badmin">
-                    <p>Badminton</p>
-                </a>
-            </div>
-            <div class="ekskul-card shadow" style="background-color: #0C356A;">
-                <a href="">
-                    <img src="assets/eks-pingpong.png" alt="pingpong">
-                    <p>Tenis Meja</p>
+                    <img src="/assets/banner2.png" alt="basket">
+                    <p>Pramuka</p>
                 </a>
             </div>
         </div>

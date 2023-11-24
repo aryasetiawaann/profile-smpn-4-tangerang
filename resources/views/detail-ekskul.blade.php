@@ -4,7 +4,7 @@
 <div>
     <div class="detail-ekskul-content">
         <div class="detail-ekskul-content-head">
-            <h1>DETAIL EKSTRAKURIKULER</h1>
+            <h1>DETAIL EKSTRAKULIKULER</h1>
         </div>
         <div class="detail-ekskul-content-body">
             <h3>Ekskul Basket</h3>
