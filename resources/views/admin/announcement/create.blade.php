@@ -13,9 +13,10 @@
             <label for="deskripsi">Deskripsi:</label>
             <textarea class="form-control" id="deskripsi" name="deskripsi" rows="4" required></textarea>
         </div>
+        <!-- Tanggal diambil dari created_at -->
         <div class="form-group">
-            <label for="tanggal">Tanggal:</label>
-            <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+            <label for="tanggal">Tanggal (Hari ini):</label>
+            <input type="date" class="form-control" id="tanggal" name="tanggal" value="{{ now()->toDateString() }}" required readonly>
         </div>
         <div class="form-group">
             <label for="photo">Foto:</label>

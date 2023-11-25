@@ -15,6 +15,7 @@
                     <tr>
                         <th>Foto</th>
                         <th>Judul</th>
+                        <th>Tim</th>
                         <th>Deskripsi</th>
                         <th>Tanggal</th>
                         <th>Aksi</th>
@@ -27,6 +28,7 @@
                             <img src="{{ asset('storage/' . $prestasi->photo) }}" alt="{{ $prestasi->judul }}" style="width: 100px; height: auto;">
                         </td>
                         <td>{{ $prestasi->judul }}</td>
+                        <td>{{ $prestasi->tim }}</td>
                         <td class="prestasi-deskripsi">{{ Str::limit($prestasi->deskripsi, 100) }}</td>
                         <td>{{ $prestasi->tanggal }}</td>
                         <td>

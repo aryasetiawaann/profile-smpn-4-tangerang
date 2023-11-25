@@ -9,7 +9,7 @@ class Prestasi extends Model
 {
     use HasFactory;
     protected $table = 'prestasi';
-    protected $fillable = ['judul', 'deskripsi', 'tanggal', 'photo'];
+    protected $fillable = ['judul', 'tim', 'deskripsi', 'tanggal', 'photo'];
     protected $casts = [
         'tanggal' => 'date',
     ];

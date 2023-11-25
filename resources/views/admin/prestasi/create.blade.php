@@ -10,6 +10,10 @@
             <input type="text" class="form-control" id="judul" name="judul" required>
         </div>
         <div class="form-group">
+            <label for="tim">Tim:</label>
+            <input type="text" class="form-control" id="tim" name="tim" required>
+        </div>
+        <div class="form-group">
             <label for="deskripsi">Deskripsi:</label>
             <textarea class="form-control" id="deskripsi" name="deskripsi" rows="4" required></textarea>
         </div>

@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('prestasi', function (Blueprint $table) {
             $table->id();
             $table->string('judul', 100);
+            $table->string('tim', 50);
             $table->longText('deskripsi');
             $table->date('tanggal');
             $table->string('photo');

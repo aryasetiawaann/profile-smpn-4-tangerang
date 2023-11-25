@@ -14,9 +14,10 @@
             <label for="deskripsi">Deskripsi:</label>
             <textarea class="form-control" id="deskripsi" name="deskripsi" rows="4" required>{{ $announcement->deskripsi }}</textarea>
         </div>
+        <!-- Tanggal diambil dari updated_at -->
         <div class="form-group">
-            <label for="tanggal">Tanggal:</label>
-            <input type="date" class="form-control" id="tanggal" name="tanggal" value="{{ \Carbon\Carbon::parse($announcement->tanggal)->format('Y-m-d') }}" required>
+            <label for="tanggal">Tanggal (Hari ini):</label>
+            <input type="date" class="form-control" id="tanggal" name="tanggal" value="{{ \Carbon\Carbon::parse($announcement->updated_at)->toDateString() }}" readonly>
         </div>
         <div class="form-group">
             <label for="photo">Foto:</label>

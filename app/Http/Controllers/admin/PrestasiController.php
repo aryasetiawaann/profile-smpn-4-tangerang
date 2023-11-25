@@ -24,7 +24,8 @@ class PrestasiController extends Controller
     {
         // FORM VALIDATION
         $this->validate($request, [
-            'judul' => 'required|max:30', 
+            'judul' => 'required|max:100',
+            'tim' => 'required|max:50',
             'deskripsi' => 'required',
             'tanggal' => 'required|date',
             'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -37,6 +38,7 @@ class PrestasiController extends Controller
         // Save to database
         Prestasi::create([
             'judul' => $request->judul,
+            'tim' => $request->tim,
             'deskripsi' => $request->deskripsi,
             'tanggal' => $request->tanggal,
             'photo' => $path,
@@ -66,6 +68,7 @@ class PrestasiController extends Controller
         // Validation
         $this->validate($request, [
             'judul' => 'required|max:30', // Ganti name dengan judul
+            'tim' => 'required|max:50',
             'deskripsi' => 'required',
             'tanggal' => 'nullable|date',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -74,10 +77,12 @@ class PrestasiController extends Controller
         // Find the prestasi entry
         $prestasi = Prestasi::find($id);
 
-        // Update the judul, deskripsi, and tanggal
+        // Update the judul, tim, deskripsi, and tanggal
         $prestasi->judul = $request->judul;
+        $prestasi->tim = $request->tim; // Make sure to include 'tim' here
         $prestasi->deskripsi = $request->deskripsi;
         $prestasi->tanggal = $request->tanggal;
+
 
         // Check if a new photo is provided
         if ($request->hasFile('photo')) {
