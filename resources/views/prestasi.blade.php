@@ -16,23 +16,24 @@
             <h1>PRESTASI SISWA DAN SEKOLAH</h1>
         </div>
         <div class="prestasi-content-body">
-            @for ($i = 0; $i < 10; $i++) 
+        @foreach ($prestasis as $prestasi)
                 <div class="prestasi-card">
                     <img src="/assets/prestasi.png" alt="prestasi">
                     <div class="prestasi-card-desc">
-                        <a href="">
+                        <a href="/prestasi/{{ $prestasi->id }}" style="text-decoration:none;color:unset;">
+                            <h5>{{ $prestasi->judul }}</h5>
                             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio..</h1>
                         </a>  
-                        <p class="prestasi-date">4 November 2023</p>
+                        <p class="prestasi-date">{{ $prestasi->tanggal->format('d F Y') }}</p>
                         <hr>
-                        <p class="prestasi-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor natus enim molestias placeat doloribus magnam perspiciatis deleniti qui veritatis optio!</p>
+                        <p class="prestasi-highlight">{{ Str::limit($prestasi->deskripsi, 200) }}</p>
                         <div class="prestasi-desc-detail">
                             <img src="/assets/person.png" alt="person">
                             <p>Tim sepakbola SMPN 4 TANGERANG</p>
                         </div>
                     </div>
                 </div>
-            @endfor
+        @endforeach
         </div>
     </div>
     <div>
@@ -40,3 +41,7 @@
     </div>
 </div>
 @stop
+
+@php
+$title = 'Prestasi Siswa dan Sekolah';
+@endphp
