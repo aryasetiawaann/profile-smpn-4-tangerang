@@ -8,20 +8,32 @@
         @method('PUT')
         <div class="form-group">
             <label for="judul">Judul:</label>
-            <input type="text" class="form-control" id="judul" name="judul" value="{{ $announcement->judul }}" required>
+            <input type="text" class="form-control @error('judul') is-invalid @enderror" id="judul" name="judul" value="{{ old('judul', $announcement->judul) }}" required>
+            @error('judul')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
         </div>
         <div class="form-group">
             <label for="deskripsi">Deskripsi:</label>
-            <textarea class="form-control" id="deskripsi" name="deskripsi" rows="4" required>{{ $announcement->deskripsi }}</textarea>
+            <textarea class="form-control @error('deskripsi') is-invalid @enderror" id="deskripsi" name="deskripsi" rows="4" required>{{ old('deskripsi', $announcement->deskripsi) }}</textarea>
+            @error('deskripsi')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
         </div>
         <!-- Tanggal diambil dari updated_at -->
         <div class="form-group">
             <label for="tanggal">Tanggal (Hari ini):</label>
-            <input type="date" class="form-control" id="tanggal" name="tanggal" value="{{ \Carbon\Carbon::parse($announcement->updated_at)->toDateString() }}" readonly>
+            <input type="date" class="form-control @error('tanggal') is-invalid @enderror" id="tanggal" name="tanggal" value="{{ \Carbon\Carbon::parse($announcement->updated_at)->toDateString() }}" readonly>
+            @error('tanggal')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
         </div>
         <div class="form-group">
             <label for="photo">Foto:</label>
-            <input type="file" class="form-control" id="photo" name="photo" accept="image/*">
+            <input type="file" class="form-control @error('photo') is-invalid @enderror" id="photo" name="photo" accept="image/*">
+            @error('photo')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
             <img src="{{ asset('storage/' . $announcement->photo) }}" alt="Photo" style="width: 100px; height: auto;">
         </div>
         <button type="submit" class="btn btn-primary">Update</button>

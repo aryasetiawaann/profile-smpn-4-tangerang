@@ -43,7 +43,7 @@ class VisimisiController extends Controller
     public function update(Request $request, string $id)
     {
         $this->validate($request, [
-            'deskripsi'=> 'max:255',
+            'deskripsi'=> 'max:500',
         ]);
         $visimisi = Visimisi::find($id);
         $visimisi->deskripsi = $request->deskripsi;

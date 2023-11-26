@@ -60,17 +60,9 @@
         @foreach ($sambutan as $sambutanItem)
         <div class="home-sambutan-body">
             <img src="{{ Storage::url($sambutanItem->photo) }}" alt="kepala-sekolah">
-            <!-- <img src="/assets/kepsek.png" alt="kepala-sekolah"> -->
             <div class="home-sambutan-desc">
-                <!-- <h3>H. MULYONO SOBAR, S.Pd, M.Pd.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.</p> -->
                 <h3>{{ $sambutanItem->namakepsek }}</h3>
-                <p>{{ $sambutanItem->deskripsi }}</p>
+                <p>{!! nl2br(e($sambutanItem->deskripsi)) !!}</p>
             </div>
         </div>
         @endforeach
@@ -79,7 +71,7 @@
         @if($visi)
             <div class="visi">
                 <h1>{{$visi->judul}}</h1>
-                <p>{{$visi->deskripsi}}</p>
+                <p>{!! nl2br(e($visi->deskripsi)) !!}</p> 
             </div>
         @else
             <h2>NO VISI DATA AVAILABLE</h2>
@@ -87,9 +79,7 @@
         @if($misi)
         <div class="misi">
             <h1>{{ $misi->judul }}</h1>
-            <ul>
-                {{$misi->deskripsi}}
-            </ul>
+            <p>{!! nl2br(e($misi->deskripsi)) !!}</p>
         </div>
         @else
             <h2>NO MISI DATA AVAILABLE</h2>

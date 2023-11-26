@@ -22,6 +22,11 @@ class SambutanController extends Controller
 
     public function store(Request $request)
     {
+        $this->validate($request,[
+            'namakepsek' => 'required|max:100',
+            'deskripsi' => 'required|string|min:200|max:1050',
+            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        ]);
         $path = $request->file('photo')->storePublicly('sambutan_photos', 'public');
 
         Sambutan::create([
@@ -43,7 +48,7 @@ class SambutanController extends Controller
     {
         $this->validate($request,[
             'namakepsek' => 'max:100',
-            'deskripsi' => 'max:255',
+            'deskripsi' => 'string|min:200|max:1050',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
         $sambutan = Sambutan::find($id);

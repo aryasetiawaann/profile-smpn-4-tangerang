@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('visimisis', function (Blueprint $table) {
             $table->id();
             $table->string('judul', 30);
-            $table->string('deskripsi',255);
+            $table->string('deskripsi',1000);
         });
     }
 

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('sambutans', function (Blueprint $table) {
             $table->id();
             $table->string('namakepsek', 100);
-            $table->string('deskripsi', 255);
+            $table->string('deskripsi', 2000);
             $table->string('photo')->nullable();
         });
     }
