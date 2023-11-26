@@ -40,12 +40,20 @@ $check = end($words);
                     <span class="material-symbols-outlined">home</span>
                     <h3>Home</h3>
                     </a>
+                    <a class="{{ ($check == 'Sambutan') ? 'active' : ' ' }}" href="/admin/sambutan">
+                    <span class="material-symbols-outlined">record_voice_over</span>
+                    <h3>Sambutan</h3>
+                    </a>
+                    <a class="{{ ($check == 'Home') ? 'active' : ' ' }}" href="/admin/visimisi">
+                    <span class="material-symbols-outlined">visibility</span>
+                    <h3>Visi & Misi</h3>
+                    </a>
                     <a class="{{ ($check == 'Pengajar') ? 'active' : ' ' }}" href="/admin/pengajar">
                     <span class="material-symbols-outlined">groups</span>
                     <h3>Staff Pengajar</h3>
                     </a>
                     <a class="{{ ($check == 'Fasilitas') ? 'active' : ' ' }}" href="{{ route('admin.fasilitas.index') }}">
-                    <span class="material-symbols-outlined">business</span>
+                    <span class="material-symbols-outlined">location_city</span>
                     <h3>Fasilitas</h3>
                     </a>
                     <a class="{{ ($check == 'Ekskul') ? 'active' : ' ' }}" href="#">
