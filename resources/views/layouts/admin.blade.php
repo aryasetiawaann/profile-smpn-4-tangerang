@@ -44,7 +44,7 @@ $check = end($words);
                     <span class="material-symbols-outlined">record_voice_over</span>
                     <h3>Sambutan</h3>
                     </a>
-                    <a class="{{ ($check == 'Home') ? 'active' : ' ' }}" href="/admin/visimisi">
+                    <a class="{{ ($check == 'Visimisi') ? 'active' : ' ' }}" href="/admin/visimisi">
                     <span class="material-symbols-outlined">visibility</span>
                     <h3>Visi & Misi</h3>
                     </a>
