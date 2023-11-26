@@ -6,12 +6,16 @@ use App\Http\Controllers\FasilitasController as VisitorFasilitasController;
 use App\Http\Controllers\AnnouncementController as VisitorAnnouncementController;
 use App\Http\Controllers\KalenderController as VisitorKalenderController;
 use App\Http\Controllers\PrestasiController as VisitorPrestasiController;
+use App\Http\Controllers\SambutanController as VisitorSambutanController;
+use App\Http\Controllers\VisimisiController as VisitorVisimisiController;
 
 //ADMIN
 use App\Http\Controllers\Admin\FasilitasController as AdminFasilitasController;
 use App\Http\Controllers\Admin\AnnouncementController as AdminAnnouncementController;
 use App\Http\Controllers\Admin\KalenderController as AdminKalenderController;   
 use App\Http\Controllers\Admin\PrestasiController as AdminPrestasiController;
+use App\Http\Controllers\Admin\SambutanController as AdminSambutanController;
+use App\Http\Controllers\Admin\VisimisiController as AdminVisimisiController;
 
 Route::get('/', function () {
     return view('home', ['title'=> 'Home']);
@@ -178,3 +182,29 @@ Route::resource('admin/kalender', AdminKalenderController::class)->names([
 
 //kalender-VISITOR
 Route::get('/kalender-akademik', [VisitorKalenderController::class, 'index'])->name('kalender.index');
+
+//Sambutan-VISITOR
+// Route::get('/', [VisitorSambutanController::class, 'index'])->name('home.index');
+
+//Sambutan-ADMIN
+Route::resource('/admin/sambutan', AdminSambutanController::class)->names([
+    'index' => 'admin.sambutan.index',
+    'create' => 'admin.sambutan.create',
+    'store' => 'admin.sambutan.store',
+    'edit' => 'admin.sambutan.edit',
+    'update' => 'admin.sambutan.update',
+    'destroy' => 'admin.sambutan.destroy',
+]);
+
+//Visimisi-VISITOR
+
+//Visimisi-ADMIN
+
+Route::resource('/admin/visimisi', AdminVisimisiController::class)->names([
+    'index' => 'admin.visimisi.index',
+    'create' => 'admin.visimisi.create',
+    'store' => 'admin.visimisi.store',
+    'edit' => 'admin.visimisi.edit',
+    'update' => 'admin.visimisi.update',
+    'destroy' => 'admin.visimisi.destroy',
+]);

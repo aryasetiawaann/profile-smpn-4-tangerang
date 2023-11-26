@@ -44,6 +44,12 @@
         </div>
     </div>
 
+    @php
+        $sambutan = \App\Models\Sambutan::all();
+        $visi = \App\Models\Visimisi::find(1);
+        $misi = \App\Models\Visimisi::find(2);
+    @endphp
+
     <div class="home-line"></div>
 
     <div class="home-sambutan">
@@ -51,38 +57,43 @@
             <h1>SAMBUTAN KEPALA SEKOLAH</h1>
             <p>SMP NEGERI 4 TANGERANG</p>
         </div>
+        @foreach ($sambutan as $sambutanItem)
         <div class="home-sambutan-body">
-            <img src="/assets/kepsek.png" alt="kepala-sekolah">
+            <img src="{{ Storage::url($sambutanItem->photo) }}" alt="kepala-sekolah">
+            <!-- <img src="/assets/kepsek.png" alt="kepala-sekolah"> -->
             <div class="home-sambutan-desc">
-                <h3>H. MULYONO SOBAR, S.Pd, M.Pd.</h3>
+                <!-- <h3>H. MULYONO SOBAR, S.Pd, M.Pd.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
                     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
                     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.</p>
+                    deserunt mollit anim id est laborum.</p> -->
+                <h3>{{ $sambutanItem->namakepsek }}</h3>
+                <p>{{ $sambutanItem->deskripsi }}</p>
             </div>
         </div>
+        @endforeach
     </div>
     <div class="home-visi-misi">
-        <div class="visi">
-            <h1>VISI</h1>
-            <p>
-                Visi SMP Negeri 4 disesuikan dengan visi Pemerintah Kota Tangerang yang menitikberatkan pada pendidikan karakter akhlakul karimah. Visi SMP Negeri 4 Tangerang adalah
-                mewujudkan peserta didik yang berkarakter, berprestasi, sehat dan berwawasan lingkungan.
-            </p>
-        </div>
+        @if($visi)
+            <div class="visi">
+                <h1>{{$visi->judul}}</h1>
+                <p>{{$visi->deskripsi}}</p>
+            </div>
+        @else
+            <h2>NO VISI DATA AVAILABLE</h2>
+        @endif
+        @if($misi)
         <div class="misi">
-            <h1>MISI</h1>
+            <h1>{{ $misi->judul }}</h1>
             <ul>
-                <li><p>Melaksanakan Projek Penguatan Profil Pelajar Pancasila</p></li>
-                <li><p>Mengimplentasikan Kurikulum Merdeka dan kegiatan ekstrakurikuler dalam upaya mencapai prestasi</p></li>
-                <li><p>Melaksanakan program sekolah sehat</p></li>
-                <li><p>Melaksanakan program sekolah adiwiyata nasional</p></li>
-                <li><p>Melaksanakan program sekolah ramah anak</p></li>
-                <li><p>Melaksanakan kerjasama antar warga sekolah, orangtua, masyarakat dan lembaga lain yang terkait.</p></li>
+                {{$misi->deskripsi}}
             </ul>
         </div>
+        @else
+            <h2>NO MISI DATA AVAILABLE</h2>
+        @endif
     </div>
     <div class="home-berita">
         <div class="home-berita-head">
