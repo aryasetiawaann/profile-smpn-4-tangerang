@@ -20,7 +20,6 @@
         <button type="submit">Update Fasilitas</button>
     </form>
 @endsection
-
 @php
 $title = 'Edit Fasilitas';
 @endphp

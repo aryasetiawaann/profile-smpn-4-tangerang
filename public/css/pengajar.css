@@ -65,10 +65,12 @@
 
 .card img {
     width: 70%;
+    height: 65%;
     border: 8px solid white;
     border-radius: 50%;
     object-fit: cover;
     margin-top: -80px;
+    background-color: rgba(193,198,199,255);
 }
 
 .card-body {
