@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pengajar extends Model
 {
     use HasFactory;
-    protected $table = 'pengajars';
+    protected $table = 'pengajar';
 
     protected $fillable = ['name', 'jabatan', 'photo'];
 
