@@ -42,15 +42,15 @@ $check = end($words);
                         <span class="material-symbols-outlined">home</span>
                         <h3>Home</h3>
                     </a>
-                    <a class="{{ ($check == 'Sambutan') ? 'active' : ' ' }}" href="/admin/sambutan">
+                    <a class="{{ ($check == 'Sambutan') ? 'active' : ' ' }}" href="{{ route('admin.sambutan.index') }}">
                         <span class="material-symbols-outlined">record_voice_over</span>
                         <h3>Sambutan</h3>
                     </a>
-                    <a class="{{ ($check == 'Visimisi') ? 'active' : ' ' }}" href="/admin/visimisi">
+                    <a class="{{ ($check == 'Visimisi') ? 'active' : ' ' }}" href="{{ route('admin.visimisi.index') }}">
                         <span class="material-symbols-outlined">visibility</span>
                         <h3>Visi & Misi</h3>
                     </a>
-                    <a class="{{ ($check == 'Pengajar') ? 'active' : ' ' }}" href="/admin/pengajar">
+                    <a class="{{ ($check == 'Pengajar') ? 'active' : ' ' }}" href="{{ route('admin.pengajar.index') }}">
                         <span class="material-symbols-outlined">groups</span>
                         <h3>Staff Pengajar</h3>
                     </a>
