@@ -95,14 +95,16 @@
 .days {
     margin-top: 15px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(28px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(11%, 1fr));
+    gap: 10px;
 }
 
 .days li {
     text-align: center;
     color: #2984ff;
+    aspect-ratio: 4/4;
 }
+
 
 .days li.active {
     background-color: #2984ff;
