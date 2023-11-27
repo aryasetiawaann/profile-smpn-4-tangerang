@@ -21,9 +21,14 @@
             <div class="invalid-feedback">{{ $message }}</div>
         @enderror
 
+        @if(session('error'))
+            <div class="alert alert-danger">{{ session('error') }}</div>
+        @endif
+
         <button type="submit">Add Pengajar</button>
     </form>
 @endsection
+
 @php
 $title = 'Tambah Pengajar';
 @endphp

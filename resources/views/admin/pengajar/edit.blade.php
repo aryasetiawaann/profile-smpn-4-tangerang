@@ -23,6 +23,10 @@
             <div class="invalid-feedback">{{ $message }}</div>
         @enderror
 
+        @if(session('error'))
+            <div class="alert alert-danger">{{ session('error') }}</div>
+        @endif
+
         <button type="submit">Update Pengajar</button>
     </form>
 @endsection

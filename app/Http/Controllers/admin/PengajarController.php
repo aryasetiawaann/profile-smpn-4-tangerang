@@ -47,11 +47,13 @@ class PengajarController extends Controller
     {
         $pengajar = Pengajar::findOrFail($id);
         $photo = Storage::url($pengajar->photo);
-        return view('pengajar.show', 
-        [
-            'pengajar' => $pengajar,
-            'photo' => $photo
-        ]);
+        return view(
+            'pengajar.show',
+            [
+                'pengajar' => $pengajar,
+                'photo' => $photo
+            ]
+        );
     }
 
     public function edit($id)
@@ -61,38 +63,38 @@ class PengajarController extends Controller
     }
 
     public function update(Request $request, $id)
-{
-    // Validation
-    $this->validate($request, [
-        'name' => 'required',
-        'jabatan' => 'required|max:20',
-        'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-    ]);
+    {
+        // Validation
+        $this->validate($request, [
+            'name' => 'required|max:50',
+            'jabatan' => 'required|max:30',
+            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
 
-    // Find the entry
-    $pengajar = Pengajar::find($id);
+        // Find the entry
+        $pengajar = Pengajar::find($id);
 
-    // Update the name
-    $pengajar->name = $request->name;
+        // Update the name
+        $pengajar->name = $request->name;
 
-    // Check if a new photo is provided
-    if ($request->hasFile('photo')) {
-        // Delete the old photo if it exists
-        if ($pengajar->photo) {
-            Storage::disk('public')->delete($pengajar->photo);
+        // Check if a new photo is provided
+        if ($request->hasFile('photo')) {
+            // Delete the old photo if it exists
+            if ($pengajar->photo) {
+                Storage::disk('public')->delete($pengajar->photo);
+            }
+
+            // Upload the new photo
+            $path = $request->file('photo')->storePublicly('pengajar_photos', 'public');
+            $pengajar->photo = $path;
         }
 
-        // Upload the new photo
-        $path = $request->file('photo')->storePublicly('pengajar_photos', 'public');
-        $pengajar->photo = $path;
+        // Save changes to the database
+        $pengajar->save();
+
+        // Redirect to the index page
+        return redirect()->route('admin.pengajar.index');
     }
-
-    // Save changes to the database
-    $pengajar->save();
-
-    // Redirect to the index page
-    return redirect()->route('admin.pengajar.index');
-}
 
 
     public function destroy($id)
