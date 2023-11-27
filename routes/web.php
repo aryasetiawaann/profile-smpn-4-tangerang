@@ -66,6 +66,10 @@ Route::get('/dokumentasi/{kelas}', function ($kelas) {
     return view('dokumentasi', ['title'=> $title]);
 });
 
+Route::get('admin/login', function () {
+    return view('admin.login');
+});
+
 
 // --- BAGIAN ADMIN ---
 

@@ -1,7 +1,116 @@
 @extends('layouts.admin')
 
 @section('content')
-        <div class="admin-content-admin">
+<div class="homeadmin-container">
+    <div class="homeadmin-left">
+        <div class="homeadmin-left-top">
+            <h1>Dashboard</h1>
+            <img src="/assets/banner.png" alt="banner">
+        </div>
+        <div class="homeadmin-left-bottom">
+            <h1>Staff</h1>
+            <div class="homeadmin-stafflist">
+                <table>
+                    <thead class="thead-admin">
+                        <tr class="tr-admin">
+                            <th>Foto</th>
+                            <th>Nama</th>
+                            <th>Jabatan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="assets\kepsek.png" alt="Foto"></td>
+                            <td><p>Tulis nama disini</p></td>
+                            <td><p>Kepala Sekolah</p></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets\kepsek.png" alt="Foto"></td>
+                            <td><p>Tulis nama disini</p></td>
+                            <td><p>Kepala Sekolah</p></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets\kepsek.png" alt="Foto"></td>
+                            <td><p>Tulis nama disini</p></td>
+                            <td><p>Kepala Sekolah</p></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets\kepsek.png" alt="Foto"></td>
+                            <td><p>Tulis nama disini</p></td>
+                            <td><p>Kepala Sekolah</p></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets\kepsek.png" alt="Foto"></td>
+                            <td><p>Tulis nama disini</p></td>
+                            <td><p>Kepala Sekolah</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="homeadmin-right">
+        <div class="homeadmin-calendar">
+            <div class="calendar-top">
+                <p class="current-date"></p>
+                <div class="icons">
+                    <span id="prev" class="material-symbols-outlined">chevron_left</span>
+                    <span id="next" class="material-symbols-outlined">chevron_right</span>
+                </div>
+            </div>
+            <div class="calendar">
+                <ul class="weeks">
+                    <li><p>Sun</p></li>
+                    <li><p>Mon</p></li>
+                    <li><p>Tue</p></li>
+                    <li><p>Wed</p></li>
+                    <li><p>Thu</p></li>
+                    <li><p>Fri</p></li>
+                    <li><p>Sat</p></li>
+                </ul>
+                <ul class="days"></ul>
+            </div>
+        </div>
+        <div class="homeadmin-berita">
+            <h1>Pengumuman dan Berita</h1>
+            <div class="homeadmin-berita-list">
+                <div class="homeadmin-berita-list-item">
+                    <img src="/assets/basket.jpeg" alt="basket">
+                    <div>
+                        <h3>SMPN 4 TANGERANG something...</h3>
+                        <p class="homeadmin-berita-list-tanggal">27 November 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, corporis itaque? Cumque nobis commodi delectus et nemo, unde voluptatum incidunt.</p>
+                    </div>
+                </div>
+                <div class="homeadmin-berita-list-item">
+                    <img src="/assets/basket.jpeg" alt="basket">
+                    <div>
+                        <h3>SMPN 4 TANGERANG something...</h3>
+                        <p class="homeadmin-berita-list-tanggal">27 November 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, corporis itaque? Cumque nobis commodi delectus et nemo, unde voluptatum incidunt.</p>
+                    </div>
+                </div>
+                <div class="homeadmin-berita-list-item">
+                    <img src="/assets/basket.jpeg" alt="basket">
+                    <div>
+                        <h3>SMPN 4 TANGERANG something...</h3>
+                        <p class="homeadmin-berita-list-tanggal">27 November 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, corporis itaque? Cumque nobis commodi delectus et nemo, unde voluptatum incidunt.</p>
+                    </div>
+                </div>
+                <div class="homeadmin-berita-list-item">
+                    <img src="/assets/basket.jpeg" alt="basket">
+                    <div>
+                        <h3>SMPN 4 TANGERANG something...</h3>
+                        <p class="homeadmin-berita-list-tanggal">27 November 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, corporis itaque? Cumque nobis commodi delectus et nemo, unde voluptatum incidunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- <div class="admin-content-admin">
             <main>
                 <h1 style="font-weight: 600;">Dashboard</h1>
                 <div class="image-box">
@@ -71,7 +180,7 @@
                             <li>Thu</li>
                             <li>Fri</li>
                             <li>Sat</li>
-                        </ul>
+                        </ul>s
                         <ul class="days"></ul>
                     </div>
                 </div>
@@ -109,7 +218,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <script>
     const daysTag = document.querySelector(".days"),
     currentDate = document.querySelector(".current-date"),
