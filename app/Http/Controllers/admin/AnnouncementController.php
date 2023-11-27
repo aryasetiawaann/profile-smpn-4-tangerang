@@ -24,7 +24,7 @@ class AnnouncementController extends Controller
     {
         // FORM VALIDATION
         $this->validate($request, [
-            'judul' => 'required|max:30', // Ganti name dengan judul
+            'judul' => 'required|max:100', // Ganti name dengan judul
             'deskripsi' => 'required',
             'tanggal' => 'required|date',
             'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -65,7 +65,7 @@ class AnnouncementController extends Controller
     {
         // Validation
         $this->validate($request, [
-            'judul' => 'required|max:30', // Ganti name dengan judul
+            'judul' => 'required|max:100', // Ganti name dengan judul
             'deskripsi' => 'required',
             'tanggal' => 'nullable|date',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
