@@ -5,6 +5,7 @@ $check = end($words);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@ $check = end($words);
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Admin SMPN 4 Tangerang | {{ $title }}</title>
 </head>
+
 <body>
     <div class="admin-container">
         <div class="admin-sidebar">
@@ -28,8 +30,8 @@ $check = end($words);
                         <h2>Admin</h2>
                     </div>
                     <div class="close-btn">
-                    <span class="material-symbols-outlined">
-                        close
+                        <span class="material-symbols-outlined">
+                            close
                         </span>
                     </div>
                 </div>
@@ -37,45 +39,60 @@ $check = end($words);
                 <div class="line"></div>
                 <div class="sidebar">
                     <a class="{{ ($check == 'Home') ? 'active' : ' ' }}" href="/admin">
-                    <span class="material-symbols-outlined">home</span>
-                    <h3>Home</h3>
+                        <span class="material-symbols-outlined">home</span>
+                        <h3>Home</h3>
                     </a>
                     <a class="{{ ($check == 'Sambutan') ? 'active' : ' ' }}" href="/admin/sambutan">
-                    <span class="material-symbols-outlined">record_voice_over</span>
-                    <h3>Sambutan</h3>
+                        <span class="material-symbols-outlined">record_voice_over</span>
+                        <h3>Sambutan</h3>
                     </a>
                     <a class="{{ ($check == 'Visimisi') ? 'active' : ' ' }}" href="/admin/visimisi">
-                    <span class="material-symbols-outlined">visibility</span>
-                    <h3>Visi & Misi</h3>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <h3>Visi & Misi</h3>
                     </a>
                     <a class="{{ ($check == 'Pengajar') ? 'active' : ' ' }}" href="/admin/pengajar">
-                    <span class="material-symbols-outlined">groups</span>
-                    <h3>Staff Pengajar</h3>
+                        <span class="material-symbols-outlined">groups</span>
+                        <h3>Staff Pengajar</h3>
                     </a>
                     <a class="{{ ($check == 'Fasilitas') ? 'active' : ' ' }}" href="{{ route('admin.fasilitas.index') }}">
-                    <span class="material-symbols-outlined">location_city</span>
-                    <h3>Fasilitas</h3>
+                        <span class="material-symbols-outlined">location_city</span>
+                        <h3>Fasilitas</h3>
                     </a>
                     <a class="{{ ($check == 'Ekskul') ? 'active' : ' ' }}" href="#">
-                    <span class="material-symbols-outlined">steps</span>
-                    <h3>Ekstrakulikuler</h3>
+                        <span class="material-symbols-outlined">steps</span>
+                        <h3>Ekstrakulikuler</h3>
                     </a>
                     <a class="{{ ($check == 'Pengumuman') ? 'active' : ' ' }}" href="{{ route('admin.announcement.index') }}">
-                    <span class="material-symbols-outlined">campaign</span>
-                    <h3>Pengumumuman & Berita</h3>
+                        <span class="material-symbols-outlined">campaign</span>
+                        <h3>Pengumumuman & Berita</h3>
                     </a>
                     <a class="{{ ($check == 'Prestasi') ? 'active' : ' ' }}" href="{{ route('admin.prestasi.index') }}">
-                    <span class="material-symbols-outlined">emoji_events</span>
-                    <h3>Prestasi</h3>
+                        <span class="material-symbols-outlined">emoji_events</span>
+                        <h3>Prestasi</h3>
                     </a>
                     <a class="{{ ($check == 'Kalender') ? 'active' : ' ' }}" href="{{ route('admin.kalender.index') }}">
-                    <span class="material-symbols-outlined">calendar_month</span>
-                    <h3>Kalender Akademik</h3>
+                        <span class="material-symbols-outlined">calendar_month</span>
+                        <h3>Kalender Akademik</h3>
                     </a>
-                    <a class="{{ ($check == 'Logout') ? 'active' : ' ' }}" href="#">
-                    <span class="material-symbols-outlined">logout</span>
-                    <h3>Logout</h3>
+                    <a id="logoutLink" class="{{ ($check == 'Logout') ? 'active' : ' ' }}" href="{{ route('logout') }}">
+                        <span class="material-symbols-outlined">logout</span>
+                        <h3>Logout</h3>
                     </a>
+
+                    <form id="logoutForm" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+
+                    <script>
+                        document.getElementById('logoutLink').addEventListener('click', function(event) {
+                            event.preventDefault(); // Prevent the default link behavior
+                            var confirmation = confirm('Are you sure you want to logout?');
+                            if (confirmation) {
+                                document.getElementById('logoutForm').submit(); // Submit the form programmatically
+                            }
+                        });
+                    </script>
+
                 </div>
             </aside>
         </div>
@@ -84,4 +101,5 @@ $check = end($words);
         </div>
     </div>
 </body>
+
 </html>

@@ -18,18 +18,20 @@
                 </div>
             </a>
             <div class="login-form-body">
-                <!-- Nampilin Alert kalo ada (ilangin d-none nya)-->
-                <div class="alert alert-danger text-center d-none" role="alert"> 
-                    tulis deskripsi alert disini
+                <!-- Tampilkan alert jika ada -->
+                @if(session('error'))
+                <div class="alert alert-danger text-center" role="alert">
+                    {{ session('error') }}
                 </div>
-                <!-- ----------------------- -->
-                <form action="#" method="post">
+                @endif
+                <form action="{{ route('login') }}" method="post">
+                    @csrf
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="usernmaeInput" placeholder="">
-                        <label for="usernmaeInput">Username</label>
+                        <input type="text" class="form-control" id="usernameInput" name="username" placeholder="">
+                        <label for="usernameInput">Username</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="passwordInput" placeholder="">
+                        <input type="password" class="form-control" id="passwordInput" name="password" placeholder="">
                         <label for="passwordInput">Password</label>
                     </div>
                     <button type="submit">Log In</button>
