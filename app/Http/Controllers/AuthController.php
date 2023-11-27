@@ -14,7 +14,7 @@ class AuthController extends Controller
 
     public function login(Request $request)
 {
-    $credentials = $request->only('username', 'password');
+    $credentials = $request->only('name', 'password');
 
     if (Auth::attempt($credentials)) {
         // Jika login berhasil, redirect ke halaman /admin
