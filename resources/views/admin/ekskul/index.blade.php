@@ -23,9 +23,9 @@
                     @forelse ($ekskul as $ekskul)
                     <tr>
                         <td>
-                            <img src="{{ asset('storage/' . $ekskul->photo) }}" alt="{{ $ekskul->judul }}" style="width: 100px; height: auto;">
+                            <img src="{{ asset('storage/' . $ekskul->photo) }}" alt="{{ $ekskul->nama }}" style="width: 100px; height: auto;">
                         </td>
-                        <td>{{ $ekskul->judul }}</td>
+                        <td>{{ $ekskul->nama }}</td>
                         <td class="ekskul-deskripsi">{{ Str::limit($ekskul->deskripsi, 100) }}</td>
                         <td>
                             <a href="{{ route('admin.ekskul.edit', $ekskul->id) }}">Edit</a>
