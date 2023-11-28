@@ -10,6 +10,7 @@ use App\Http\Controllers\PrestasiController as VisitorPrestasiController;
 use App\Http\Controllers\SambutanController as VisitorSambutanController;
 use App\Http\Controllers\VisimisiController as VisitorVisimisiController;
 use App\Http\Controllers\PengajarController as VisitorPengajarController;
+use App\Http\Controllers\EkskulController as VisitorEkskulController;
 
 //ADMIN
 use App\Http\Controllers\Admin\FasilitasController as AdminFasilitasController;
@@ -19,19 +20,15 @@ use App\Http\Controllers\Admin\PrestasiController as AdminPrestasiController;
 use App\Http\Controllers\Admin\SambutanController as AdminSambutanController;
 use App\Http\Controllers\Admin\VisimisiController as AdminVisimisiController;
 use App\Http\Controllers\Admin\PengajarController as AdminPengajarController;
+use App\Http\Controllers\Admin\EkskulController as AdminEkskulController;
 
 // VISITOR PAGE ROUTES
 Route::get('/', function () {
     return view('home', ['title' => 'Home']);
 });
 
-// Isi ID atau judul beritanya aja
-Route::get('/pengumuman-dan-berita/id', function () {
-    return view('detail-pengumuman', ['title' => 'judul pengumumannya']);
-});
-
-Route::get('/ekstrakulikuler/id', function () {
-    return view('detail-ekskul', ['title' => 'Nama Ekskul']);
+Route::get('/sejarah-sekolah', function () {
+    return view('sejarah', ['title' => 'Sejarah Sekolah']);
 });
 
 // contoh: kelas-8
@@ -123,6 +120,16 @@ Route::middleware(['auth'])->group(function () {
         'update' => 'admin.pengajar.update',
         'destroy' => 'admin.pengajar.destroy',
     ]);
+
+    //Ekskul-ADMIN
+    Route::resource('admin/ekskul', AdminEkskulController::class)->names([
+        'index' => 'admin.ekskul.index',
+        'create' => 'admin.ekskul.create',
+        'store' => 'admin.ekskul.store',
+        'edit' => 'admin.ekskul.edit',
+        'update' => 'admin.ekskul.update',
+        'destroy' => 'admin.ekskul.destroy',
+    ]);
 });
 
 // --- BAGIAN VISITOR ---
@@ -144,4 +151,6 @@ Route::get('/kalender-akademik', [VisitorKalenderController::class, 'index'])->n
 //Pengajar-VISITOR
 Route::get('/staff-pengajar', [VisitorPengajarController::class, 'index'])->name('pengajar.index');
 
-
+//Ekskul-VISITOR
+Route::get('/ekstrakulikuler', [VisitorEkskulController::class, 'index'])->name('ekskul.index');
+Route::get('/ekstrakulikuler/{id}', [VisitorEkskulController::class, 'show'])->name('detail-ekskul.index');

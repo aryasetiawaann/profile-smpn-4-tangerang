@@ -23,7 +23,7 @@
 
 .ekskul-content-body {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 80px;
 }
@@ -31,9 +31,11 @@
 .ekskul-card {
     width: 32%;
     margin: 15px 0;
+    margin-right: 17px;
     border-radius: 5px;
     scale: 1;
     transition: scale 0.3s ease;
+    overflow: hidden;
 }
 
 .ekskul-card a {
@@ -44,6 +46,7 @@
     color: #ffc436;
     display: flex;
     align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .ekskul-card img {
@@ -60,6 +63,9 @@
     text-transform: uppercase;
     text-align: center;
     visibility: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 24px;
     font-weight: 600;
     margin: 0 auto;
@@ -101,5 +107,20 @@
 
     .ekskul-card {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .ekskul-content {
+        margin: 30px;
+    }
+
+    .ekskul-content-body {
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    .ekskul-card {
+        width: 45%;
     }
 }

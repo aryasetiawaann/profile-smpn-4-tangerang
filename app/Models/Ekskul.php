@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Ekskul extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'photo'];
+    protected $table = 'ekskul';
+    protected $fillable = ['nama', 'deskripsi', 'photo'];
 }

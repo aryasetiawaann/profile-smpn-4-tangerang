@@ -21,7 +21,7 @@
             <div class="detail-pengumuman-text">
                 <img src="{{ $announcement->photo }}" alt="banner">
                 <div>
-                    {!! $announcement->deskripsi !!}
+                    {!! nl2br(e($announcement->deskripsi)) !!}
                 </div>
             </div>
         </div>

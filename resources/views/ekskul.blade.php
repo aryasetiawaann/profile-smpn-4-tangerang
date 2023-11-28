@@ -16,31 +16,14 @@
             <h1>EKSTRAKULIKULER</h1>
         </div>
         <div class="ekskul-content-body">
-            <!-- BIKIN LOOP DISINI -->
+            @foreach($ekskul as $ekskul)
             <div class="ekskul-card shadow">
-                <a href="">
-                    <img src="/assets/basket.jpeg" alt="basket">
-                    <p>BASKET</p>
+                <a href="/ekstrakulikuler/{{ $ekskul->id }}">
+                    <img src="{{ 'storage/' . $ekskul->photo }}" alt="{{ $ekskul->nama }}">
+                    <p>{{ $ekskul->nama }}</p>
                 </a>
             </div>
-            <div class="ekskul-card shadow">
-                <a href="">
-                    <img src="/assets/banner3.png" alt="basket">
-                    <p>Tari Tradisional</p>
-                </a>
-            </div>
-            <div class="ekskul-card shadow">
-                <a href="">
-                    <img src="/assets/banner2.png" alt="basket">
-                    <p>Pramuka</p>
-                </a>
-            </div>
-            <div class="ekskul-card shadow">
-                <a href="">
-                    <img src="/assets/banner2.png" alt="basket">
-                    <p>Pramuka</p>
-                </a>
-            </div>
+            @endforeach
         </div>
     </div>
     <div>
@@ -48,3 +31,6 @@
     </div>
 </div>
 @stop
+@php
+$title = 'Ekstrakulikuler';
+@endphp
