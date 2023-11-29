@@ -3,6 +3,9 @@
 @section('content')
 <h1>VISI MISI</h1>
 <table border="1">
+    @if ($visimisi->count() < 2)
+        <a href="{{ route('admin.visimisi.create') }}" class="btn btn-success">Add Visi/Misi</a>
+    @endif
     <tr>
         <th>Judul</th>
         <th>Deskripsi</th>
