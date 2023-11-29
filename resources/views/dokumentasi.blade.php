@@ -18,11 +18,11 @@
             <p>DOKUMENTASI</p>
             <h1>SMP NEGERI 4 TANGERANG {{ $title }}</h1>
         </div>
-        <div class="fasilitas-content-body">
+        <div class="dokumentasi-content-body">
             @foreach ($dokumentasi as $dokumentasi)
-                <div class="fasilitas-card">
+                <div class="dokumentasi-card">
                     <img src="{{ asset('storage/' . $dokumentasi->photo) }}" alt="{{ $dokumentasi->judul }}">
-                    <div class="fasilitas-card-desc">
+                    <div class="dokumentasi-card-desc">
                         <p>{{ $dokumentasi->judul }}</p>
                     </div>
                 </div>
