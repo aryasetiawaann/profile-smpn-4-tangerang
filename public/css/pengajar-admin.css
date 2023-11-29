@@ -1,4 +1,4 @@
-.dokumentasi-admin-container {
+.pengajar-admin-container {
     margin: 30px;
     display: flex;
     flex-direction: column;
@@ -6,12 +6,12 @@
     align-items: start;
 }
 
-.dokumentasi-admin-head {
+.pengajar-admin-head {
     font-weight: lighter;
     margin-bottom: 15px;
 }
 
-.dokumentasi-admin-body {
+.pengajar-admin-body {
     width: 100%;
     padding: 30px;
     height: auto;
@@ -19,60 +19,51 @@
     background-color: #fff;
 }
 
-.dokumentasi-admin-dropdown select {
-    padding: 10px 15px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    background-color: #2984ff;
-    cursor: pointer;
-    color: #fff;
-}
-
-.dokumentasi-admin-add {
+.pengajar-admin-add {
     padding: 8px 30px;
     border-radius: 8px;
     background-color: #2984ff;
     color: #fff;
 }
 
-.dokumentasi-admin-table-container {
+.pengajar-admin-table-container {
     overflow-y: auto;
 }
 
-.dokumentasi-admin-table-container table {
+.pengajar-admin-table-container table {
     margin: 0;
     margin-top: 30px;
 }
 
-.dokumentasi-admin-table-container td:first-child {
+.pengajar-admin-table-container td:first-child {
     display: flex;
     justify-content: center;
 }
 
-.dokumentasi-admin-photo {
-    width: 200px;
-    border-radius: 10px;
-    height: 150px;
+.pengajar-admin-photo {
+    width: 100px;
     object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
 
-.dokumentasi-admin-edit img {
+.pengajar-admin-edit img {
     width: 20px;
 }
 
-.dokumentasi-admin-delete {
+.pengajar-admin-delete {
     background: none;
     cursor: pointer;
 }
 
-.dokumentasi-admin-delete img {
+.pengajar-admin-delete img {
     width: 20px;
     margin-top: 5px;
 }
 
 /* ------------------ BAGIAN EDIT & CREATE -------------------*/
 
-.dokumentasi-admin-form-container {
+.pengajar-admin-form-container {
     width: 700px;
     padding: 30px;
     margin: 30px;
@@ -81,22 +72,22 @@
     background-color: #2984ff;
 }
 
-.dokumentasi-admin-form-container form {
+.pengajar-admin-form-container form {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .input-nama,
-.input-photo,
-.input-kelas {
+.input-jabatan,
+.input-photo {
     display: flex;
     flex-direction: column;
 }
 
 .input-nama label,
-.input-photo label,
-.input-kelas label {
+.input-jabatan label,
+.input-photo label {
     background-color: #2984ff;
     width: max-content;
     color: #fff;
@@ -108,7 +99,8 @@
     z-index: 99;
 }
 
-.input-nama input {
+.input-nama input,
+.input-jabatan input {
     width: 250px;
     height: 40px;
     border: 1px solid;
@@ -144,14 +136,7 @@
     color: #fff;
 }
 
-.input-kelas select {
-    padding: 12px 40px;
-    border: 1px solid;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.dokumentasi-admin-submit {
+.pengajar-admin-submit {
     width: 100px;
     height: 35px;
     border-radius: 10px;

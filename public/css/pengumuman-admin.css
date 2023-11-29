@@ -37,7 +37,7 @@
     background-color: #fff;
 }
 
-.pengumuman-table{
+.pengumuman-table {
     margin: 0 30px;
     overflow-x: auto;
 }
@@ -68,7 +68,7 @@ td {
     padding: 10px;
 }
 
-.kalender-name{
+.kalender-name {
     color: #2984ff;
 }
 
@@ -99,7 +99,7 @@ td {
     align-items: start;
 }
 
-.head-edit{
+.head-edit {
     margin-bottom: -60px;
 }
 
@@ -173,14 +173,13 @@ td {
     padding-left: 20px;
 }
 
-
 .description-form {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
 
-.description-form textarea{
+.description-form textarea {
     width: 800px;
     height: 309px;
     margin-bottom: 20px;
@@ -188,14 +187,13 @@ td {
     border: 1px solid #000;
 }
 
-
 .file-form {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
 
-.file-form input{
+.file-form input {
     border: 1px solid #000;
     width: 800px;
     color: #444;
@@ -205,20 +203,20 @@ td {
     border: 1px solid #555;
 }
 
-.file-form input[type=file]::file-selector-button {
+.file-form input[type="file"]::file-selector-button {
     margin-right: 20px;
     border: none;
     background: #d4d4d4;
     padding: 10px 20px;
     border-radius: 10px;
-    color: #fff;;
+    color: #fff;
     cursor: pointer;
-    transition: background .2s ease-in-out;
-  }
-  
-  .file-form input[type=file]::file-selector-button:hover {
-    background: #2984ff ;
-  }
+    transition: background 0.2s ease-in-out;
+}
+
+.file-form input[type="file"]::file-selector-button:hover {
+    background: #2984ff;
+}
 
 .simpan-button button {
     margin-top: 40px;

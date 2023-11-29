@@ -14,6 +14,8 @@ $check = end($words);
     <link rel="stylesheet" href="/css/pengumuman-admin.css">
     <link rel="stylesheet" href="/css/prestasi-admin.css">
     <link rel="stylesheet" href="/css/dokumentasi-admin.css">
+    <link rel="stylesheet" href="/css/fasilitas-admin.css">
+    <link rel="stylesheet" href="/css/pengajar-admin.css">
     <link rel="stylesheet" href="/css/ekskul-admin.css">
     <link rel="stylesheet" href="/css/error-msg.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />

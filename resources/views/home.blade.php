@@ -21,14 +21,14 @@
             <div class="carousel-item">
             <img src="/assets/banner-2.jpg" class="d-block w-100 c-img" alt="banner2">
             <div class="carousel-caption d-md-block">
-                <h5>Second slide label</h5>
+                <h5>Festival Tari Kreasi Tradisional</h5>
                 <p>Festival Tari Kreasi Tradisional. dalam rangka "Memperingati Hari Sumpah Pemuda ke-95".</p>
             </div>
             </div>
             <div class="carousel-item">
             <img src="/assets/banner-3.jpg" class="d-block w-100 c-img" alt="banner3">
             <div class="carousel-caption d-md-block">
-                <h5>Third slide label</h5>
+                <h5>Penampilan Tari Medley</h5>
                 <p>Penampilan Tari Medley dalam acara Pembukaan O2Sn (Olimpiade Olahraga Siswa Nasional) tahun 2023.</p>
             </div>
             </div>

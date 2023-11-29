@@ -1,48 +1,52 @@
 @extends('layouts.admin')
 
 @section('content')
-    <h1>Dokumentasi List</h1>
-    <div>
-        <label for="kelas">Filter by Class:</label>
-        <select id="kelas" name="kelas" onchange="filterTable()">
-            <option value="all">All Classes</option>
-            <option value="kelas-7">Kelas 7</option>
-            <option value="kelas-8">Kelas 8</option>
-            <option value="kelas-9">Kelas 9</option>
-        </select>
+<div class="dokumentasi-admin-container">
+    <div class="dokumentasi-admin-head">
+        <h2>Dokumentasi List</h2>
     </div>
-    <a href="{{ route('admin.dokumentasi.create') }}">Add Dokumentasi</a>
-
-    <table border="1">
-        <tr>
-            <th>Title</th>
-            <th>Class</th>
-            <th>Photo</th>
-            <th>Action</th>
-        </tr>
-        <tbody id="dokumentasiTableBody">
-            @foreach ($dokumentasi as $dokumentasiItem)
-                <tr class="dokumentasiRow" data-kelas="{{ $dokumentasiItem->kelas }}">
-                    <td>{{ $dokumentasiItem->judul }}</td>
-                    <td>{{ $dokumentasiItem->kelas }}</td>
-                    <td>
-                        <img src="{{ asset('storage/' . $dokumentasiItem->photo) }}" alt="{{ $dokumentasiItem->judul }}" style="width: 100px; height: auto;">
-                    </td>
-                    <td>
-                        <a href="{{ route('admin.dokumentasi.edit', $dokumentasiItem->id) }}">Edit</a>
-                        <form action="{{ route('admin.dokumentasi.destroy', $dokumentasiItem->id) }}" method="POST">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit">Delete</button>
-                        </form>
-                    </td>
+    <div class="dokumentasi-admin-body">
+        <div class="dokumentasi-admin-dropdown">
+            <select id="kelas" name="kelas" onchange="filterTable()">
+                <option value="all">All Classes</option>
+                <option value="kelas-7">Kelas 7</option>
+                <option value="kelas-8">Kelas 8</option>
+                <option value="kelas-9">Kelas 9</option>
+            </select>
+        </div>
+        <a href="{{ route('admin.dokumentasi.create') }}" class="dokumentasi-admin-add">+Add</a>
+        <div class="dokumentasi-admin-table-container">
+            <table border="1">
+                <tr>
+                    <th>Photo</th>
+                    <th>Title</th>
+                    <th>Class</th>
+                    <th>Action</th>
                 </tr>
-            @endforeach
-        </tbody>
-    </table>
-
-    <div class="header-container">
+                <tbody id="dokumentasiTableBody">
+                    @foreach ($dokumentasi as $dokumentasiItem)
+                        <tr class="dokumentasiRow" data-kelas="{{ $dokumentasiItem->kelas }}">
+                            <td>
+                                <img class="dokumentasi-admin-photo" src="{{ asset('storage/' . $dokumentasiItem->photo) }}" alt="{{ $dokumentasiItem->judul }}">
+                            </td>
+                            <td>{{ $dokumentasiItem->judul }}</td>
+                            <td>{{ $dokumentasiItem->kelas }}</td>
+                            <td>
+                                <a class="dokumentasi-admin-edit" href="{{ route('admin.dokumentasi.edit', $dokumentasiItem->id) }}"><img src="/assets/edit.png" alt="edit"></a>
+                                <form action="{{ route('admin.dokumentasi.destroy', $dokumentasiItem->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="dokumentasi-admin-delete" type="submit"><img src="/assets/trash.png" alt="trash"></button>
+                                </form>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
     </div>
+</div>
+
 
     <script>
         function filterTable() {
