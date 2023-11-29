@@ -62,7 +62,7 @@ $check = end($words);
                     </a>
                     <a class="{{ ($check == 'Ekskul') ? 'active' : ' ' }}" href="{{ route('admin.ekskul.index') }}">
                         <span class="material-symbols-outlined">steps</span>
-                        <h3>Ekstrakulikuler</h3>
+                        <h3>Ekstrakurikuler</h3>
                     </a>
                     <a class="{{ ($check == 'Pengumuman') ? 'active' : ' ' }}" href="{{ route('admin.announcement.index') }}">
                         <span class="material-symbols-outlined">campaign</span>

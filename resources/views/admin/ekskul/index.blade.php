@@ -3,7 +3,7 @@
 @section('content')
 <div class="ekskul-container">
     <div class="head-ekskul">
-        <h2>Ekstrakulikuler</h2>
+        <h2>Ekstrakurikuler</h2>
     </div>
     <div class="ekskul-body">
         <div class="button-add-ekskul">
@@ -38,7 +38,7 @@
                     </tr>
                     @empty
                     <tr>
-                        <td colspan="5">Tidak ada ekstrakulikuler.</td>
+                        <td colspan="5">Tidak ada ekstrakurikuler.</td>
                     </tr>
                     @endforelse
                 </tbody>

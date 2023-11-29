@@ -3,6 +3,9 @@
 @section('content')
 <h1>Kata Sambutan</h1>
 <table border="1">
+    @if ($sambutan->isEmpty())
+    <a href="{{ route('admin.sambutan.create') }}" class="btn btn-success">Add Sambutan</a>
+    @endif
     <tr>
         <th>Kepala Sekolah</th>
         <th>Kata Sambutan</th>

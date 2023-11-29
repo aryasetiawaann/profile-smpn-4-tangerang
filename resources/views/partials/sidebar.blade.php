@@ -38,7 +38,7 @@
                 <li><a href="/sejarah-sekolah">Sejarah</a></li>
                 <li><a href="{{ route('pengajar.index') }}">Staff Pengajar</a></li>
                 <li><a href="{{ route('fasilitas.index') }}">Fasilitas Sekolah</a></li>
-                <li><a href="/ekstrakulikuler">Ekstrakulikuler</a></li>
+                <li><a href="/ekstrakurikuler">Ekstrakurikuler</a></li>
             </ul>
             
             <div class="content-list">
