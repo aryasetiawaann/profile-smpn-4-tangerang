@@ -7,18 +7,18 @@
         <div class="line"></div>
         <div class="banner-desc">
             <p>PROFILE</p>
-            <h1>EKSTRAKULIKULER</h1>
+            <h1>EKSTRAKURIKULER</h1>
         </div>
     </div>
     <div class="ekskul-content">
         <div class="ekskul-content-head">
             <p>PROFILE</p>
-            <h1>EKSTRAKULIKULER</h1>
+            <h1>EKSTRAKURIKULER</h1>
         </div>
         <div class="ekskul-content-body">
             @foreach($ekskul as $ekskul)
             <div class="ekskul-card shadow">
-                <a href="/ekstrakulikuler/{{ $ekskul->id }}">
+                <a href="/ekstrakurikuler/{{ $ekskul->id }}">
                     <img src="{{ 'storage/' . $ekskul->photo }}" alt="{{ $ekskul->nama }}">
                     <p>{{ $ekskul->nama }}</p>
                 </a>
@@ -32,5 +32,5 @@
 </div>
 @stop
 @php
-$title = 'Ekstrakulikuler';
+$title = 'Ekstrakurikuler';
 @endphp

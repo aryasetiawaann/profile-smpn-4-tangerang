@@ -2,27 +2,20 @@
 
 @section('content')
 <div class="container-edit">
-    <div class="head-edit">
-        <h1>Create Ekstrakurikuler</h1>
+<div class="head-edit">
+        <h1>Edit Ekstrakurikuler</h1>
     </div>
     <div class="inner-container">
     <div class="head-editpengumuman">
         <h1>UNGGUL TERAMPIL AKTIF MANDIRI ADAPTIF</h1>
     </div>
-    <form method="POST" action="{{ route('admin.announcement.store') }}" enctype="multipart/form-data">
+    <form method="POST" action="{{ route('admin.ekskul.store') }}" enctype="multipart/form-data">
         @csrf
         <div class="top-form">
             <div class="title-form">
-                <label for="judul">Judul:</label>
-                <input type="text" class="form-control @error('judul') is-invalid @enderror" id="judul" name="judul" value="{{ old('judul') }}" required>
-                 @error('judul')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                 @enderror
-            </div>
-            <div class="date-form">
-                <label for="tanggal">Tanggal (Hari ini):</label>
-                <input type="date" class="form-control @error('tanggal') is-invalid @enderror" id="tanggal" name="tanggal" value="{{ now()->toDateString() }}" required readonly>
-                @error('tanggal')
+                <label for="nama">Nama Ekstrakurikuler:</label>
+                <input type="text" class="form-control @error('nama') is-invalid @enderror" id="nama" name="nama" value="{{ old('nama') }}" required>
+                @error('nama')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
@@ -43,8 +36,8 @@
                 @enderror
             </div>
         </div>
-            <div class="simpan-button">
-                <button a href="" class="my-button" type="submit">Simpan</button>
+        <div class="simpan-button">
+                <button a href="" class="my-button" type="submit">Update</button>
             </div>
     </form>
     </div>

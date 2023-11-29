@@ -4,7 +4,7 @@
 <div>
     <div class="detail-pengumuman-content">
         <div class="detail-pengumuman-content-head">
-            <h1>EKSTRAKULIKULER</h1>
+            <h1>EKSTRAKURIKULER</h1>
         </div>
         <div class="detail-pengumuman-content-body">
             <h3>{{ $ekskul->nama }}</h3>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="home-berita-more" style="margin-bottom: 30px; margin-top: 0px;">
-            <button><a href="/ekstrakulikuler">Kembali</a></button>
+            <button><a href="/ekstrakurikuler">Kembali</a></button>
         </div>
     </div>
     <div>

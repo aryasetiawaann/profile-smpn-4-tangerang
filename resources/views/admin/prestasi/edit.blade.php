@@ -21,7 +21,7 @@
                 @enderror
             </div>
             <div class="tim-form">
-                <label for="tim">Tim:</label>
+                <label for="tim">Penulis:</label>
                 <input type="text" class="form-control @error('tim') is-invalid @enderror" id="tim" name="tim" value="{{ $prestasi->tim }}" required>
                 @error('tim')
                     <div class="invalid-feedback">{{ $message }}</div>

@@ -157,8 +157,8 @@ Route::get('/kalender-akademik', [VisitorKalenderController::class, 'index'])->n
 Route::get('/staff-pengajar', [VisitorPengajarController::class, 'index'])->name('pengajar.index');
 
 //Ekskul-VISITOR
-Route::get('/ekstrakulikuler', [VisitorEkskulController::class, 'index'])->name('ekskul.index');
-Route::get('/ekstrakulikuler/{id}', [VisitorEkskulController::class, 'show'])->name('detail-ekskul.index');
+Route::get('/ekstrakurikuler', [VisitorEkskulController::class, 'index'])->name('ekskul.index');
+Route::get('/ekstrakurikuler/{id}', [VisitorEkskulController::class, 'show'])->name('detail-ekskul.index');
 //Dokumentasi-VISITOR
 Route::get('/dokumentasi', [VisitorDokumentasiController::class, 'index'])->name('dokumentasi.index');
 Route::get('/dokumentasi/{kelas}', [VisitorDokumentasiController::class, 'showByClass'])->name('dokumentasi.showByClass');

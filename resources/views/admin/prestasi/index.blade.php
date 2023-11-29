@@ -15,7 +15,7 @@
                     <tr>
                         <th>Foto</th>
                         <th>Judul</th>
-                        <th>Tim</th>
+                        <th>Penulis</th>
                         <th>Deskripsi</th>
                         <th>Tanggal</th>
                         <th>Aksi</th>

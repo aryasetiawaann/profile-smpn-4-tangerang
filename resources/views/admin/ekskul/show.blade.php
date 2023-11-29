@@ -4,7 +4,7 @@
 <div>
     <div class="detail-ekskul-content">
         <div class="detail-ekskul-content-head">
-            <h1>EKSTRAKULIKULER</h1>
+            <h1>EKSTRAKURIKULER</h1>
         </div>
         <div class="detail-ekskul-content-body">
             <h3>{{ $ekskul->nama }}</h3>
