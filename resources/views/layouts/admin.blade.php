@@ -74,6 +74,11 @@ $check = end($words);
                         <span class="material-symbols-outlined">calendar_month</span>
                         <h3>Kalender Akademik</h3>
                     </a>
+                    <a class = "{{ ($check == 'Dokumentasi') ? 'active' : ' ' }}" href="{{ route('admin.dokumentasi.index') }}">
+                        <span class="material-symbols-outlined">collections</span>
+                        <h3>Dokumentasi</h3>
+                    </a>
+                    <a>
                     <a id="logoutLink" class="{{ ($check == 'Logout') ? 'active' : ' ' }}" href="{{ route('logout') }}">
                         <span class="material-symbols-outlined">logout</span>
                         <h3>Logout</h3>

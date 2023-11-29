@@ -1,3 +1,6 @@
+@php
+    $title = 'Dokumentasi';
+@endphp
 @extends('layouts.app')
 
 @section('content')
@@ -16,21 +19,14 @@
             <h1>SMP NEGERI 4 TANGERANG {{ $title }}</h1>
         </div>
         <div class="fasilitas-content-body">
-            @for ($i = 0; $i < 30; $i++) 
-            <!-- <div class="dokumentasi-card">
-                <img src="/assets/dokumentasi1.png" alt="dokumentasi1">
-                <div class="dokumentasi-card-desc">
-                    <p>17 November 2023</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse architecto quod inventore alias quaerat corrupti accusamus tempore deserunt saepe tenetur!</p>
-                </div>
-            </div> -->
-            <div class="fasilitas-card">
-                <img src="/assets/dokumentasi1.png" alt="dokumentasi1">
+            @foreach ($dokumentasi as $dokumentasi)
+                <div class="fasilitas-card">
+                    <img src="{{ asset('storage/' . $dokumentasi->photo) }}" alt="{{ $dokumentasi->judul }}">
                     <div class="fasilitas-card-desc">
-                        <p>Ini Judul Kegiatannya</p>
+                        <p>{{ $dokumentasi->judul }}</p>
                     </div>
-            </div>
-            @endfor
+                </div>
+            @endforeach
         </div>
     </div>
     <div>

@@ -11,6 +11,7 @@ use App\Http\Controllers\SambutanController as VisitorSambutanController;
 use App\Http\Controllers\VisimisiController as VisitorVisimisiController;
 use App\Http\Controllers\PengajarController as VisitorPengajarController;
 use App\Http\Controllers\EkskulController as VisitorEkskulController;
+use App\Http\Controllers\DokumentasiController as VisitorDokumentasiController;
 
 //ADMIN
 use App\Http\Controllers\Admin\FasilitasController as AdminFasilitasController;
@@ -21,6 +22,7 @@ use App\Http\Controllers\Admin\SambutanController as AdminSambutanController;
 use App\Http\Controllers\Admin\VisimisiController as AdminVisimisiController;
 use App\Http\Controllers\Admin\PengajarController as AdminPengajarController;
 use App\Http\Controllers\Admin\EkskulController as AdminEkskulController;
+use App\Http\Controllers\Admin\DokumentasiController as AdminDokumentasiController;
 
 // VISITOR PAGE ROUTES
 Route::get('/', function () {
@@ -31,12 +33,7 @@ Route::get('/sejarah-sekolah', function () {
     return view('sejarah', ['title' => 'Sejarah Sekolah']);
 });
 
-// contoh: kelas-8
-Route::get('/dokumentasi/{kelas}', function ($kelas) {
-    $title = str_replace('-', ' ', $kelas);
 
-    return view('dokumentasi', ['title' => $title]);
-});
 
 
 // --- BAGIAN ADMIN ---
@@ -130,6 +127,16 @@ Route::middleware(['auth'])->group(function () {
         'update' => 'admin.ekskul.update',
         'destroy' => 'admin.ekskul.destroy',
     ]);
+    //Dokumentasi-ADMIN
+    Route::resource('admin/dokumentasi', AdminDokumentasiController::class)->names([
+        'index' => 'admin.dokumentasi.index',
+        'create' => 'admin.dokumentasi.create',
+        'store' => 'admin.dokumentasi.store',
+        'edit' => 'admin.dokumentasi.edit',
+        'update' => 'admin.dokumentasi.update',
+        'destroy' => 'admin.dokumentasi.destroy',
+    ]);
+    
 });
 
 // --- BAGIAN VISITOR ---
@@ -154,3 +161,6 @@ Route::get('/staff-pengajar', [VisitorPengajarController::class, 'index'])->name
 //Ekskul-VISITOR
 Route::get('/ekstrakulikuler', [VisitorEkskulController::class, 'index'])->name('ekskul.index');
 Route::get('/ekstrakulikuler/{id}', [VisitorEkskulController::class, 'show'])->name('detail-ekskul.index');
+//Dokumentasi-VISITOR
+Route::get('/dokumentasi', [VisitorDokumentasiController::class, 'index'])->name('dokumentasi.index');
+Route::get('/dokumentasi/{kelas}', [VisitorDokumentasiController::class, 'showByClass'])->name('dokumentasi.showByClass');
