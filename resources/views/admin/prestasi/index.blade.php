@@ -1,15 +1,15 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="prestasi-container">
-    <div class="head-prestasi">
+<div class="pengumuman-container">
+    <div class="head-pengumuman">
         <h2>Prestasi Siswa dan Sekolah</h2>
     </div>
-    <div class="prestasi-body">
-        <div class="button-add-prestasi">
+    <div class="pengumuman-body">
+        <div class="button-add-pengumuman">
             <button><a href="{{ route('admin.prestasi.create') }}">+ Add</a></button>
         </div>
-        <div class="prestasi-table">
+        <div class="pengumuman-table">
             <table class="table">
                 <thead>
                     <tr>
@@ -29,7 +29,7 @@
                         </td>
                         <td>{{ $prestasi->judul }}</td>
                         <td>{{ $prestasi->tim }}</td>
-                        <td class="prestasi-deskripsi">{{ Str::limit($prestasi->deskripsi, 100) }}</td>
+                        <td class="pengumuman-deskripsi">{{ Str::limit($prestasi->deskripsi, 100) }}</td>
                         <td>{{ $prestasi->tanggal }}</td>
                         <td>
                             <a href="{{ route('admin.prestasi.edit', $prestasi->id) }}">Edit</a>

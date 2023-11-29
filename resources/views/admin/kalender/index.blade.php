@@ -1,15 +1,15 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="kalender-container">
-    <div class="head-kalender">
+<div class="pengumuman-container">
+    <div class="head-pengumuman">
         <h2>Kalender Akademik</h2>
     </div>
-    <div class="kalender-body">
-        <div class="button-add-kalender">
+    <div class="pengumuman-body">
+        <div class="button-add-pengumuman">
             <button><a href="{{ route('admin.kalender.create') }}">+ Add</a></button>
         </div>
-        <div class="kalender-table">
+        <div class="pengumuman-table">
             <table class="table">
                 <thead>
                     <tr>

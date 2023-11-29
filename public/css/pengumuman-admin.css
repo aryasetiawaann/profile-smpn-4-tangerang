@@ -66,7 +66,9 @@ td {
     font-size: 16px;
     color: #9d9d9d;
     padding: 10px;
+    text-align: center;
 }
+
 
 .kalender-name{
     color: #2984ff;
@@ -132,6 +134,7 @@ td {
     border-radius: 9px;
     border: 1px black solid;
     margin-top: 10px;
+    padding: 20px;
 }
 
 .title-form label {
@@ -156,7 +159,25 @@ td {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+
+}
+
+.tim-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
     margin-left: 40px;
+}
+
+.tim-form input{
+    width: 300px;
+    height: 50px;
+    background: white;
+    border-radius: 9px;
+    border: 1px black solid;
+    margin-top: 3px;
+    padding: 20px;   
 }
 
 .date-form input {
@@ -166,6 +187,7 @@ td {
     border-radius: 9px;
     border: 1px black solid;
     margin-top: 3px;
+    padding: 20px;
 }
 
 ::placeholder {
@@ -186,6 +208,7 @@ td {
     margin-bottom: 20px;
     border-radius: 9px;
     border: 1px solid #000;
+    padding: 20px;
 }
 
 
@@ -203,6 +226,10 @@ td {
     background: #fff;
     border-radius: 10px;
     border: 1px solid #555;
+}
+
+.file-form small{
+    padding-top: 10px;
 }
 
 .file-form input[type=file]::file-selector-button {
@@ -227,6 +254,12 @@ td {
     border: none;
 }
 
+.file-form img{
+    padding-top: 20px;
+    /* height: 100px;
+    width: 100px; */
+}
+
 .my-button {
     display: inline-block;
     padding: 10px 20px;
@@ -243,3 +276,4 @@ td {
 .my-button:hover {
     background-color: #e8e7e7;
 }
+
