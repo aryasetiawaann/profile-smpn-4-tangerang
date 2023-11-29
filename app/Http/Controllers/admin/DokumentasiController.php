@@ -28,7 +28,7 @@ class DokumentasiController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'judul' => 'required|max:100',
+            'judul' => 'required|max:25',
             'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'kelas' => 'required', // Validasi pilihan kelas
         ]);
@@ -67,7 +67,7 @@ class DokumentasiController extends Controller
     {
         // Validation
         $this->validate($request, [
-            'judul' => 'required|max:100',
+            'judul' => 'required|max:25',
             'kelas' => 'required',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);

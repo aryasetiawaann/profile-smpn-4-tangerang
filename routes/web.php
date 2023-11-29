@@ -34,8 +34,6 @@ Route::get('/sejarah-sekolah', function () {
 });
 
 
-
-
 // --- BAGIAN ADMIN ---
 
 //login-ADMIN

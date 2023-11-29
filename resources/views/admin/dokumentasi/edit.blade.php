@@ -1,4 +1,4 @@
-@extends('admin.layouts.app')
+@extends('layouts.admin')
 
 @section('content')
     <h1>Edit Dokumentasi</h1>
@@ -31,7 +31,10 @@
 
         @if(session('error'))
             <div class="alert alert-danger">{{ session('error') }}</div>
-        @endif
+        @endifa
+
+        <button type="submit">Update Dokumentasi</button>
+
 @endsection
 @php
 $title = 'Edit Dokumentasi';
