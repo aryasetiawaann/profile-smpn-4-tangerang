@@ -27,8 +27,7 @@
 }
 
 .prestasi-card {
-    height: auto;
-    min-height: 310px;
+    height: 310px;
     margin: 15px;
     padding: 15px;
     display: flex;
@@ -104,6 +103,66 @@
 }
 
 @media screen and (max-width: 500px) {
+    .prestasi-content-head p {
+        font-size: 13px;
+    }
+
+    .prestasi-content-head h1 {
+        font-size: 21px;
+    }
+
+    .prestasi-card {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    .prestasi-card img {
+        width: 100%;
+    }
+
+    .prestasi-card-desc {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .prestasi-card-desc h1 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .prestasi-card-desc p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .prestasi-card-desc hr {
+        display: none;
+    }
+
+    .prestasi-date {
+        margin: 0;
+    }
+
+    .prestasi-highlight {
+        height: 80px;
+        margin-bottom: 3px;
+    }
+
+    .prestasi-desc-detail img {
+        width: 20px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .prestasi-desc-detail p {
+        margin: auto 0;
+        margin-left: 5px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 1100px) {
     .prestasi-content-head p {
         font-size: 13px;
     }
