@@ -124,7 +124,7 @@ body {
     height: 1px;
     margin: auto;
     background-color: #ccc;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .admin-sidebar aside .sidebar {
@@ -133,7 +133,6 @@ body {
     flex-direction: column;
     height: 86vh;
     position: relative;
-    top: 2rem;
 }
 
 .admin-sidebar aside h3 {
