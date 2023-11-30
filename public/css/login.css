@@ -70,3 +70,13 @@ a {
     background-color: #0174be;
     color: #ffffff;
 }
+
+.login-form-body a{
+    text-decoration: underline;
+    color: #0174be;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+}

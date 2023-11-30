@@ -11,12 +11,12 @@
     <div class="login-container">
         <img class="login-banner" src="/assets/fas-lobby.jpg" alt="banner">
         <div class="login-form-container">
-            <a href="/">
-                <div class="login-form-head">
-                    <img src="/assets/logo.png" alt="logo">
-                    <h1>SMPN 4 TANGERANG</h1>
-                </div>
-            </a>
+            
+            <div class="login-form-head">
+                <img src="/assets/logo.png" alt="logo">
+                <h1>SMPN 4 TANGERANG</h1>
+            </div>
+          
             <div class="login-form-body">
                 <!-- Tampilkan alert jika ada -->
                 @if(session('error'))
@@ -36,6 +36,7 @@
                     </div>
                     <button type="submit">Log In</button>
                 </form>
+                <a href="/" class="login-back-to">Kembali ke halaman utama</a>
             </div>
         </div>
     </div>
