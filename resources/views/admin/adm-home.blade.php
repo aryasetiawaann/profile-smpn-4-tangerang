@@ -5,7 +5,7 @@
     <div class="homeadmin-left">
         <div class="homeadmin-left-top">
             <h1>Dashboard</h1>
-            <img src="/assets/banner.png" alt="banner">
+            <img src="/assets/fas-gerbang.jpg" alt="banner">
         </div>
         <div class="homeadmin-left-bottom">
             <h1>Staff</h1>
