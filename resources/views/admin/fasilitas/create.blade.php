@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="fasilitas-admin-form-container">
+    <h2 style="color: #fff;margin-bottom: 10px;">Create Fasilitas</h2>
     <form method="POST" action="{{ route('admin.fasilitas.store') }}" enctype="multipart/form-data">
         @csrf
         <div class="input-nama">

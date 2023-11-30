@@ -64,8 +64,9 @@
 /* ------------------ BAGIAN EDIT & CREATE -------------------*/
 
 .fasilitas-admin-form-container {
-    width: 700px;
+    width: 95%;
     padding: 30px;
+    margin: 30px auto;
     margin: 30px;
     height: auto;
     border-radius: 16px;
@@ -101,8 +102,8 @@
 
 .input-nama input,
 .input-jabatan input {
-    width: 250px;
-    height: 40px;
+    width: 350px;
+    height: 50px;
     border: 1px solid;
     border-radius: 10px;
     padding: 10px;
@@ -114,14 +115,14 @@
 
 .input-photo input {
     width: 100%;
-    height: 40px;
+    height: 50px;
     background-color: #fff;
     border: 1px solid;
     border-radius: 10px;
 }
 
 .input-photo input[type="file"]::file-selector-button {
-    width: 20%;
+    width: 15%;
     height: 100%;
     border: none;
     font-size: 12px;
@@ -141,6 +142,7 @@
     height: 35px;
     border-radius: 10px;
     font-weight: 600;
+    cursor: pointer;
     background-color: #fff;
     font-size: 12px;
 }

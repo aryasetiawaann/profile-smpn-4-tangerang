@@ -28,11 +28,11 @@
                         <td>{{ $ekskul->nama }}</td>
                         <td class="ekskul-deskripsi">{{ Str::limit($ekskul->deskripsi, 100) }}</td>
                         <td>
-                            <a href="{{ route('admin.ekskul.edit', $ekskul->id) }}">Edit</a>
+                            <a class="pengajar-admin-edit" href="{{ route('admin.ekskul.edit', $ekskul->id) }}"><img src="/assets/edit.png" alt="edit"></a>
                             <form action="{{ route('admin.ekskul.destroy', $ekskul->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit">Delete</button>
+                                <button class="pengajar-admin-delete" type="submit"><img src="/assets/trash.png" alt="trash"></button>
                             </form>
                         </td>
                     </tr>

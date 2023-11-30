@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="pengajar-admin-form-container">
+    <h2 style="color: #fff;margin-bottom: 10px;">Edit Staff Pengajar</h2>
     <form method="POST" action="{{ route('admin.pengajar.update', $pengajar->id) }}" enctype="multipart/form-data">
         @csrf
         @method('PUT')

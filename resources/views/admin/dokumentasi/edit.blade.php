@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="dokumentasi-admin-form-container">
+    <h2 style="color: #fff;margin-bottom: 10px;">Edit Dokumentasi</h2>
     <form method="POST" action="{{ route('admin.dokumentasi.update', $dokumentasi->id) }}" enctype="multipart/form-data">
         @csrf
         @method('PUT')

@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="fasilitas-admin-form-container">
+    <h2 style="color: #fff;margin-bottom: 10px;">Edit Fasilitas</h2>
     <form method="POST" action="{{ route('admin.fasilitas.update', $fasilitas->id) }}" enctype="multipart/form-data">
         @csrf
         @method('PUT')

@@ -28,11 +28,11 @@
                         </td>
                         <td>{{ $kalender->created_at->format('Y-m-d H:i:s') }}</td>
                         <td>
-                            <a href="{{ route('admin.kalender.edit', $kalender->id) }}">Edit</a>
+                            <a class="pengajar-admin-edit" href="{{ route('admin.kalender.edit', $kalender->id) }}"><img src="/assets/edit.png" alt="edit"></a>
                             <form action="{{ route('admin.kalender.destroy', $kalender->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit">Delete</button>
+                                <button class="pengajar-admin-delete" type="submit"><img src="/assets/trash.png" alt="trash"></button>
                             </form>
                         </td>
                     </tr>

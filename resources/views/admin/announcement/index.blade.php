@@ -30,11 +30,11 @@
                         <td class="pengumuman-deskripsi">{{ Str::limit($announcement->deskripsi, 100) }}</td>
                         <td>{{ $announcement->tanggal }}</td>
                         <td>
-                            <a href="{{ route('admin.announcement.edit', $announcement->id) }}">Edit</a>
+                            <a class="pengajar-admin-edit" href="{{ route('admin.announcement.edit', $announcement->id) }}"><img src="/assets/edit.png" alt="edit"></a>
                             <form action="{{ route('admin.announcement.destroy', $announcement->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit">Delete</button>
+                                <button class="pengajar-admin-delete" type="submit"><img src="/assets/trash.png" alt="trash"></button>
                             </form>
                         </td>
                     </tr>

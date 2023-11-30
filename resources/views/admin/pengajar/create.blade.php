@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="pengajar-admin-form-container">
+    <h2 style="color: #fff;margin-bottom: 10px;">Create Staff Pengajar</h2>
     <form method="POST" action="{{ route('admin.pengajar.store') }}" enctype="multipart/form-data">
         @csrf
         <div class="input-nama">
