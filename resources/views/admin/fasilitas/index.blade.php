@@ -13,7 +13,7 @@
                     <tr>
                         <th>Photo</th>
                         <th>Name</th>
-                        <th>Action</th>
+                        <th>Tindakan</th>
                     </tr>
                 </thead>
                 <tbody>

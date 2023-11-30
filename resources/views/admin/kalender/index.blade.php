@@ -16,7 +16,7 @@
                         <th>Judul</th>
                         <th>File</th>
                         <th>Tanggal Upload</th>
-                        <th>Aksi</th>
+                        <th>Tindakan</th>
                     </tr>
                 </thead>
                 <tbody>

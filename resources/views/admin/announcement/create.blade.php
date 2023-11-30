@@ -19,7 +19,7 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                  @enderror
             </div>
-            <div class="date-form">
+            <div class="tim-form">
                 <label for="tanggal">Tanggal (Hari ini):</label>
                 <input type="date" class="form-control @error('tanggal') is-invalid @enderror" id="tanggal" name="tanggal" value="{{ now()->toDateString() }}" required readonly>
                 @error('tanggal')

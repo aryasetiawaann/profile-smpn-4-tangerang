@@ -16,7 +16,7 @@
                         <th>Foto</th>
                         <th>Ekskul</th>
                         <th>Deskripsi</th>
-                        <th>Aksi</th>
+                        <th>Tindakan</th>
                     </tr>
                 </thead>
                 <tbody>

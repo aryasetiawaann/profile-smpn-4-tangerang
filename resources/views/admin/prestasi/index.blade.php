@@ -18,7 +18,7 @@
                         <th>Penulis</th>
                         <th>Deskripsi</th>
                         <th>Tanggal</th>
-                        <th>Aksi</th>
+                        <th>Tindakan</th>
                     </tr>
                 </thead>
                 <tbody>

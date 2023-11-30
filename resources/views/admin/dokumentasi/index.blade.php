@@ -21,7 +21,7 @@
                     <th>Photo</th>
                     <th>Title</th>
                     <th>Class</th>
-                    <th>Action</th>
+                    <th>Tindakan</th>
                 </tr>
                 <tbody id="dokumentasiTableBody">
                     @foreach ($dokumentasi as $dokumentasiItem)

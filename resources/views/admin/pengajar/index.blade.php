@@ -14,7 +14,7 @@
                         <th>Photo</th>
                         <th>Name</th>
                         <th>Jabatan</th>
-                        <th>Action</th>
+                        <th>Tindakan</th>
                     </tr>
                 </thead>
                 <tbody>

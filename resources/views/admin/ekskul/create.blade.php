@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-edit">
 <div class="head-edit">
-        <h1>Edit Ekstrakurikuler</h1>
+        <h1>Create Ekstrakurikuler</h1>
     </div>
     <div class="inner-container">
     <div class="head-editpengumuman">
@@ -13,7 +13,7 @@
         @csrf
         <div class="top-form">
             <div class="title-form">
-                <label for="nama">Nama Ekstrakurikuler:</label>
+                <label for="nama">Nama :</label>
                 <input type="text" class="form-control @error('nama') is-invalid @enderror" id="nama" name="nama" value="{{ old('nama') }}" required>
                 @error('nama')
                     <div class="invalid-feedback">{{ $message }}</div>
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="simpan-button">
-                <button a href="" class="my-button" type="submit">Update</button>
+                <button a href="" class="my-button" type="submit">Simpan</button>
             </div>
     </form>
     </div>
