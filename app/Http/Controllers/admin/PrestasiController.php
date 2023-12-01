@@ -1,11 +1,11 @@
 <?php
 
-namespace app\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use app\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
-use app\Models\Prestasi;
+use App\Models\Prestasi;
 
 class PrestasiController extends Controller
 {

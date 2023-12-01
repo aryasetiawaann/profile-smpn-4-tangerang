@@ -1,11 +1,11 @@
 <?php
 
-namespace app\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use app\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
-use app\Models\Ekskul;
+use App\Models\Ekskul;
 
 class EkskulController extends Controller
 {

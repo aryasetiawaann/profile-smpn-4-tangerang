@@ -1,28 +1,28 @@
 <?php
 
-use app\Http\Controllers\AuthController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 //VISITOR
-use app\Http\Controllers\FasilitasController as VisitorFasilitasController;
-use app\Http\Controllers\AnnouncementController as VisitorAnnouncementController;
-use app\Http\Controllers\KalenderController as VisitorKalenderController;
-use app\Http\Controllers\PrestasiController as VisitorPrestasiController;
-use app\Http\Controllers\SambutanController as VisitorSambutanController;
-use app\Http\Controllers\VisimisiController as VisitorVisimisiController;
+use App\Http\Controllers\FasilitasController as VisitorFasilitasController;
+use App\Http\Controllers\AnnouncementController as VisitorAnnouncementController;
+use App\Http\Controllers\KalenderController as VisitorKalenderController;
+use App\Http\Controllers\PrestasiController as VisitorPrestasiController;
+use App\Http\Controllers\SambutanController as VisitorSambutanController;
+use App\Http\Controllers\VisimisiController as VisitorVisimisiController;
 use app\Http\Controllers\PengajarController as VisitorPengajarController;
-use app\Http\Controllers\EkskulController as VisitorEkskulController;
-use app\Http\Controllers\DokumentasiController as VisitorDokumentasiController;
+use App\Http\Controllers\EkskulController as VisitorEkskulController;
+use App\Http\Controllers\DokumentasiController as VisitorDokumentasiController;
 
 //ADMIN
-use app\Http\Controllers\Admin\FasilitasController as AdminFasilitasController;
-use app\Http\Controllers\Admin\AnnouncementController as AdminAnnouncementController;
-use app\Http\Controllers\Admin\KalenderController as AdminKalenderController;
-use app\Http\Controllers\Admin\PrestasiController as AdminPrestasiController;
-use app\Http\Controllers\Admin\SambutanController as AdminSambutanController;
-use app\Http\Controllers\Admin\VisimisiController as AdminVisimisiController;
+use App\Http\Controllers\Admin\FasilitasController as AdminFasilitasController;
+use App\Http\Controllers\Admin\AnnouncementController as AdminAnnouncementController;
+use App\Http\Controllers\Admin\KalenderController as AdminKalenderController;
+use App\Http\Controllers\Admin\PrestasiController as AdminPrestasiController;
+use App\Http\Controllers\Admin\SambutanController as AdminSambutanController;
+use App\Http\Controllers\Admin\VisimisiController as AdminVisimisiController;
 use app\Http\Controllers\Admin\PengajarController as AdminPengajarController;
-use app\Http\Controllers\Admin\EkskulController as AdminEkskulController;
-use app\Http\Controllers\Admin\DokumentasiController as AdminDokumentasiController;
+use App\Http\Controllers\Admin\EkskulController as AdminEkskulController;
+use App\Http\Controllers\Admin\DokumentasiController as AdminDokumentasiController;
 
 // VISITOR PAGE ROUTES
 Route::get('/', function () {
