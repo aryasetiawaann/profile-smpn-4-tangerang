@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Visimisi;
 use Illuminate\Http\Request;
 
-class VisimisiController extends Controller
+class AdminVisimisiController extends Controller
 {
     public function index()
     {

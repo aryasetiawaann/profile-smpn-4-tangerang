@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Sambutan;
 use Illuminate\Http\Request;
 
-class SambutanController extends Controller
+class AdminSambutanController extends Controller
 {
     public function index()
     {

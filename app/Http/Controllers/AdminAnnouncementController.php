@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Announcement;
 
-class AnnouncementController extends Controller
+class AdminAnnouncementController extends Controller
 {
     public function index()
     {
