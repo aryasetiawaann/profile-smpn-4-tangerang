@@ -4,13 +4,11 @@
 <div>
     <div class="detail-pengumuman-content">
         <div class="detail-pengumuman-content-head">
-            <h1>PRESTASI</h1>
+            <h1>{{ $prestasi->judul }}</h1>
         </div>
         <div class="detail-pengumuman-content-body">
-            <h3>{{ $prestasi->judul }}</h3>
             <div class="detail-pengumuman-info">
                 <div class="detail-pengumuman-info-admin">
-                    <img src="/assets/person.png" alt="person">
                     <p>{{ $prestasi->tim }}</p>
                 </div>
                 <div class="detail-pengumuman-info-date">

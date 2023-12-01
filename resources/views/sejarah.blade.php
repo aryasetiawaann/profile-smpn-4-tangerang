@@ -2,21 +2,13 @@
 
 @section('content')
 <div>
-    <div class="banner">
-        <img src="/assets/banner.png" alt="banner">
-        <div class="line"></div>
-        <div class="banner-desc">
-            <p>PROFILE</p>
-            <h1>SEJARAH SEKOLAH</h1>
-        </div>
-    </div>
     <div class="sejarah-content">
-        <div class="sejarah-content-head">
+        <div class="sejarah-content-head" style="margin-top: 2rem">
             <p>SEJARAH SEKOLAH</p>
             <h1>SMP NEGERI 4 TANGERANG</h1>
         </div>
         <div class="sejarah-content-body">
-            <img src="/assets/foto-sekolah.png" alt="foto-sekolah">
+            <img src="/assets/fas-gerbang.jpg" alt="foto-sekolah">
             <div class="content-body-text">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ducimus, ea magnam veniam exercitationem deserunt accusamus neque nobis in ipsam a dignissimos libero magni ab ullam, illo autem debitis eum at dolor excepturi sapiente quaerat. Magni cum similique sunt nobis quaerat consectetur ea, sint illum esse animi placeat ullam. Molestias reiciendis exercitationem fugiat, provident expedita eaque neque debitis necessitatibus ut repellendus, beatae, deserunt officiis quod illum laborum doloribus cupiditate laudantium eum. Aspernatur corrupti iste ab deleniti? Dolorum quo voluptas dignissimos ipsam exercitationem aliquam quaerat facilis quos asperiores error? Minima consequuntur repellat rem iste qui voluptate deserunt voluptates consectetur! Omnis, necessitatibus.</p>
                 <br>

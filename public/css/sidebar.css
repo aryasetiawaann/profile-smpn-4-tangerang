@@ -110,8 +110,24 @@
 
 .dropdown-button {
     background: none !important;
+    display: flex;
+    justify-content: space-between;
     border: none;
-    width: 10%;
+    width: 100%;
+}
+
+.dropdown-desc{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-desc p{
+    margin: 0 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+    line-height: normal;
 }
 
 .dropdown-button svg {

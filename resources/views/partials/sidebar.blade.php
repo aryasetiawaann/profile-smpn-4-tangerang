@@ -20,9 +20,11 @@
             </a>
             
             <div class="content-list">
-                <img src="/assets/profile-sidebar.png" alt="profile">
-                <p>Profile</p>
                 <button class="dropdown-button" @click="drop1 = !drop1">
+                <div  class="dropdown-desc">
+                    <img src="/assets/profile-sidebar.png" alt="profile">
+                    <p>Profile</p>
+                </div>
                     <div class="svg-container">
                         <svg x-show="!drop1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14" fill="none" >
                             <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -42,9 +44,11 @@
             </ul>
             
             <div class="content-list">
-                <img src="/assets/akademik-sidebar.png" alt="akademik">
-                <p>Akademik</p>
                 <button class="dropdown-button" @click="drop2 = !drop2">
+                <div class="dropdown-desc">
+                    <img src="/assets/akademik-sidebar.png" alt="akademik">
+                    <p>Akademik</p>
+                </div>
                     <div class="svg-container">
                         <svg x-show="!drop2" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14" fill="none" >
                             <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -68,9 +72,11 @@
             </a>
             
             <div class="content-list">
-                <img src="/assets/dokumentasi-sidebar.png" alt="dokumentasi">
-                <p>Dokumentasi</p>
                 <button class="dropdown-button" @click="drop3 = !drop3">
+                <div class="dropdown-desc">
+                    <img src="/assets/dokumentasi-sidebar.png" alt="dokumentasi">
+                    <p>Dokumentasi</p>
+                </div>
                     <div class="svg-container">
                         <svg x-show="!drop3" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14" fill="none">
                             <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

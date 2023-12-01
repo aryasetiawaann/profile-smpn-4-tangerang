@@ -4,10 +4,9 @@
 <div>
     <div class="detail-pengumuman-content">
         <div class="detail-pengumuman-content-head">
-            <h1>PENGUMUMAN DAN BERITA</h1>
+            <h1>{{ $announcement->judul }}</h1>
         </div>
         <div class="detail-pengumuman-content-body">
-            <h3>{{ $announcement->judul }}</h3>
             <div class="detail-pengumuman-info">
                 <div class="detail-pengumuman-info-admin">
                     <img src="/assets/admin-info.png" alt="admin-info">

@@ -134,7 +134,6 @@ Route::middleware(['auth'])->group(function () {
         'update' => 'admin.dokumentasi.update',
         'destroy' => 'admin.dokumentasi.destroy',
     ]);
-    
 });
 
 // --- BAGIAN VISITOR ---
