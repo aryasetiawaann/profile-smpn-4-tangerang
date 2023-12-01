@@ -3,10 +3,11 @@
 @section('content')
 <div class="homeadmin-container">
     <div class="homeadmin-left">
-        <div class="homeadmin-left-top">
-            <h1>Dashboard</h1>
-            <img src="/assets/fas-gerbang.jpg" alt="banner">
-        </div>
+    <div class="homeadmin-left-top">
+    <h1>Selamat Datang, Admin</h1>
+    <img src="/assets/fas-gerbang.jpg" alt="banner">
+</div>
+
         <div class="homeadmin-left-bottom">
             <h1>Staff</h1>
             <div class="homeadmin-stafflist">
@@ -19,37 +20,25 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><img src="assets\kepsek.png" alt="Foto"></td>
-                            <td><p>Tulis nama disini</p></td>
-                            <td><p>Kepala Sekolah</p></td>
-                        </tr>
-                        <tr>
-                            <td><img src="assets\kepsek.png" alt="Foto"></td>
-                            <td><p>Tulis nama disini</p></td>
-                            <td><p>Kepala Sekolah</p></td>
-                        </tr>
-                        <tr>
-                            <td><img src="assets\kepsek.png" alt="Foto"></td>
-                            <td><p>Tulis nama disini</p></td>
-                            <td><p>Kepala Sekolah</p></td>
-                        </tr>
-                        <tr>
-                            <td><img src="assets\kepsek.png" alt="Foto"></td>
-                            <td><p>Tulis nama disini</p></td>
-                            <td><p>Kepala Sekolah</p></td>
-                        </tr>
-                        <tr>
-                            <td><img src="assets\kepsek.png" alt="Foto"></td>
-                            <td><p>Tulis nama disini</p></td>
-                            <td><p>Kepala Sekolah</p></td>
-                        </tr>
-                    </tbody>
+                    @foreach($pengajars as $pengajar)
+                    <tr>
+                        <td><img class="pengajar-admin-photo" src="{{ asset('storage/' . $pengajar->photo) }}" alt="{{ $pengajar->name }}" ></td>
+                        <td>{{ $pengajar->name }}</td>
+                        <td>{{ $pengajar->jabatan }}</td>
+                    </tr>
+                    @endforeach
+                </tbody>
                 </table>
             </div>
+            <div class="admin-more-btn" style="margin-bottom: 10px; margin-top: 20px;">
+            <button><a href="/admin/pengajar">More</a></button>
+        </div>
         </div>
     </div>
     <div class="homeadmin-right">
+    <div class="clock-container">
+        <p id="real-time-clock"></p>
+    </div>
         <div class="homeadmin-calendar">
             <div class="calendar-top">
                 <p class="current-date"></p>
@@ -71,7 +60,7 @@
                 <ul class="days"></ul>
             </div>
         </div>
-        <div class="homeadmin-berita">
+        <!-- <div class="homeadmin-berita">
             <h1>Pengumuman dan Berita</h1>
             <div class="homeadmin-berita-list">
                 <div class="homeadmin-berita-list-item">
@@ -107,119 +96,24 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
-        <!-- <div class="admin-content-admin">
-            <main>
-                <h1 style="font-weight: 600;">Dashboard</h1>
-                <div class="image-box">
-                    <img src="assets\foto-sekolah.png" alt="Your Image">
-                </div>
-                <div class="staff-box-admin">
-                    <h2 style="font-weight: 600;">Staff</h2>
-                    <table class="table-admin">
-                        <thead class="thead-admin">
-                            <tr class="tr-admin">
-                                <th>Foto</th>
-                                <th>Nama</th>
-                                <th>Jabatan</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img src="assets\kepsek.png" alt="Foto"></td>
-                                <td>M. Rizieq Shihab</td>
-                                <td>Guru Agama Islam</td>
-                            </tr>
-                            <tr>
-                                <td><img src="assets\kepsek.png" alt="Foto"></td>
-                                <td>M. Rizieq Shihab</td>
-                                <td>Guru Agama Islam</td>
-                            </tr>
-                            <tr>
-                                <td><img src="assets\kepsek.png" alt="Foto"></td>
-                                <td>M. Rizieq Shihab</td>
-                                <td>Guru Agama Islam</td>
-                            </tr>
-                            <tr>
-                                <td><img src="assets\kepsek.png" alt="Foto"></td>
-                                <td>M. Rizieq Shihab</td>
-                                <td>Guru Agama Islam</td>
-                            </tr>
-                            <tr>
-                                <td><img src="assets\kepsek.png" alt="Foto"></td>
-                                <td>M. Rizieq Shihab</td>
-                                <td>Guru Agama Islam</td>
-                            </tr>
-                        </tbody>
-                    </table class="table-admin">
-                    <a href="">Show All</a>
-                </div>
-            </main>
-            <div class="right">
-                <div class="top">
-                    <button id="menu-btn">
-                        <span class="material-symbols-outlined">menu</span>
-                    </button>
-                </div>
-                <div class="wrapper">
-                    <header>
-                        <p class="current-date"></p>
-                        <div class="icons">
-                            <span id="prev" class="material-symbols-outlined">chevron_left</span>
-                            <span id="next" class="material-symbols-outlined">chevron_right</span>
-                        </div>
-                    </header>
-                    <div class="calendar">
-                        <ul class="weeks">
-                            <li>Sun</li>
-                            <li>Mon</li>
-                            <li>Tue</li>
-                            <li>Wed</li>
-                            <li>Thu</li>
-                            <li>Fri</li>
-                            <li>Sat</li>
-                        </ul>s
-                        <ul class="days"></ul>
-                    </div>
-                </div>
-                <div class="berita">
-                    <h4 style="margin-bottom: 1rem;">Pengumuman dan Berita</h4>
-                    <div class="item">
-                        <img src="foto-sekolah.png">
-                        <div class="right-berita">
-                            <div class="info">
-                                <h4>SMPN 4 Tanggerang</h4>
-                                <h5>4 November 2023</h5>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="foto-sekolah.png">
-                        <div class="right-berita">
-                            <div class="info">
-                                <h4>SMPN 4 Tanggerang</h4>
-                                <h5>4 November 2023</h5>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="foto-sekolah.png">
-                        <div class="right-berita">
-                            <div class="info">
-                                <h4>SMPN 4 Tanggerang</h4>
-                                <h5>4 November 2023</h5>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+    
         <script>
+            function updateClock() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+
+    const clockText = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('real-time-clock').textContent = clockText;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
     const daysTag = document.querySelector(".days"),
     currentDate = document.querySelector(".current-date"),
     prevNextIcon = document.querySelectorAll(".icons span");
@@ -277,3 +171,6 @@ prevNextIcon.forEach(icon => { // getting prev and next icons
 });
 </script>
 @stop
+@php
+$title = 'Home Admin';
+@endphp

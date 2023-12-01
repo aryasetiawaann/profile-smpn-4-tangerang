@@ -47,6 +47,8 @@ Route::middleware(['auth'])->group(function () {
         return view('admin.adm-home', ['title' => 'Home']);
     })->name('admin.home');
 
+    Route::get('/admin', [AdminPengajarController::class, 'preview'])->name('admin.adm-home');
+
     //fasilitas-ADMIN
     Route::resource('admin/fasilitas', AdminFasilitasController::class)->names([
         'index' => 'admin.fasilitas.index',
