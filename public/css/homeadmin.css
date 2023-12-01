@@ -105,7 +105,6 @@
     aspect-ratio: 4/4;
 }
 
-
 .days li.active {
     background-color: #2984ff;
     color: #fff;
@@ -158,4 +157,57 @@
 
 .homeadmin-berita-list-tanggal {
     color: #b7b7b7;
+}
+
+/* Add this CSS to your stylesheet */
+.admin-more-btn button {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.admin-more-btn button:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.admin-more-btn button a {
+    color: inherit; /* Inherit text color from parent button */
+    text-decoration: none; /* Remove default link underline */
+}
+
+.clock-container {
+    height: 10rem;
+    background: rgba(
+        255,
+        255,
+        255,
+        0.7
+    ); /* Optional: add a semi-transparent background */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif; /* Change the font-family as needed */
+    font-size: 45px;
+    font-weight: 500;
+    color: #007bff;
+}
+
+#real-time-clock {
+    margin: 0;
 }

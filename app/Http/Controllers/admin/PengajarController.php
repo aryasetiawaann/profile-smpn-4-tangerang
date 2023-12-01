@@ -15,6 +15,13 @@ class PengajarController extends Controller
         return view('admin.pengajar.index', ['pengajars' => $pengajars]);
     }
 
+    public function preview()
+{
+    $pengajars = Pengajar::take(5)->get();
+
+    return view('admin.adm-home', ['pengajars' => $pengajars]);
+}
+
     public function create()
     {
         return view('admin.pengajar.create');
