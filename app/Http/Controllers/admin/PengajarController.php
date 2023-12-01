@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace app\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use app\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
-use App\Models\Pengajar;
+use app\Models\Pengajar;
 
 class PengajarController extends Controller
 {

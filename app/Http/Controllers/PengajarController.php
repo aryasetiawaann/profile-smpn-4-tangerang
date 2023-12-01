@@ -1,10 +1,10 @@
 <?php
 // app/Http/Controllers/PengajarController.php
 
-namespace App\Http\Controllers;
+namespace app\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Models\Pengajar;
+use app\Http\Controllers\Controller;
+use app\Models\Pengajar;
 use Illuminate\Http\Request;
 
 class PengajarController extends Controller

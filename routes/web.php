@@ -9,7 +9,7 @@ use App\Http\Controllers\KalenderController as VisitorKalenderController;
 use App\Http\Controllers\PrestasiController as VisitorPrestasiController;
 use App\Http\Controllers\SambutanController as VisitorSambutanController;
 use App\Http\Controllers\VisimisiController as VisitorVisimisiController;
-use App\Http\Controllers\PengajarController as VisitorPengajarController;
+use app\Http\Controllers\PengajarController as VisitorPengajarController;
 use App\Http\Controllers\EkskulController as VisitorEkskulController;
 use App\Http\Controllers\DokumentasiController as VisitorDokumentasiController;
 
@@ -20,7 +20,7 @@ use App\Http\Controllers\Admin\KalenderController as AdminKalenderController;
 use App\Http\Controllers\Admin\PrestasiController as AdminPrestasiController;
 use App\Http\Controllers\Admin\SambutanController as AdminSambutanController;
 use App\Http\Controllers\Admin\VisimisiController as AdminVisimisiController;
-use App\Http\Controllers\Admin\PengajarController as AdminPengajarController;
+use app\Http\Controllers\Admin\PengajarController as AdminPengajarController;
 use App\Http\Controllers\Admin\EkskulController as AdminEkskulController;
 use App\Http\Controllers\Admin\DokumentasiController as AdminDokumentasiController;
 
