@@ -41,7 +41,7 @@
                 </div>
                 <div class="navbar-c-right-content">
                     <img src="/assets/telephone.png" alt="telephone">
-                    <p>(021) 123-456-788</p>
+                    <p>(021) 552-7051</p>
                 </div>
             </div>
         </div>
