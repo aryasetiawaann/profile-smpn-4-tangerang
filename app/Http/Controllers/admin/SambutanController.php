@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace app\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+use app\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
-use App\Models\Sambutan;
+use app\Models\Sambutan;
 use Illuminate\Http\Request;
 
 class SambutanController extends Controller

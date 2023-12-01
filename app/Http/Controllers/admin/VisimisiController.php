@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace app\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
-use App\Models\Visimisi;
+use app\Http\Controllers\Controller;
+use app\Models\Visimisi;
 use Illuminate\Http\Request;
 
 class VisimisiController extends Controller
