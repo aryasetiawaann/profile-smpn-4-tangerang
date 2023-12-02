@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/css/ekskul.css">
     <link rel="stylesheet" href="/css/kalender.css">
     <link rel="stylesheet" href="/css/prestasi.css">
-    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/pengumuman.css">
     <link rel="stylesheet" href="/css/dokumentasi.css">
     <link rel="stylesheet" href="/css/fasilitas.css">
