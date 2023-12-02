@@ -12,7 +12,7 @@
 @section('content')
     <div>
         <div class="banner">
-            <img src="/assets/banner2.png" alt="banner2">
+            <img src="/assets/staff1.png" alt="banner2">
             <div class="line"></div>
             <div class="banner-desc">
                 <p>PROFILE</p>
