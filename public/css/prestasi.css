@@ -69,11 +69,6 @@
 
 .prestasi-highlight {
     height: auto;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .prestasi-desc-detail {
@@ -100,10 +95,6 @@
         flex-direction: column;
         margin: 30px;
         margin-bottom: 50px;
-    }
-
-    .prestasi-highlight {
-        height: 100px;
     }
 }
 
@@ -149,7 +140,6 @@
     }
 
     .prestasi-highlight {
-        height: 80px;
         margin-bottom: 3px;
     }
 
