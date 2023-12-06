@@ -14,7 +14,8 @@
         </div>
     </div>
     <div class="fasilitas-content">
-        <div class="fasilitas-content-head">
+        <div class="fasilitas-content-head" data-aos="fade-left"
+     data-aos-duration="1000">
             <p>PROFILE</p>
             <h1>FASILITAS SEKOLAH</h1>
         </div>

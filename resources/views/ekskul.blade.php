@@ -14,7 +14,8 @@
         </div>
     </div>
     <div class="ekskul-content">
-        <div class="ekskul-content-head">
+        <div class="ekskul-content-head" data-aos="fade-left"
+     data-aos-duration="1000">
             <p>PROFILE</p>
             <h1>EKSTRAKURIKULER</h1>
         </div>

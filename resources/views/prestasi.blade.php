@@ -14,7 +14,8 @@
         </div>
     </div>
     <div class="prestasi-content">
-        <div class="prestasi-content-head">
+        <div class="prestasi-content-head" data-aos="fade-left"
+     data-aos-duration="1000">
             <p>AKADEMIK</p>
             <h1>PRESTASI SISWA DAN SEKOLAH</h1>
         </div>

@@ -19,11 +19,12 @@ a {
     color: #fff;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     padding: 0 80px;
     height: 100px;
-    width: 100%;
     z-index: 5;
 }
 
@@ -87,13 +88,13 @@ a {
 .content {
     margin-left: 20%;
     margin-top: 99px;
-    width: 80%;
+    width: auto;
+    overflow-x: hidden;
     transition: margin-left 0.3s ease, width 0.3s ease;
 }
 
 .expand {
     margin-left: 5%;
-    width: 95%;
 }
 
 .go-top {
@@ -202,12 +203,10 @@ a {
     /* ------------- END BAGIAN RESPONSIVE NAVBAR ------------- */
     .content {
         margin-left: 7%;
-        width: 93%;
     }
 
     .expand {
         margin-left: 7%;
-        width: 93%;
     }
 
     .go-top {
@@ -251,7 +250,6 @@ a {
 
     .content {
         margin-top: 99px;
-        width: 100%;
         margin-left: 0;
     }
 

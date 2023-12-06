@@ -13,7 +13,8 @@
         </div>
     </div>
     <div class="pengumuman-content">
-        <div class="pengumuman-content-head">
+        <div class="pengumuman-content-head" data-aos="fade-left"
+     data-aos-duration="1000">
             <p>TERKINI</p>
             <h1>PENGUMUMAN DAN BERITA</h1>
         </div>

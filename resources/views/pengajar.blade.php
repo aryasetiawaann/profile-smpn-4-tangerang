@@ -23,7 +23,8 @@
             </div>
         </div>
         <div class="pengajar-content">
-            <div class="pengajar-content-head">
+            <div class="pengajar-content-head" data-aos="fade-left"
+     data-aos-duration="1000">
                 <p>PROFILE</p>
                 <h1>STAFF PENGAJAR</h1>
             </div>

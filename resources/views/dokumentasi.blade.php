@@ -17,7 +17,8 @@
         </div>
     </div>
     <div class="dokumentasi-content">
-        <div class="dokumentasi-content-head">
+        <div class="dokumentasi-content-head" data-aos="fade-left"
+     data-aos-duration="1000">
             <p>DOKUMENTASI</p>
             <h1>SMP NEGERI 4 TANGERANG {{ $title }}</h1>
         </div>

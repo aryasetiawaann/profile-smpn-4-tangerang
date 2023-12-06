@@ -12,7 +12,8 @@
         </div>
     </div>
     <div class="kalender-content">
-        <div class="kalender-content-head">
+        <div class="kalender-content-head" data-aos="fade-left"
+     data-aos-duration="1000">
             <p>AKADEMIK</p>
             <h1>KURIKULUM</h1>
         </div>
