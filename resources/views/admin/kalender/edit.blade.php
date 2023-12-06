@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-edit">
 <div class="head-edit">
-        <h1>Edit Kalender</h1>
+        <h1>Edit Kurikulum</h1>
     </div>
     <div class="inner-container">
         <div class="head-editpengumuman">

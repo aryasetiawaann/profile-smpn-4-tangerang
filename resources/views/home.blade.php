@@ -3,7 +3,7 @@
 @section('content')
 
 <div>
-    <div class="carousel-container">
+    <div class="carousel-container" >
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -12,8 +12,9 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="/assets/banner-1.jpg" class="d-block w-100 c-img" alt="banner1">
-            <div class="carousel-caption d-md-block">
+            <img src="/assets/banner-1.jpg" class="d-block w-100 c-img" alt="banner1" >
+            <div class="carousel-caption d-md-block" data-aos="fade-up"
+     data-aos-duration="1000">
                 <h5>Selamat datang di profile SMPN 4 Tangerang</h5>
                 <p>Tari Topeng Klana Cirebon di acara "Tridoeta Lima Jam Menari 2020"</p>
             </div>
@@ -33,14 +34,6 @@
             </div>
             </div>
         </div>
-        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button> -->
         </div>
     </div>
 
@@ -50,9 +43,12 @@
         $misi = \App\Models\Visimisi::find(2);
     @endphp
 
-    <div class="home-line"></div>
+    <div class="home-line">
+        <marquee direction="left">SELAMAT DATANG DI WEBSITE SMP NEGERI 4 KOTA TANGERANG | UNGGUL TERAMPIL AKTIF MANDIRI ADAPTIF</marquee>
+    </div>
 
-    <div class="home-sambutan">
+    <div class="home-sambutan" data-aos="fade-up"
+     data-aos-duration="1200">
         <div class="home-sambutan-head">
             <h1>SAMBUTAN KEPALA SEKOLAH</h1>
             <p>SMP NEGERI 4 TANGERANG</p>
@@ -69,7 +65,7 @@
     </div>
     <div class="home-visi-misi">
         @if($visi)
-            <div class="visi">
+            <div class="visi" data-aos="fade-left" data-aos-duration="1000">
                 <h1>{{$visi->judul}}</h1>
                 <p>{!! nl2br(e($visi->deskripsi)) !!}</p> 
             </div>
@@ -77,7 +73,7 @@
             <h2>NO VISI DATA AVAILABLE</h2>
         @endif
         @if($misi)
-        <div class="misi">
+        <div class="misi" data-aos="fade-right" data-aos-duration="1000">
             <h1>{{ $misi->judul }}</h1>
             <p>{!! nl2br(e($misi->deskripsi)) !!}</p>
         </div>
@@ -86,7 +82,8 @@
         @endif
     </div>
     <div class="home-berita">
-        <div class="home-berita-head">
+        <div class="home-berita-head" data-aos="fade-right"
+     data-aos-duration="1000">
             <h1>TERKINI</h1>
             <p>PENGUMUMAN DAN BERITA</p>
         </div>
@@ -96,7 +93,8 @@
         @endphp
 
         @foreach ($topAnnouncements as $announcement)
-            <div class="home-berita-item">
+            <div class="home-berita-item" data-aos="fade-up"
+     data-aos-duration="1000">
                 <img src="{{ asset('storage/' . $announcement->photo) }}">
                 <div class="berita-item-desc">
                     <a href="/pengumuman-dan-berita/{{ $announcement->id }}" style="text-decoration:none;color:unset;">

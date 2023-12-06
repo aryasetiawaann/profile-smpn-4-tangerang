@@ -74,7 +74,7 @@ $check = end($words);
                     </a>
                     <a class="{{ ($check == 'Kalender') ? 'active' : ' ' }}" href="{{ route('admin.kalender.index') }}">
                         <span class="material-symbols-outlined">calendar_month</span>
-                        <h3>Kalender Akademik</h3>
+                        <h3>Kurikulum</h3>
                     </a>
                     <a class = "{{ ($check == 'Dokumentasi') ? 'active' : ' ' }}" href="{{ route('admin.dokumentasi.index') }}">
                         <span class="material-symbols-outlined">collections</span>

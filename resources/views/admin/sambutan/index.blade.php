@@ -13,9 +13,9 @@
             <table border="1">
                 <thead>
                     <tr>
+                        <th>Foto</th>
                         <th>Kepala Sekolah</th>
                         <th>Kata Sambutan</th>
-                        <th>Foto</th>
                         <th>Tindakan</th>
                     </tr>
                 </thead>

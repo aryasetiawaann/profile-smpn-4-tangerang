@@ -60,7 +60,7 @@
 .sidebar-title h1 {
     margin: 0;
     margin-left: 10px;
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.65px;
 }
@@ -261,7 +261,7 @@
     }
 
     .content-list p {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .content-list img,
@@ -280,6 +280,6 @@
     }
 
     .dropdown-list a {
-        font-size: 10px;
+        font-size: 16px;
     }
 }

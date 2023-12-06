@@ -4,8 +4,11 @@
 <div>
     <div class="banner">
         <img src="/assets/prestasibanner.jpg" alt="banner">
-        <div class="line"></div>
-        <div class="banner-desc">
+        <div class="line">
+            <marquee direction="left">SELAMAT DATANG DI WEBSITE SMP NEGERI 4 KOTA TANGERANG | UNGGUL TERAMPIL AKTIF MANDIRI ADAPTIF</marquee>
+        </div>
+        <div class="banner-desc" data-aos="fade-up"
+     data-aos-duration="1000">
             <p>AKADEMIK</p>
             <h1>PRESTASI</h1>
         </div>
@@ -17,7 +20,8 @@
         </div>
         <div class="prestasi-content-body">
             @foreach ($prestasis as $prestasi)
-            <div class="prestasi-card">
+            <div class="prestasi-card" data-aos="fade-up"
+     data-aos-duration="1000">
                 <img src="{{ 'storage/' . $prestasi->photo }}">
                 <div class="prestasi-card-desc">
                     <a href="/prestasi/{{ $prestasi->id }}" style="text-decoration:none;color:unset;">

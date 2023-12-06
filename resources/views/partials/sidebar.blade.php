@@ -61,7 +61,7 @@
             </div>
             
             <ul class="dropdown-list" x-show="drop2" x-transition>
-                <li><a href="/kalender-akademik">Kalender Akademik</a></li>
+                <li><a href="/kalender-akademik">Kurikulum</a></li>
                 <li><a href="/prestasi">Prestasi</a></li>
             </ul>
             <a href="/pengumuman-dan-berita">

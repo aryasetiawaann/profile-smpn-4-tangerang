@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-edit">
 <div class="head-edit">
-        <h1>Tambah Kalender Akademik</h1>
+        <h1>Tambah Kurikulum</h1>
     </div>
     <div class="inner-container">
     <div class="head-editpengumuman">

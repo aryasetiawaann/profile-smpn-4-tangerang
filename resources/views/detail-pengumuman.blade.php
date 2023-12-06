@@ -3,10 +3,12 @@
 @section('content')
 <div>
     <div class="detail-pengumuman-content">
-        <div class="detail-pengumuman-content-head">
+        <div class="detail-pengumuman-content-head" data-aos="fade-down"
+     data-aos-duration="1000">
             <h1>{{ $announcement->judul }}</h1>
         </div>
-        <div class="detail-pengumuman-content-body">
+        <div class="detail-pengumuman-content-body" data-aos="fade-up"
+     data-aos-duration="1000">
             <div class="detail-pengumuman-info">
                 <div class="detail-pengumuman-info-admin">
                     <img src="/assets/admin-info.png" alt="admin-info">

@@ -3,7 +3,7 @@
 @section('content')
 <div class="pengumuman-container">
     <div class="head-pengumuman">
-        <h2>Kalender Akademik</h2>
+        <h2>Kurikulum</h2>
     </div>
     <div class="pengumuman-body">
         <div class="button-add-pengumuman">

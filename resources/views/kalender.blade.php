@@ -5,19 +5,21 @@
     <div class="banner">
         <img src="/assets/fas-lobby.jpg" alt="banner">
         <div class="line"></div>
-        <div class="banner-desc">
+        <div class="banner-desc" data-aos="fade-up"
+     data-aos-duration="1000">
             <p>AKADEMIK</p>
-            <h1>KALENDER AKADEMIK</h1>
+            <h1>KURIKULUM</h1>
         </div>
     </div>
     <div class="kalender-content">
         <div class="kalender-content-head">
             <p>AKADEMIK</p>
-            <h1>KALENDER AKADEMIK SEKOLAH</h1>
+            <h1>KURIKULUM</h1>
         </div>
         <div class="kalender-content-body">
             @forelse ($kalenders as $kalender)
-            <div class="kalender-item">
+            <div class="kalender-item" data-aos="fade-up"
+     data-aos-duration="1000">
                 <h3>{{ $kalender->title }}</h3>
                 <button>
                 <a href="{{ asset('storage/' . $kalender->file_path) }}" target="_blank">

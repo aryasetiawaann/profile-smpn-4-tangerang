@@ -13,8 +13,11 @@
     <div>
         <div class="banner">
             <img src="/assets/staff1.png" alt="banner2">
-            <div class="line"></div>
-            <div class="banner-desc">
+            <div class="line">
+                <marquee direction="left">SELAMAT DATANG DI WEBSITE SMP NEGERI 4 KOTA TANGERANG | UNGGUL TERAMPIL AKTIF MANDIRI ADAPTIF</marquee>
+            </div>
+            <div class="banner-desc" data-aos="fade-up"
+     data-aos-duration="1000">
                 <p>PROFILE</p>
                 <h1>STAFF PENGAJAR</h1>
             </div>
@@ -24,7 +27,8 @@
                 <p>PROFILE</p>
                 <h1>STAFF PENGAJAR</h1>
             </div>
-            <div class="pengajar-content-body">
+            <div class="pengajar-content-body" data-aos="fade-up"
+     data-aos-duration="1000">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         @foreach($slides as $chunk)

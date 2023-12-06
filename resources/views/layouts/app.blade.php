@@ -18,10 +18,15 @@
     <link rel="stylesheet" href="/css/fasilitas.css">
     <link rel="stylesheet" href="/css/detail-pengumuman.css">
     <link rel="stylesheet" href="/css/detail-ekskul.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>SMPN 4 Tangerang | {{ $title }}</title>
 </head>
 <body>
+<script>
+  AOS.init();
+</script>
     <div x-data="{isopen_sidebar : false}" id="top">
         <div class="navbar-c shadow-lg">
             <div class="navbar-c-left">

@@ -34,7 +34,7 @@ a {
 }
 
 .navbar-c-left img {
-    height: 80px;
+    height: 60px;
     width: auto;
     margin: auto 0;
 }
@@ -44,7 +44,7 @@ a {
 }
 
 .navbar-c-left-desc h1 {
-    font-size: 18px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -53,7 +53,7 @@ a {
 }
 
 .navbar-c-left-desc p {
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -76,7 +76,7 @@ a {
 
 .navbar-c-right-content p {
     margin: 3px 10px;
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -144,6 +144,13 @@ a {
     background: #0174be;
 }
 
+.line marquee {
+    color: #ffc436;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
 .banner-desc {
     position: absolute;
     top: 35%;
@@ -156,7 +163,7 @@ a {
 .banner-desc h1 {
     margin: 0;
     color: #ffc436;
-    font-size: 32px;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -254,6 +261,11 @@ a {
 
     .go-top {
         margin: 30px;
+    }
+
+    .line marquee {
+        font-size: 14px;
+        padding: 10px 0;
     }
 }
 

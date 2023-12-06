@@ -5,7 +5,7 @@
     <div class="homeadmin-left">
     <div class="homeadmin-left-top">
     <h1>Selamat Datang, Admin</h1>
-    <img src="/assets/fas-gerbang.jpg" alt="banner">
+    <img src="/assets/foto-sekolah.webp" alt="banner">
 </div>
 
         <div class="homeadmin-left-bottom">
