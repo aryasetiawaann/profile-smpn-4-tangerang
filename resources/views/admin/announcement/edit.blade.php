@@ -36,6 +36,13 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
+            <div class="title-form">
+                    <label for="link">Link:</label>
+                    <input type="text" class="form-control @error('link') is-invalid @enderror" id="link" name="link" value="{{ old('link', $announcement->link ?? '') }}">
+                    @error('link')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
             <div class="file-form">
                 <label for="photo">Foto:</label>
                 <input type="file" class="form-control @error('photo') is-invalid @enderror" id="photo" name="photo" accept="image/*">

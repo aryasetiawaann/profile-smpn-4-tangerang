@@ -9,7 +9,7 @@ class Announcement extends Model
 {
     use HasFactory;
     protected $table = 'announcements';
-    protected $fillable = ['judul', 'deskripsi', 'tanggal', 'photo'];
+    protected $fillable = ['judul', 'deskripsi', 'link', 'tanggal', 'photo'];
     protected $casts = [
         'tanggal' => 'date',
     ];

@@ -16,6 +16,7 @@
                         <th>Foto</th>
                         <th>Judul</th>
                         <th>Deskripsi</th>
+                        <th>Link</th>
                         <th>Tanggal</th>
                         <th>Tindakan</th>
                     </tr>
@@ -28,6 +29,7 @@
                         </td>
                         <td>{{ $announcement->judul }}</td>
                         <td class="pengumuman-deskripsi">{{ Str::limit($announcement->deskripsi, 100) }}</td>
+                        <td>{{ $announcement->link }}</td>
                         <td>{{ $announcement->tanggal }}</td>
                         <td>
                             <a class="pengajar-admin-edit" href="{{ route('admin.announcement.edit', $announcement->id) }}"><img src="/assets/edit.png" alt="edit"></a>

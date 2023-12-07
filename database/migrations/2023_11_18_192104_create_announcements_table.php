@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('judul', 100);
             $table->longText('deskripsi');
+            $table->string('link', 255)->nullable();
             $table->date('tanggal');
             $table->string('photo');
             $table->timestamps();

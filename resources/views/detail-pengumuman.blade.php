@@ -24,6 +24,11 @@
                 <div>
                     {!! nl2br(e($announcement->deskripsi)) !!}
                 </div>
+                @if($announcement->link)
+                <div class="link-btn">
+                    <button><a href="{{ $announcement->link }}" target="_blank">Open Link</a></button>
+                </div>
+                @endif
             </div>
         </div>
         <div class="home-berita-more" style="margin-bottom: 30px; margin-top: 0px;">

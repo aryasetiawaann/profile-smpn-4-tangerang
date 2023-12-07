@@ -28,6 +28,7 @@ class AdminAnnouncementController extends Controller
             'deskripsi' => 'required',
             'tanggal' => 'required|date',
             'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'link' => 'nullable|url',
         ]);
 
         // Upload photo to public disk
@@ -38,6 +39,7 @@ class AdminAnnouncementController extends Controller
         Announcement::create([
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
+            'link' => $request->link,
             'tanggal' => $request->tanggal,
             'photo' => $path,
         ]);
@@ -69,6 +71,7 @@ class AdminAnnouncementController extends Controller
             'deskripsi' => 'required',
             'tanggal' => 'nullable|date',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'link' => 'nullable|url',
         ]);
 
         // Find the announcement entry
